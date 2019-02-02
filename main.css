@@ -1,0 +1,215 @@
+/*text*/
+html {
+    font-family: "Courier New", Courier New, sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+h1 {
+    font-family: 'Arvo', serif;
+    text-align: center;
+    font-size: 2em;
+    display: block;
+}
+h2 {
+    font-family: 'Arvo', serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: grey;
+}
+/*h3 {
+    font-family: "Courier New", Courier New, sans-serif;
+    text-align: left;
+    padding-left: 5%;
+    color: grey;
+}*/
+h4 {
+    font-size: 1.5em;
+    font-family: 'Arvo', serif;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex: 29%;
+    max-width: 530px;
+    float: center;
+    margin: auto;
+/*    padding-top: 50px;*/
+    font-weight: 600;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 29%;
+    max-width: 450px;
+    float: center;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+/*    padding-top: 25px;*/
+    padding-bottom: 25px;    
+    max-width: 450px;
+/*
+    padding-left: 36%;
+    padding-right: 36%;
+*/
+}
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.title {
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+    padding-top: 50px;
+    margin: auto;
+    display: block;
+}
+.spacer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+
+/*links*/
+a {
+    color: skyblue;
+}
+a:visited {
+    color: mediumorchid;
+}
+
+/*header*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+    overflow: hidden;
+}
+li {
+    float: right;
+    font-size: 18px;
+}
+li a {
+    font-size: 15;
+    color: grey;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    color: #100;
+}
+li a:visited {
+    color: lightgrey;
+}
+#name {
+    color: #000;
+}
+.active {
+    color: #4CAF50;
+}
+
+/*gallery style 1: single image*/
+div.gallery {
+    margin: 25px 0px 50px 0px;
+    float: center;
+}
+div.gallery img {
+    display: block;
+    margin: auto;
+    border: none;
+    float: center;
+    padding: 2px;
+}
+div.title {
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+    padding-top: 10px;
+    margin: auto;
+    display: block;
+}
+div.desc {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: lightgrey;
+}
+div.process {
+    text-align: center;
+    font-size: 12px;
+}
+div.white {
+    background-color: white;
+}
+iframe {
+    display: block;
+    margin: auto;
+    border: none;
+    float: center;
+}
+
+/*gallery style 2: flexbox*/
+* {
+    box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+      /*margin: 50px 0px 50px 0px;*/
+  padding-left: 10%;
+  padding-right: 10%;
+    padding-top: 100px;
+}
+.column2 {
+  flex: 50%;
+  max-width: 100%;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+}
+.column img {
+  padding: 5px;
+  vertical-align: middle;
+}
+/*
+.column img:hover {
+  padding: 0px;
+  vertical-align: middle;
+}
+*/
+.column2 img {
+  padding: 2px;
+  vertical-align: middle;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 1400px) {
+  .column {
+    flex: 33%;
+    max-width: 33%;
+  }
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .column2 {
+    flex: 100%;
+    max-width: 100%;
+}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
