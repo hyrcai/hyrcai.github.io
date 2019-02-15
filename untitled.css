@@ -55,6 +55,8 @@ h4 {
     font-weight: 600;
 }
 main {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     display: block;
     max-width: 550px;
     float: center;
@@ -62,7 +64,6 @@ main {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
-    font-family: 'Open Sans', sans-serif;
     color: gray;
 }
 .subtitle {
