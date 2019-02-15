@@ -7,7 +7,11 @@ html {
     background-color: rgb(250, 250, 250);
     margin:0;
     padding:0;
-    webkit-font-smoothing: subpixel-antialiased;
+}
+html .safari a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 body {
     margin: 0;
