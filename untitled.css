@@ -1,3 +1,6 @@
+/*✱fonts*/
+@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,600,700);
+
 /*✱text*/
 html {
     font-family: "Open Sans", Courier New, sans-serif;
@@ -16,6 +19,9 @@ h1 {
     padding-top: 25px;
     padding-left: 10px;
     padding-right: 10px;
+    
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    text-rendering: geometricPrecision !important;
 }
 h2 {
     font-family: 'Arvo', serif;
