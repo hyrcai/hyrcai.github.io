@@ -16,14 +16,6 @@ h1 {
     padding-top: 25px;
     padding-left: 10px;
     padding-right: 10px;
-    
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
 }
 h2 {
     font-family: 'Arvo', serif;
