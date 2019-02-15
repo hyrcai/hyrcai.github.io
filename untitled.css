@@ -1,5 +1,5 @@
 /*✱fonts*/
-@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,600,700|Asap);
 
 /*✱text*/
 html {
@@ -7,18 +7,6 @@ html {
     background-color: rgb(250, 250, 250);
     margin:0;
     padding:0;
-}
-html .safari {
-    h1 {
-        font-family: 'Arvo', serif;
-        text-align: center;
-        font-size: 2em;
-        display: block;
-        padding-top: 25px;
-        padding-left: 10px;
-        padding-right: 10px;
-        letter-spacing: -5px;
-    }
 }
 body {
     margin: 0;
@@ -67,10 +55,8 @@ h4 {
     font-weight: 600;
 }
 main {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 29%;
-    max-width: 555px;
+    display: block;
+    max-width: 550px;
     float: center;
     margin: auto;
     padding-left: 50px;
@@ -81,7 +67,8 @@ main {
 }
 .subtitle {
     font-family: 'Open Sans', sans-serif;
-    color: darkgray;
+    color: dimgray;
+    float: center;
     text-align: center;
     padding-bottom: 50px;
 }
