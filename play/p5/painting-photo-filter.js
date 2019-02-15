@@ -12,7 +12,7 @@ var y = 0;
 
 //load image
 function preload() {
-    img = loadImage("photo.jpg");
+    img = loadImage("https://hyrcai.github.io/play/p5/photo.jpg");
     
     //sorry for long link, it's from facebook,
     //I tried url shorteners but they messed up the program
