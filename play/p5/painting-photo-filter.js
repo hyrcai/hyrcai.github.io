@@ -12,7 +12,7 @@ var y = 0;
 
 //load image
 function preload() {
-    img = loadImage("https://scontent.fagc2-1.fna.fbcdn.net/v/t1.0-9/44824245_1935019013257397_3442166024294629376_n.jpg?_nc_cat=106&_nc_ht=scontent.fagc2-1.fna&oh=20689f4ef54a6fc95922b240a2579026&oe=5C552C4F");
+    img = loadImage("photo.jpg");
     
     //sorry for long link, it's from facebook,
     //I tried url shorteners but they messed up the program
