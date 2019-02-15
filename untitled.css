@@ -23,8 +23,17 @@ h1 {
 }
 /* Safari 7.1+ */
 
-h1 _::-webkit-full-page-media, _:future, :root .safari_only {
-    letter-spacing: -1px;
+_::-webkit-full-page-media, _:future, :root .safari_only {
+    h1 {
+        font-family: 'Arvo', serif;
+        text-align: center;
+        font-size: 2em;
+        display: block;
+        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        letter-spacing: -1px;
+    }
 }
 h2 {
     font-family: 'Arvo', serif;
