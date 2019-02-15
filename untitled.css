@@ -216,13 +216,13 @@ iframe.footer {
     /*    filter:blur(1px);*/
 }
 .home .title {
+    font-family: "Asap", Asap, sans-serif;
     text-align: center;
     font-size: 14px;
     color: black;
     padding-top: 10px;
     margin: auto;
     display: block;
-    font-family: "Asap", Asap, sans-serif;
 }
 .home .div, span {
     display: inline-block;
