@@ -1,5 +1,5 @@
 /*✱fonts*/
-@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,400,600,700|Asap:500|Assistant);
+@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,600,700|Asap);
 
 /*✱text*/
 html {
@@ -86,8 +86,7 @@ main {
     padding-bottom: 0px;
 }
 .title {
-    font-family: "Open Sans", Open Sans, sans-serif;
-    font-weight: 400;
+    font-family: "Asap", Asap, sans-serif;
     text-align: center;
     font-size: 14px;
     color: dimgray;
@@ -223,6 +222,7 @@ iframe.footer {
     padding-top: 10px;
     margin: auto;
     display: block;
+    font-family: "Asap", Asap, sans-serif;
 }
 .home .div, span {
     display: inline-block;
