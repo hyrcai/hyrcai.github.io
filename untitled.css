@@ -1,5 +1,5 @@
 /*✱fonts*/
-@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,600,700|Asap:500);
+@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,400,600,700|Asap:500|Assistant);
 
 /*✱text*/
 html {
@@ -86,7 +86,8 @@ main {
     padding-bottom: 0px;
 }
 .title {
-    font-family: "Asap", Courier New, sans-serif;
+    font-family: "Open Sans", Open Sans, sans-serif;
+    font-weight: 400;
     text-align: center;
     font-size: 14px;
     color: dimgray;
