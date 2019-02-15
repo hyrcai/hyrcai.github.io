@@ -8,10 +8,17 @@ html {
     margin:0;
     padding:0;
 }
-html .safari a {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+html .safari {
+    h1 {
+        font-family: 'Arvo', serif;
+        text-align: center;
+        font-size: 2em;
+        display: block;
+        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        letter-spacing: 0px;
+    }
 }
 body {
     margin: 0;
