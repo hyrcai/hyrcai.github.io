@@ -10,7 +10,7 @@ body {
 }
 h1 {
     font-family: 'Arvo', serif;
-    font-kerning: normal;
+    text-rendering: optimizeLegibility; 
     text-align: center;
     font-size: 2em;
     display: block;
