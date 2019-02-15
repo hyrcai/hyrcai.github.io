@@ -20,7 +20,10 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
     
-    -webkit-font-smoothing: subpixel-antialiased !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: geometricPrecision !important;
 }
 h2 {
