@@ -17,23 +17,9 @@ h1 {
     font-size: 2em;
     display: block;
     padding-top: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
     letter-spacing: 0px;
-}
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
-{ @media {
-    h1 {
-        font-family: 'Arvo', serif;
-        text-align: center;
-        font-size: 2em;
-        display: block;
-        padding-top: 25px;
-        padding-left: 10px;
-        padding-right: 10px;
-        letter-spacing: -10px;
-    }
-    }
 }
 h2 {
     font-family: 'Arvo', serif;
@@ -129,15 +115,14 @@ ul {
 }
 li {
     float: left;
-    font-size: 18px;
-}
-li a {
     font-size: 15px;
     color: black;
     text-align: center;
+}
+li a {
     padding: 25px;
     text-decoration: none;
-    transition: .5s ease-in-out;
+    transition: .5s ease-out;
     font-weight: bold;
 }
 li a:hover:not(.active) {
@@ -147,11 +132,9 @@ li a:visited {
     color: black;
 }
 li a.active {
-    /*    color: rgb(100, 100, 100);*/
     text-decoration: underline;
 }
 #name {
-    color: black;
     float: left;
     padding: 0px;
     padding-left: 20px;
@@ -160,20 +143,22 @@ iframe.navbar {
     width: 100%;
     height: 75px;
 }
-@media (max-width: 750px) {
+@media (max-width: 500px) {
     iframe.navbar {
-        height: 250px;
-        width: 300px;
-        float: center;
+/*        height: 80px;*/
+/*        width: 300px;*/
+/*        float: center;*/
     }
-    #name {
-        float: inherit;
-        padding-left: 65px;
+    ul {
+        display: inline;
+/*
+        list-style-type: inherit;
+        padding: none;
+*/
     }
     li {
-        float: inherit;
+        float: center;
         text-align: center;
-        padding: 5px;
     }
 }
 
@@ -230,6 +215,24 @@ iframe.footer {
     display: inline-block;
     overflow: hidden;
     padding-bottom: 25px;
+}
+@media (max-width: 1000px) {
+    .home {
+        column-count: 1;
+        padding-left: 10%;
+        padding-top: 50px;
+        padding-right: 10%;
+        max-width: 100%;
+        display: block;
+    }
+}
+@media (max-width: 800px) {
+    .home {
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 100px;
+    }
 }
 /*-----------------------------------------------*/
 /*✱gallery style 1: single image*/
