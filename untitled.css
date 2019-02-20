@@ -40,7 +40,7 @@ h4 {
     padding-left: 50px;
     font-weight: 600;
 }
-main {
+section {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     display: block;
@@ -78,7 +78,7 @@ main {
     text-align: center;
     font-size: 14px;
     color: dimgray;
-    padding-top: 50px;
+    padding-top: 10px;
     margin: auto;
     display: block;
 }
@@ -115,56 +115,58 @@ a:visited {
 
 ul {
     list-style-type: none;
-    margin-top: 0px;
-    padding: 25px;
+    margin: 0px;
+    padding-bottom: 50px;
     overflow: hidden;
-    display: inline-block;
 }
-li {
+ul li {
     float: left;
     font-size: 15px;
     color: black;
-    text-align: center;
 }
-li a {
+ul div {
+    float: right;
+    padding-right: 50px;
+}
+
+ul li a {
+    display: block;
     padding: 25px;
     text-decoration: none;
     transition: .5s ease-out;
     font-weight: bold;
+    text-align: center;
 }
-li a:hover:not(.active) {
+ul li a:hover:not(.active) {
     color: rosybrown;
 }
-li a:visited {
+ul li a:visited {
     color: black;
 }
-li a.active {
+ul li a.active {
     text-decoration: underline;
 }
-#name {
+ul li.name {
     float: left;
     padding: 0px;
-    padding-left: 20px;
 }
 iframe.navbar {
     width: 100%;
     height: 75px;
 }
-@media (max-width: 500px) {
-    iframe.navbar {
-/*        height: 80px;*/
-/*        width: 300px;*/
-/*        float: center;*/
+@media screen and (max-width: 600px) {
+    ul, ul li.name, ul div, ul li {
+        float: none;
+        padding: 0px;
+        text-align: center;
     }
     ul {
-        display: inline;
-/*
-        list-style-type: inherit;
-        padding: none;
-*/
+        padding-top: 50px;
+        
     }
-    li {
-        float: center;
+    ul div {
+        padding-top: 25px;
+        float: none; 
         text-align: center;
     }
 }
@@ -192,25 +194,37 @@ iframe.footer {
     font-family: 'Open Sans', sans-serif;
     color: darkgray;
 }
-.home img, .home video {
+.home3 {
+    column-count: 3;
+    padding-left: 10%;
+    padding-top: 50px;
+    padding-right: 10%;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: darkgray;
+}
+.home img, .home video, .home3 img, .home3 video {
     width: 100%;
     height: 100%;
     vertical-align: middle;
     transition: .5s ease;
 }
-.home iframe, .home div {
+.home iframe, .home div, .home3 iframe, .home3 div {
     transition: .5s ease;
 }
-.home img:hover, .home video:hover, .home iframe:hover, .home div:hover {
+.home img:hover, .home video:hover, .home iframe:hover, .home div:hover, .home3 img:hover, .home3 video:hover, .home3 iframe:hover, .home3 div:hover {
     opacity: 0.8;
     /*
     transform: perspective(1000px) rotateY(-5deg);
     transition: transform .3s;
     */
     /*    box-shadow: -5px 5px 10px rgba(0,0,0,.1);*/
-    /*    filter:blur(1px);*/
+/*
+        filter:blur(1px);
+    overflow: hidden;
+*/
 }
-.home .title {
+.home .title, .home3 .title {
     font-family: "Asap", Asap, sans-serif;
     text-align: center;
     font-size: 14px;
@@ -219,13 +233,18 @@ iframe.footer {
     margin: auto;
     display: block;
 }
-.home .div, span {
+.home span, .home3 span {
     display: inline-block;
     overflow: hidden;
     padding-bottom: 25px;
 }
-@media (max-width: 1000px) {
-    .home {
+@media screen and (max-width: 1200px) {
+    .home3 {
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .home, .home3 {
         column-count: 1;
         padding-left: 10%;
         padding-top: 50px;
@@ -234,8 +253,8 @@ iframe.footer {
         display: block;
     }
 }
-@media (max-width: 800px) {
-    .home {
+@media screen and (max-width: 800px) {
+    .home, .home3 {
         max-width: 100%;
         padding-left: 0px;
         padding-right: 0px;
@@ -275,7 +294,7 @@ iframe {
     border: none;
     float: center;
 }
-@media (max-width: 1330px) {
+@media screen and (max-width: 1330px) {
     img {
         width: 100%;
     }
@@ -313,19 +332,19 @@ iframe {
 .column video, .column2 video, .column3 video {
     width: 100%;
 }
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     .column {
         flex: 33%;
         max-width: 33%;
     }
 }
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .column, .column3 {
         flex: 50%;
         max-width: 50%;
     }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column, .column2, .column3 {
         flex: 100%;
         max-width: 100%;
