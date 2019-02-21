@@ -99,6 +99,9 @@ mark {
     padding-left: 5px;
     padding-right: 5px;
 }
+ol li {
+    padding-top: 10px;
+}
 
 /*-----------------------------------------------*/
 /*✱links*/
@@ -118,6 +121,7 @@ ul {
     margin: 0px;
     padding-bottom: 50px;
     overflow: hidden;
+    color: black;
 }
 ul li {
     float: left;
