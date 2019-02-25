@@ -140,6 +140,7 @@ ul li a {
     transition: .5s ease-out;
     font-weight: bold;
     text-align: center;
+    color: black;
 }
 ul li a:hover:not(.active) {
     color: rosybrown;
