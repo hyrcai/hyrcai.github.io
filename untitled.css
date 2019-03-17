@@ -167,7 +167,7 @@ iframe.navbar {
     background-color: rgb(250, 250, 250);
     overflow: hidden;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     ul, ul li.name, ul div, ul li {
         float: none;
         padding: 0px;
@@ -212,9 +212,8 @@ iframe.footer {
     max-width: 100%;
 }
 .home span, .home3 span {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     display: inline-block;
-    overflow: hidden;
     position: relative;
 }
 .home img, .home video, .home3 img, .home3 video {
