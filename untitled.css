@@ -199,7 +199,7 @@ iframe.footer {
 
 .home {
     column-count: 2;
-    column-gap: 15px;
+    column-gap: 18px;
     padding-left: 8%;
     padding-top: 25px;
     padding-right: 8%;
@@ -215,7 +215,7 @@ iframe.footer {
 .home span, .home3 span {
     display: inline-block;
     padding: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     position: relative;
 }
 .home img, .home video, .home3 img, .home3 video {
