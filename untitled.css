@@ -213,11 +213,10 @@ iframe.footer {
     max-width: 100%;
 }
 .home span, .home3 span {
+    display: inline-block;
     padding: 0px;
     padding-bottom: 10px;
-    display: inline-block;
     position: relative;
-    box-sizing: content-box;
 }
 .home img, .home video, .home3 img, .home3 video {
     width: 100%;
