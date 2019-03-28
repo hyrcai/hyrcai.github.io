@@ -277,7 +277,7 @@ iframe.footer {
         display: block;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .home, .home3 {
         max-width: 100%;
         padding-left: 0px;
