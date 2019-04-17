@@ -6,7 +6,7 @@ Project-06-Abstract Clock
 
 function setup() {
     createCanvas(480,480);
-    background(250);
+    background(255);
 }
 
 function draw() {

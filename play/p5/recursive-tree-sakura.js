@@ -90,7 +90,7 @@ var maxRatio = .9;
 
 function setup() {
     createCanvas(480, 480);
-    background(250);
+    background(255);
     strokeJoin(MITER);
     strokeCap(PROJECT);
     frameRate(1);

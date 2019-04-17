@@ -6,7 +6,7 @@ Project-02-Variable-Face
 
 function setup() {
     createCanvas(640,480);
-    background(250);
+    background(255);
     rectMode(CENTER);
     ellipseMode(CENTER);
     angleMode(DEGREES);
@@ -36,7 +36,7 @@ function setup() {
 }
 
 function draw() {
-    background(250);
+    background(255);
     // label
     textFont('Courier New');
     textStyle(ITALIC);

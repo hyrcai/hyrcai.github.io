@@ -13,7 +13,7 @@ var t = 25;
 
 function setup() {
     createCanvas(480,480);
-    background(250);
+    background(255);
 }
 
 function draw() {
