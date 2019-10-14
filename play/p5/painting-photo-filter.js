@@ -12,7 +12,7 @@ var y = 0;
 
 //load image
 function preload() {
-    img = loadImage("https://hyrcai.github.io/play/p5/photo.jpg");
+    img = loadImage("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/44824245_1935019013257397_3442166024294629376_n.jpg?_nc_cat=106&_nc_oc=AQnaRTWolNXltFKZOGnXEtHpbtW_SMvKkpw3ZT64TcyLtTmX6I-3Bg0J2rFfRK6sJtA&_nc_ht=scontent-sjc3-1.xx&oh=c21533f20cfa8db10a47ff8bc88fcdd1&oe=5DE0AE4F");
     
     //sorry for long link, it's from facebook,
     //I tried url shorteners but they messed up the program

@@ -7,51 +7,80 @@ html {
     background-color: rgb(250, 250, 250);
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body {
     margin: 0;
-/*    border-top: 5px solid white;*/
-/*    border-bottom: 3px solid lightpink;*/
+    /*    border-top: 5px solid white;*/
+    /*    border-bottom: 3px solid lightpink;*/
 }
 h1 {
     font-family: 'Arvo', serif;
     text-align: center;
     font-size: 2em;
     display: block;
-    padding-top: 25px;
+    padding-top: 200px;
     padding-left: 10%;
     padding-right: 10%;
     font-weight: bold;
 }
 h2 {
     font-family: 'Arvo', serif;
+    text-align: center;
+    font-size: 2em;
+    display: block;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: bold;
+}
+h3 {
+    font-family: 'Arvo', serif;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.5proem;
     color: darkgray;
+    margin: auto;
+    margin-left: 25%;
+    max-width: 25%;
+    float: left;
 }
 h4 {
     font-size: 1.5em;
     font-family: 'Arvo', serif;
     color: black;
     text-align: center;
-    display: flex;
-    flex: 29%;
-    max-width: 640px;
-    float: center;
-    margin: auto;
-    padding-left: 50px;
+    display: block;
+    /*    width: 25%;*/
+    /*        flex: 10%;*/
+    /*    max-width: 640px;*/
+}
+p {
+    margin: 0;
+    padding: none;
 }
 section {
+    flex-direction: row;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    display: block;
+    /*    display: flex;*/
     max-width: 550px;
+    /*
     float: center;
     margin: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    */
+    margin: none;
+    margin-left: 40%;
+    padding: none;
     padding-bottom: 50px;
     color: gray;
+}
+.prompt {
+    float: center;
+    margin: auto;
+    padding: 50px 0 0 0;
+}
+.center {
+    margin-left: 33.3%;
 }
 .subtitle {
     font-family: 'Open Sans', sans-serif;
@@ -61,6 +90,16 @@ section {
     padding-bottom: 50px;
     padding-right: 10%;
     padding-left: 10%;
+    font-weight: 700;
+}
+.processheader {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin-left: 30%;
+    max-width: 30%;
+    float: left;
+    color: dimgray;
+    font-weight: 700;
 }
 .bookmark {
     color: gainsboro;
@@ -81,15 +120,28 @@ section {
 .title {
     font-family: "Asap", Asap, sans-serif;
     text-align: center;
-    font-size: 16px;
-    color: dimgray;
-    padding-top: 10px;
+    font-size: 14px;
+    color: darkgray;
     margin: auto;
     display: block;
-/*
+    padding-top: 10px;
+    /*
     padding-right: 10%;
     padding-left: 10%;
-*/
+    */
+}
+span .title {
+    margin-top: 65px;
+}
+figcaption {
+    font-family: "Asap", Asap, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: darkgray;
+    margin: auto;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 .spacer {
     padding-top: 75px;
@@ -98,15 +150,15 @@ section {
     display: block;
     text-align: center;
 }
-.prompt {
-    padding-top: 25px;
-}
 mark {
+/*
     background-color: #fff2ac;
     background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
     color: dimgray;
     padding-left: 5px;
     padding-right: 5px;
+*/
+    color: lightpink;
 }
 ol li {
     padding-top: 10px;
@@ -124,20 +176,34 @@ a:visited {
 
 /*-----------------------------------------------*/
 /*✱landing page*/
-
-
+iframe.landing {
+    width: 100%;
+    height: 885px;
+    overflow: hidden;
+}
+iframe.landing:hover {
+    
+}
+.herotext {
+    position: absolute;
+/*    position: fixed;*/
+    top: 24%;
+    width: 100%;
+/*    height: 100%;*/
+/*    z-index: -5;*/
+}
 
 /*-----------------------------------------------*/
 /*✱navbar*/
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0px;
-    padding-bottom: 50px;
+    /*    padding-bottom: 50px;*/
     overflow: hidden;
     color: black;
 }
-ul li {
+nav ul li {
     float: left;
     font-size: 16px;
     color: black;
@@ -147,7 +213,6 @@ ul div {
     float: right;
     padding-right: 50px;
 }
-
 ul li a {
     text-decoration: none;
     transition: .5s ease-out;
@@ -163,11 +228,20 @@ ul li a:visited {
     color: black;
 }
 ul li a.active {
-    text-decoration: underline;
+    color: lightpink;
 }
-ul li.name {
-    float: left;
-    padding: 25px;
+/*
+#name {
+float: center;
+margin: auto;
+display: block;
+}
+*/
+#favicon {
+    margin-left: 5px;
+    width: 23px;
+    position: fixed;
+    top: 25px;
 }
 iframe.navbar {
     width: 100%;
@@ -235,11 +309,14 @@ iframe.footer {
 .home .container:hover img, .home .container:hover video, .home .container:hover iframe, .home3 .container:hover img, .home3 .container:hover video, .home3 .container:hover iframe {
     opacity: 0.05;
     transition: .5s ease;
-    /*
+    overflow: hidden;
+    
+/*
     transform: perspective(1000px) rotateY(-5deg);
     transition: transform .3s;
-    */
-    /*    box-shadow: -5px 5px 10px rgba(0,0,0,.1);*/
+*/
+    
+/*        box-shadow: -5px 5px 10px rgba(0,0,0,.1);*/
     /*
     filter:blur(1px);
     overflow: hidden;
@@ -259,6 +336,7 @@ iframe.footer {
     text-align: center;
     padding: none;
     text-decoration: none;
+    padding-bottom: 50px;
 }
 .container:hover .title {
     opacity: 1;
@@ -307,11 +385,14 @@ div.gallery img {
     float: center;
 }
 .desc {
-    text-align: center;
-    font-weight: 300;
-    font-size: 14px;
-    color: dimgrey;
     padding-top: 10px;
+    font-family: "Asap", Asap, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: darkgray;
+    margin: auto;
+    display: block;
+    font-style: italic;
 }
 div.white {
     background-color: white;
@@ -321,7 +402,7 @@ iframe {
     margin: auto;
     border: none;
     float: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 @media screen and (max-width: 1330px) {
     img {
