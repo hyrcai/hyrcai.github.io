@@ -150,16 +150,16 @@ figcaption {
     display: block;
     text-align: center;
 }
-mark {
 /*
-    background-color: #fff2ac;
+mark {
+    background-color: none;
     background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
     color: dimgray;
     padding-left: 5px;
     padding-right: 5px;
-*/
     color: lightpink;
 }
+*/
 ol li {
     padding-top: 10px;
 }
