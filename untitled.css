@@ -80,6 +80,7 @@ section {
 }
 .subtitle {
     font-family: 'Asap', sans-serif;
+    font-size: 14px;
     color: dimgray;
     float: center;
     text-align: center;
@@ -110,7 +111,6 @@ section {
 .body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: gray;
     text-align: left;
     padding-bottom: 0px;
 }
@@ -118,7 +118,7 @@ section {
     font-family: "Asap", Asap, sans-serif;
     text-align: center;
     font-size: 14px;
-    color: darkgray;
+    color: dimgray;
     margin: auto;
     display: block;
     padding-top: 10px;
@@ -132,12 +132,13 @@ span .title {
 }
 figcaption {
     font-family: "Asap", Asap, sans-serif;
+    font-weight: 500;
     text-align: center;
     font-size: 14px;
-    color: darkgray;
+    color: dimgray;
     margin: auto;
     display: block;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 50px;
 }
 .spacer {
