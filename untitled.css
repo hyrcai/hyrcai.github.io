@@ -1,5 +1,5 @@
 /*✱fonts*/
-@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,600,700|Asap);
+@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,400,600,700|Asap:400,500,600,700|PT+Sans:400,700);
 
 /*✱text*/
 html {
@@ -15,14 +15,14 @@ body {
     /*    border-bottom: 3px solid lightpink;*/
 }
 h1 {
-    font-family: 'Arvo', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     display: block;
     padding-top: 200px;
     padding-left: 10%;
     padding-right: 10%;
-    font-weight: bold;
 }
 h2 {
     font-family: 'Arvo', serif;
@@ -61,18 +61,14 @@ p {
 section {
     flex-direction: row;
     font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
     font-weight: 300;
-    /*    display: flex;*/
     max-width: 550px;
-    /*
-    float: center;
-    margin: auto;
-    */
     margin: none;
     margin-left: 40%;
     padding: none;
     padding-bottom: 50px;
-    color: gray;
+    color: dimgrey;
 }
 .prompt {
     float: center;
@@ -83,23 +79,24 @@ section {
     margin-left: 33.3%;
 }
 .subtitle {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Asap', sans-serif;
     color: dimgray;
     float: center;
     text-align: center;
     padding-bottom: 50px;
     padding-right: 10%;
     padding-left: 10%;
-    font-weight: 700;
+    font-weight: 500;
 }
 .processheader {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    text-transform: lowercase;
     text-align: left;
     margin-left: 30%;
     max-width: 30%;
     float: left;
     color: dimgray;
-    font-weight: 700;
 }
 .bookmark {
     color: gainsboro;
@@ -150,16 +147,6 @@ figcaption {
     display: block;
     text-align: center;
 }
-/*
-mark {
-    background-color: none;
-    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
-    color: dimgray;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: lightpink;
-}
-*/
 ol li {
     padding-top: 10px;
 }
@@ -199,7 +186,7 @@ iframe.landing:hover {
 nav ul {
     list-style-type: none;
     margin: 0px;
-    /*    padding-bottom: 50px;*/
+    padding-bottom: 5px;
     overflow: hidden;
     color: black;
 }
@@ -214,9 +201,12 @@ ul div {
     padding-right: 50px;
 }
 ul li a {
+    font-family: Asap;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: lowercase;
     text-decoration: none;
     transition: .5s ease-out;
-    font-weight: bold;
     text-align: center;
     color: black;
 }
