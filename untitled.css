@@ -25,9 +25,10 @@ h1 {
     padding-right: 10%;
 }
 h2 {
-    font-family: 'Arvo', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     display: block;
     padding-top: 50px;
     padding-left: 10%;
@@ -66,7 +67,6 @@ section {
     max-width: 550px;
     margin: none;
     margin-left: 40%;
-    padding: none;
     padding-bottom: 50px;
     color: dimgrey;
 }
@@ -151,7 +151,11 @@ figcaption {
 ol li {
     padding-top: 10px;
 }
-
+@media screen and (max-width: 700px) {
+    section.prompt {
+        padding: 50px;
+    }
+}
 /*-----------------------------------------------*/
 /*✱links*/
 
@@ -233,6 +237,7 @@ display: block;
     width: 23px;
     position: fixed;
     top: 25px;
+    z-index: 10;
 }
 iframe.navbar {
     width: 100%;
