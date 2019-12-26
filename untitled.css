@@ -1,5 +1,5 @@
 /*✱fonts*/
-@import url(https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,400,600,700|Asap:400,500,600,700|PT+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Asap:400,500,600,700|PT+Sans:400,700);
 
 /*✱text*/
 html {
@@ -191,7 +191,8 @@ iframe.landing:hover {
 nav ul {
     list-style-type: none;
     margin: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 25px;
+    padding-top: 25px;
     overflow: hidden;
     color: black;
 }
@@ -199,11 +200,13 @@ nav ul li {
     float: left;
     font-size: 16px;
     color: black;
-    padding: 25px;
+    padding: 25px 0 25px 50px;
+}
+nav ul li:first-child {
+    padding-left: 0;
 }
 ul div {
     float: right;
-    padding-right: 50px;
 }
 ul li a {
     font-family: Asap;
@@ -213,38 +216,28 @@ ul li a {
     text-decoration: none;
     transition: .5s ease-out;
     text-align: center;
-    color: black;
+    color: darkgray;
 }
 ul li a:hover:not(.active) {
-    color: lightpink;
+    letter-spacing: 5px;
+    color: dimgray;
     transition: .5s ease-out;
 }
 ul li a:visited {
-    color: black;
+    color: darkgray;
 }
 ul li a.active {
-    color: lightpink;
+    color: black;
+    letter-spacing: 5px;
+}
+#favicon {
+    width: 23px;
+    height: auto;
+}
+ul {
+    padding: 0 8% 0 8%;
 }
 /*
-#name {
-float: center;
-margin: auto;
-display: block;
-}
-*/
-#favicon {
-    margin-left: 5px;
-    width: 23px;
-    position: fixed;
-    top: 25px;
-    z-index: 10;
-}
-iframe.navbar {
-    width: 100%;
-    height: 75px;
-    background-color: rgb(250, 250, 250);
-    overflow: hidden;
-}
 @media screen and (max-width: 700px) {
     ul, ul li.name, ul div, ul li {
         float: none;
@@ -261,6 +254,7 @@ iframe.navbar {
         text-align: center;
     }
 }
+*/
 
 /*-----------------------------------------------*/
 /*✱footer*/
@@ -268,7 +262,7 @@ iframe.navbar {
 iframe.footer {
     background-color: white;
     width: 100%;
-    height: 150px;
+    height: 200px;
     color: black;
 }
 
@@ -277,9 +271,8 @@ iframe.footer {
 
 .home {
     column-count: 2;
-    column-gap: 18px;
+    column-gap: 25px;
     padding-left: 8%;
-    padding-top: 25px;
     padding-right: 8%;
     max-width: 100%;
 }
@@ -293,7 +286,7 @@ iframe.footer {
 .home span, .home3 span {
     display: inline-block;
     padding: 0px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     position: relative;
 }
 .home img, .home video, .home3 img, .home3 video {
@@ -324,7 +317,7 @@ iframe.footer {
     color: black;
     font-weight: normal;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
