@@ -11,10 +11,29 @@
         <!--        links-->
         <link rel="stylesheet" href="untitled.css">
         <link rel="icon" type="image/png" href="favicon.png">
+        <script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+             $("#hamburger").click(function(){
+                    $("nav ul div").toggleClass('visible');
+                   $("main").toggleClass('blur'); $("#favicon").toggleClass('blur');
+                 $("footer").toggleClass('blur');
+                 $("#container").toggleClass('visible');
+                    $("#hamburger").toggleClass('x');
+                })
+            })
+        </script>
     </head>
     <body>
         <!--         navbar -->
         <nav>
+            <a href="#" id="hamburger">
+                <span>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+            </a>
             <ul>
                 <li><a target="_top" href="index.html"><img id="favicon" src="favicon.png"></a></li>
                 <div>
@@ -29,6 +48,7 @@
         <!----------------------------------------------->
 
         <!--        ✱page content-->
+        <main>
         <header>
             <!--            <h1>Hey There :)</h1>-->
         </header>
@@ -46,7 +66,6 @@
 </div>
 </div>
 -->
-        <main>
             <section class="prompt"><p>I'm <b>Hannah Cai</b>, a student who's studying design in Carnegie Mellon University's School of Design. I'm passionate about creative coding, web design, data visualization, music, and motion. My goal as a designer is to create experiences that are practical, yet delightful.</p>
                 <br><p>I previously interned at <a href="https://www.labkind.com/" target="_blank">Labkind</a> as a web and UI designer, and have done freelance work in branding, motion, and illustration.</p>
                 <br><p>When I'm not doing work, you can probably find me <a href="https://open.spotify.com/user/1253995959?si=7XpLJhK4RuO4Jf9H4g11Jg" target="_blank">listening to music</a>, drinking tea, playing guitar, working on a side project, or lounging around.</p>

@@ -10,10 +10,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--        links-->
         <link rel="stylesheet" href="../untitled.css">
+        <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+             $("#hamburger").click(function(){
+                    $("nav ul div").toggleClass('visible');
+                   $("main").toggleClass('blur'); 
+                 $("#favicon").toggleClass('blur');
+                 $("footer").toggleClass('blur');
+                 $("#container").toggleClass('visible');
+                    $("#hamburger").toggleClass('x');
+                })
+            })
+        </script>
     </head>
     <body>
         <!--         navbar -->
         <nav>
+            <a href="#" id="hamburger">
+                <span>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+            </a>
             <ul>
                 <li><a target="_top" href="../index.html"><img id="favicon" src="../favicon.png"></a></li>
                 <div>
@@ -28,6 +48,7 @@
         <!----------------------------------------------->
 
         <!--        ✱page content-->
+        <main>
         <header>
             <h2>p5.js</h2>
             <p class="subtitle">Processing-based javascript library</p>
@@ -108,6 +129,7 @@
             <div class="title" style="padding-top:10px">this is a preview with no sound. to see the full experience, click <a target="_blank" href="final-fullscreen.html">here</a>.</div>
         </div>
         <p class="spacer" style="padding: 40px"></p>
+            </main>
 
         <footer>
             <!--          back / prev/ next -->

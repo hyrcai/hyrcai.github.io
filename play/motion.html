@@ -11,10 +11,30 @@
         <!--        links-->
         <link rel="stylesheet" href="../untitled.css">
         <link rel="icon" type="image/png" href="../favicon.png">
+        <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+             $("#hamburger").click(function(){
+                    $("nav ul div").toggleClass('visible');
+                   $("main").toggleClass('blur'); 
+                 $("#favicon").toggleClass('blur');
+                 $("footer").toggleClass('blur');
+                 $("#container").toggleClass('visible');
+                    $("#hamburger").toggleClass('x');
+                })
+            })
+        </script>
     </head>
     <body>
         <!--         navbar -->
         <nav>
+            <a href="#" id="hamburger">
+                <span>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+            </a>
             <ul>
                 <li><a target="_top" href="../index.html"><img id="favicon" src="../favicon.png"></a></li>
                 <div>
@@ -29,18 +49,18 @@
         <!----------------------------------------------->
 
         <!--        ✱page content-->
+        <main>
         <header>
             <h2>motion</h2>
             <p class="subtitle">Illustrator, After Effects, Axure</p>
         </header>
 
-        <main>
             <div class="row">
                 <div class="column2">
                     <video autoplay muted loop style="display: block; max-width: 1330px; float: center; margin: auto; text-align: center">
                         <source src="motion/lighter-fire.mov">
                     </video>
-                    <p class="title" style="padding-bottom: 10px"><i>lighter - fire</i></p>
+                    <p class="title" style="padding-bottom: 15px"><i>lighter - fire</i></p>
                 </div>
                 <div class="column2">
                     <video autoplay muted loop style="display: block; max-width: 1330px; float: center; margin: auto; text-align: center">

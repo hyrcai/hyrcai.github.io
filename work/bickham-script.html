@@ -11,10 +11,30 @@
         <!--        links-->
         <link rel="stylesheet" href="../untitled.css">
         <link rel="icon" type="image/png" href="../favicon.png">
+        <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+             $("#hamburger").click(function(){
+                    $("nav ul div").toggleClass('visible');
+                   $("main").toggleClass('blur'); 
+                 $("#favicon").toggleClass('blur');
+                 $("footer").toggleClass('blur');
+                 $("#container").toggleClass('visible');
+                    $("#hamburger").toggleClass('x');
+                })
+            })
+        </script>
     </head>
     <body>
         <!--         navbar -->
         <nav>
+            <a href="#" id="hamburger">
+                <span>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+            </a>
             <ul>
                 <li><a target="_top" href="../index.html"><img id="favicon" src="../favicon.png"></a></li>
                 <div>
@@ -29,13 +49,13 @@
         <!----------------------------------------------->
 
         <!--        ✱page content-->
-        <img src="spread-mockup.png" alt="Bickham Script typeface spread" style="max-width:100%; display: block; margin: auto; border: none; float: center">
+        <main>
+            <img src="spread-mockup.png" alt="Bickham Script typeface spread" style="max-width:100%; display: block; margin: auto; border: none; float: center">
         <header>
             <h1>Bickham Script — print design</h1>
             <p class="subtitle">InDesign</p>
         </header>
-        
-        <main>
+            
             <section class="prompt">"Write a statement that highlights the unique characteristics and personality of your typeface in the context of its use. Using your written text, create a two-page spread that introduces the reader to the typeface. Incorporate at least one image, but no more than three."</section>
             <h1 class="spacer">—</h1>
 

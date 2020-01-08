@@ -11,10 +11,30 @@
         <!--        links-->
         <link rel="stylesheet" href="../untitled.css">
         <link rel="icon" type="image/png" href="../favicon.png">
+        <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+             $("#hamburger").click(function(){
+                    $("nav ul div").toggleClass('visible');
+                   $("main").toggleClass('blur'); 
+                 $("#favicon").toggleClass('blur');
+                 $("footer").toggleClass('blur');
+                 $("#container").toggleClass('visible');
+                    $("#hamburger").toggleClass('x');
+                })
+            })
+        </script>
     </head>
     <body>
         <!--         navbar -->
         <nav>
+            <a href="#" id="hamburger">
+                <span>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+            </a>
             <ul>
                 <li><a target="_top" href="../index.html"><img id="favicon" src="../favicon.png"></a></li>
                 <div>
@@ -30,6 +50,7 @@
         <!----------------------------------------------->
 
         <!--        ✱page content-->
+        <main>
         <header>
             <h2>illustration</h2>
             <p class="subtitle">apple pencil + Procreate, Illustrator, traditional media, Samsung notes; <i>sorted chronologically</i></p>
@@ -256,6 +277,7 @@
         <img src="illustration/snow%20leopard.JPG" style="flex: 50%; max-width:675px; display: block; margin: auto; border: none; float: center">
         <figcaption>snow leopard</figcaption>
         <p class="spacer"></p>
+        </main>
 
         <footer>
             <b>

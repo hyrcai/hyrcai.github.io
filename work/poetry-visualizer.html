@@ -11,10 +11,30 @@
         <!--        links-->
         <link rel="stylesheet" href="../untitled.css">
         <link rel="icon" type="image/png" href="../favicon.png">
+        <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+             $("#hamburger").click(function(){
+                    $("nav ul div").toggleClass('visible');
+                   $("main").toggleClass('blur'); 
+                 $("#favicon").toggleClass('blur');
+                 $("footer").toggleClass('blur');
+                 $("#container").toggleClass('visible');
+                    $("#hamburger").toggleClass('x');
+                })
+            })
+        </script>
     </head>
     <body>
         <!--         navbar -->
         <nav>
+            <a href="#" id="hamburger">
+                <span>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+            </a>
             <ul>
                 <li><a target="_top" href="../index.html"><img id="favicon" src="../favicon.png"></a></li>
                 <div>
@@ -29,45 +49,44 @@
         <!----------------------------------------------->
 
         <!--        ✱page content-->
-<!--        <img src="pittsburgh-arts-and-lectures-1-01.png" alt="Pittsburgh Arts and Lectures poster design fall 2018" style="max-width:100%; display: block; margin: auto; border: none; float: center">-->
-
+        <main>
+            <img src="poetry-bg-01.png" style="max-width:100%; display: block; margin: auto; border: none; float: center">
         <header>
-            <h1>[] — poetry visualizer</h1>
+            <h1>Poetry Visualizer — creative coding</h1>
             <p class="subtitle">Python, basil.js/InDesign</p>
         </header>
-        <main>
-            <section class="prompt"><p>[]</p></section>
+            
+            <section class="prompt"><p>This was a self-defined final project for two classes: Computational Design (p5/basil.js) and Coding for Humanists (Python, text analysis). Based on the requirements of the two final projects, I decided to make a poetry visualizer that uses computation to identify and highlight a poetic aspect such as rhyme, rhythm (meter), or assonance within poetry or song lyrics.</p></section>
             <h1 class="spacer">—</h1>
             <p class="processheader">Moodboard</p>
             <section>
-                Inspiration.</section>
+                I first looked for examples of data vis and structures that could be used for data vis for inspiration. See the full board <a href="https://www.pinterest.com/hyrcai/datavis/" target="_blank">here</a>.</section>
             <div class="row"> 
-                <div class="column">
-                    <img src="poetry-visualizer/b1.jpg">
-                    <img src="poetry-visualizer/b5.jpg">
-                    <img src="poetry-visualizer/b9.jpg">
+                <div class="column2">
+                    <img src="poetry-visualizer/m1.png">
                 </div>
-                <div class="column">
-                    <img src="poetry-visualizer/b2.jpg">
-                    <img src="poetry-visualizer/b6.jpg">
-                    <img src="poetry-visualizer/b10.jpg">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/b3.jpg">
-                    <img src="poetry-visualizer/b7.jpg">
-                    <img src="poetry-visualizer/b11.jpg">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/b4.jpg">
-                    <img src="poetry-visualizer/b8.jpg">
-                    <img src="poetry-visualizer/b12.jpg">
+                <div class="column2">
+                    <img src="poetry-visualizer/m2.png">
                 </div>
             </div>
             <p class="spacer"></p>
             
-            <p class="processheader">Brainstorming</p>
+            <p class="processheader">Research</p>
             <section>
-                Explored different ways to visualize rhyme.</section>
+                I then looked for existing examples of what I was trying to achieve. A google search shows a lot of fanmade, manually created content identifying rhyme in rap lyrics; Vox does something similar with their video <a target="_blank" href="https://www.vox.com/2016/5/19/11701976/rapping-deconstructed-best-rhymers-of-all-time">rapping, deconstructed</a>.</section>
+            <div class="row"> 
+                <div class="column2">
+                    <img src="poetry-visualizer/m00.png">
+                </div>
+                <div class="column2">
+                    <img src="poetry-visualizer/m0.jpg">
+                </div>
+            </div>
+            <p class="spacer"></p>
+            
+            <p class="processheader">Analog Experiments</p>
+            <section>
+                Since the typical way to visualized rhymes seemed to be through simply highlighting text, I tried brainstorming different ways to visualize rhyme. I also decided that I would focus on assonance (vowel sounds) instead of just rhyme, since it gave a more complete picture of the composition of a text.</section>
             <div class="row"> 
                 <div class="column">
                     <img src="poetry-visualizer/b1.jpg">
@@ -92,85 +111,139 @@
             </div>
             <p class="spacer"></p>
 
-            <p class="processheader">Sketching</p>
+<!--
+            <p class="processheader">Surveys</p>
             <section>
-                Brainstormed possible imagery to use. This lecture series was centered on authors talking about their newest books, so I wanted to include imagery that conveyed auditioriums, listening, a speaker, and literature.</section>
+                I asked friends and classmates to fill out a worksheet to gather more inspiration for possible visual directions. At this point, I was considering visualizing meter as well as assonance, so I asked participants to try and visualize that as well.</section>
             <div class="row"> 
-<!--                <div class="column2"></div>-->
                 <div class="column2">
-                    <img src="pittsburgh-arts-and-lectures/sketch-1.jpg">
+                    <img src="poetry-visualizer/i00.png">
                 </div>
                 <div class="column2">
-                    <img src="pittsburgh-arts-and-lectures/sketch-2.jpg">
+                    <img src="poetry-visualizer/i0.jpg">
                 </div>
-<!--                <div class="column"></div>-->
             </div>
             <p class="spacer"></p>
+-->
 
-            <p class="processheader">Palettes</p>
+            <p class="processheader">Python</p>
             <section>
-                Some color palettes that I felt reflected the characteristics of the client: friendly, sophisticated, intellectual, insightful, bold, and exclusive.</section>
-            <div class="row"> 
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/cp1.jpg">
-                    <img src="pittsburgh-arts-and-lectures/cp5.jpg">
-                </div>
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/cp2.jpg">
-                    <img src="pittsburgh-arts-and-lectures/cp6.jpg">
-                </div>
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/cp3.jpg">
-                    <img src="pittsburgh-arts-and-lectures/cp7.jpg">
-                </div>
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/cp4.jpg">
-                    <img src="pittsburgh-arts-and-lectures/cp8.jpg">
-                </div>
-            </div>
+                At this point, I started coding. Identifying assonance with Python turned out to be a lot trickier than I expected. My overall method was something like this:<br>
+                <ol>
+                <li>
+                    import corpus (I was using a small corpus I created of a few favorite songs and poems)</li>
+                <li>strip punctuation, tokenize to words, convert to lowercase</li>
+                    <li>look up pronunciations with the CMU pronouncing dictionary</li>
+                    <li>extract vowel phones from pronunciations</li>
+                    <li>look up syllables of each word with a hyphenation library</li>
+                    <li>store syllables and phones  into a data file</li>
+                </ol><br>
+                Even though this was the best method I was able to come up with, I still ran into a lot of issues. The CMU pronouncing dictionary is a literal dictionary, so I had to manually find and fix pronounciations of missing words.<br><br>Additionally, I needed to break words into syllables, but couldn't find any packages for it, so I used a hyphenation package instead. This also resulted in a lot of errors, since hyphenation doesn't break words into their smallest syllables to preserve legibility (another thing I had to manually fix).<br><br>
+                After spending a lot of time looking through and trying many methods of parsing meter, I decided to leave it out of my final visualization, since none of the methods I found were accurate enough to add anything meaningful.
+            </section>
+            <img src="poetry-visualizer/python.png" style="flex: 50%; max-width:800px; display: block; margin: auto; border: none; float: center">
+            <div class="desc">output from <a target="_blank" href="https://github.com/quadrismegistus/prosodic">prosodic</a>, testing parsing for meter</div>
             <p class="spacer"></p>
-
-            <p class="processheader">Iteration</p>
-            <section></section>
-            <div class="row"> 
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/i1.png">
-                    <img src="pittsburgh-arts-and-lectures/i10.png">
-                </div>
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/i3.jpg">
-                    <img src="pittsburgh-arts-and-lectures/i11.png">
-                </div>
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/i4.png">
-                    <img src="pittsburgh-arts-and-lectures/i12.png">
-                </div>
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/i8.png">
-                    <img src="pittsburgh-arts-and-lectures/i7.png">
-                </div>
-            </div>
-            <p class="spacer"></p>
-
-            <p class="processheader">Refinement</p>
+            
+                        <p class="processheader">Iteration 1</p>
             <section>
-                I chose this iteration because I felt like it portrayed the message of the campaign the best; it conveys both the speaking and literary element.</section>
+                Before moving into basil.js, I tried using Python to generate basil code. This way, I wouldn't have to export a file and read it in a different program; I could simply generate a basil file. I eventually moved away this method because it didn't allow me to easily run for loops in basil, forcing me to generate an excessive number of lines of code. I also couldn't figure out how to get position data for characters using this method, so all of the spacing between syllables is wrong. However, this iteration does serve as a proof of concept that my final idea was achievable in the framework that I was using.
+            </section>
             <div class="row"> 
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/r1.png">
+                <div class="column2">
+                    <img src="poetry-visualizer/i1-1.png">
                 </div>
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/r2.png">
-                </div>
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/r3.png">
-                </div>
-                <div class="column">
-                    <img src="pittsburgh-arts-and-lectures/r8.png">
+                <div class="column2">
+                    <img src="poetry-visualizer/#">
                 </div>
             </div>
             <p class="spacer"></p>
-            <img src="pittsburgh-arts-and-lectures/final-poster.png" alt="Pittsburgh Arts and Lectures poster design fall 2018" style="flex: 50%; max-width:800px; display: block; margin: auto; border: none; float: center">
+
+            <p class="processheader">basil.js</p>
+            <section>Basil.js is a javascript framework that runs in Adobe InDesign, and it's the main program I used for the visualization aspect of this project. I opted for basil for the visuals for a few reasons; first, it was required for one of my final projects, and second, it generated print-ready files that I could use to make posters or a book. My  method in basil:<br>
+                <ol>
+                <li>
+                    import corpus</li>
+                <li>render text (title/author/body)</li>
+                    <li>comb through the data file, generating a color for each vowel sound
+</li>
+                    <li>referencing the data file, comb through the body, highlighting each syllable with its respective vowel’s color
+</li>
+                </ol><br>
+            Similarly with Python, I ran into many issues. Basil isn't a very robust platform; it's fairly buggy and not well-kept. I found that the function for parsing csv files was broken, so I had to regenerate data files as txt files and parse them in basil. Additionally, basil has no built in system for grabbing parts of words; I had to modify the built in functions for parsing characters and words in order to achieve what I wanted. 
+                </section>
+            <img src="poetry-visualizer/basil.png" style="flex: 50%; max-width:800px; display: block; margin: auto; border: none; float: center">
+            <div class="desc">progress shot: errors in red</div>
+            <p class="spacer"></p>
+
+            <p class="processheader">Digital Experiments</p>
+            <section>
+                Once I got the basil program to work properly, I started experimenting with different visual approaches. I referenced my earlier sketches, but also tried some new things, including suggestions from my professors.</section>
+            <div class="row"> 
+                <div class="column3">
+                    <img src="poetry-visualizer/r1.png">
+                    <img src="poetry-visualizer/g1.png">
+                    <img src="poetry-visualizer/c1.png">
+                    <img src="poetry-visualizer/a1.png">
+                </div>
+                <div class="column3">
+                    <img src="poetry-visualizer/r2.png">
+                    <img src="poetry-visualizer/g2.png">
+                    <img src="poetry-visualizer/c2.png">
+                    <img src="poetry-visualizer/a2.png">
+                </div>
+                <div class="column3">
+                    <img src="poetry-visualizer/r3.png">
+                    <img src="poetry-visualizer/g3.png">
+                    <img src="poetry-visualizer/c3.png">
+                    <img src="poetry-visualizer/a3.png">
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="column">
+                    <img src="poetry-visualizer/1.png">
+                </div>
+                <div class="column">
+                    <img src="poetry-visualizer/2.png">
+                </div>
+                <div class="column">
+                    <img src="poetry-visualizer/3.png">
+                </div>
+                <div class="column">
+                    <img src="poetry-visualizer/4.png">
+                </div>
+            </div>
+            <p class="spacer"></p>
+            
+            <p class="processheader">Final</p>
+            <section>
+                I decided on this aesthetic (inspired by <a href="https://laurendicioccio.com/paintings-/172" target="_blank">Lauren Dicioccio</a>'s work) in the end because it felt the most dynamic and visually interesting. While it sacrifices some legibility, this is a data visualization project, and I think that this organic approach showcases the data best.</section>
+            <div class="row"> 
+                <div class="column2">
+                    <img src="poetry-visualizer/f1.png">
+                </div>
+                <div class="column2">
+                    <img src="poetry-visualizer/f2.png">
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="column3">
+                    <img src="poetry-visualizer/ff4.png">
+                </div>
+                <div class="column3">
+                    <img src="poetry-visualizer/ff2.png">
+                </div>
+                <div class="column3">
+                    <img src="poetry-visualizer/ff1.png">
+                </div>
+            </div>
+            <p class="spacer"></p>
+            
+            <p class="processheader">Future Steps</p>
+            <section>
+                My original plan was to create a book of visualizations; I might follow through on that in the future. I’d also love to expand this into a standalone website, with options for user input and interactivity. However, in order to do that, I’d have to put a lot more work into making the code more robust first (this would probably involve exploring APIs and other methods for grabbing pronunciations and syllables, changing the entire framework of my program).
+                <br><br>Overall, even though I struggled a lot and ran into a lot of unforseen issues, I enjoyed this project and learned a lot! Visualizing poetry is a niche that hasn't really been filled yet, and I'd love to explore it more.
+</section>
             <p class="spacer" style="padding: 50px"></p>
         </main>
 
