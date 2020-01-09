@@ -94,6 +94,27 @@ section {
     font-weight: 500;
     line-height: 1.4;
 }
+.bottomlink {
+    font-family: 'Asap', sans-serif;
+    font-size: 14px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 500;
+    color: dimgray;
+}
+.bottomlink a, .bottomlink a:visited {
+    font-family: 'Asap', sans-serif;
+    font-size: 14px;
+    color: dimgray;
+    text-decoration: none;
+    font-weight: 500;
+/*    display: flex;*/
+/*    float: center;*/
+}
+.bottomlink a:hover {
+    letter-spacing: 5px;
+    color: black;
+}
 .processheader {
     line-height: 1.4;
     font-family: 'Asap', sans-serif;
@@ -103,7 +124,6 @@ section {
     margin-left: 30%;
     max-width: 30%;
     float: left;
-/*    letter-spacing: 4px;*/
     color: dimgray;
 }
 .bookmark {
@@ -128,12 +148,7 @@ section {
     color: darkgray;
     margin: auto;
     display: block;
-    padding-top: 14px;
-/*    font-style: italic;  */
-    /*
-    padding-right: 10%;
-    padding-left: 10%;
-    */
+    padding-top: 18px;
 }
 span .title {
     margin-top: 65px;
@@ -150,8 +165,8 @@ figcaption {
     padding-bottom: 50px;
 }
 .spacer {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     color: black;
     display: block;
     text-align: center;
@@ -470,7 +485,7 @@ iframe {
     margin: auto;
     border: none;
     float: center;
-    padding-bottom: 15px;
+/*    padding-bottom: 15px;*/
 }
 @media screen and (max-width: 1330px) {
     img {
