@@ -394,6 +394,7 @@ iframe.footer {
     overflow: hidden;
     transform: scale(1.02);
     filter: blur(5px);
+    display: block;
     
 /*
     transform: perspective(1000px) rotateY(-5deg);
