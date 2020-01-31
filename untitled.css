@@ -376,14 +376,14 @@ iframe.footer {
 .home {
     column-count: 2;
     column-gap: 25px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
     max-width: 100%;
 }
 .home3 {
     column-count: 3;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
     max-width: 100%;
 }
 .home span, .home3 span {
