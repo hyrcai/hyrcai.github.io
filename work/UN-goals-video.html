@@ -11,15 +11,15 @@
         <!--        links-->
         <link rel="stylesheet" href="../untitled.css">
         <link rel="icon" type="image/png" href="../favicon.png">
-    <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
+        <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
         <script>
             $(document).ready(function() {
-             $("#hamburger").click(function(){
+                $("#hamburger").click(function(){
                     $("nav ul div").toggleClass('visible');
-                   $("main").toggleClass('blur'); 
-                 $("#favicon").toggleClass('blur');
-                 $("footer").toggleClass('blur');
-                 $("#container").toggleClass('visible');
+                    $("main").toggleClass('blur'); 
+                    $("#favicon").toggleClass('blur');
+                    $("footer").toggleClass('blur');
+                    $("#container").toggleClass('visible');
                     $("#hamburger").toggleClass('x');
                 })
             })
@@ -50,12 +50,13 @@
 
         <!--        ✱page content-->
         <main>
-            <img src="UN-goals/banner.png" style="max-width:100%; display: block; margin: auto; border: none; float: center">
-        <header>
-            <h1>UN Sustainability Goals — video</h1>
-            <p class="subtitle">After Effects</p>
-        </header>
-            
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/385099932?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <!--            <img src="UN-goals/banner.png" style="max-width:100%; display: block; margin: auto; border: none; float: center">-->
+            <header>
+                <h1>UN Sustainability Goals — video</h1>
+                <p class="subtitle">After Effects</p>
+            </header>
+
             <section class="prompt"><p>"Create a video of at least 30 seconds which promotes action for one of the <a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" target="_blank">UN Sustainable Development Goals</a>. Design your video according to the design guidelines of the UN campaign."</p></section>
             <h1 class="spacer">—</h1>
 
@@ -74,7 +75,7 @@
 
             <p class="processheader">Approach</p>
             <section>While trying to brainstorm the most time-effective methods for creating an animation, I considered using code (p5/WEBGL) as a medium, and made a few tests to see if I could mimic an underwater scene. Though the results were promising, I eventually decided not to use code, since I was worried that my general unfamiliarity with WEBGL would make me lag behind.
-                </section>
+            </section>
             <div class="row"> 
                 <div class="column2">
                     <video autoplay muted loop>
@@ -105,53 +106,43 @@
             </div>
             <p class="spacer"></p>
 
-            <p class="processheader">Draft 1</p>
-            <section>After getting feedback, I changed my concept to be less literal and more emotional. Playing with the idea of showing less, I explored a new visual direction: blurring and colorizing stock footage. This allowed me to work a lot faster than I would've been if I was animating, and also created a unique dream-like aesthetic which worked quite well for my concept. I changed my narrative to a slow fade out of sound and footage (a metaphor for the death/extinction of marine species) to reveal the call to action below.</section>
+            <p class="processheader">Iteration 1</p>
+            <section>After getting feedback, I changed my concept to be less literal and more emotional. Playing with the idea of showing less, I explored a new visual direction: blurring and colorizing stock footage. This allowed me to work a lot faster than I would've been if I was animating, and also created a unique dream-like aesthetic which worked quite well for my concept. I changed my narrative to a slow fade out of sound and footage (a metaphor for the death/extinction of marine species).</section>
             <video autoplay muted controls width="888" style="display: block; margin: auto; border: none; float: center">
                 <source src="UN-goals/draft-1.mp4">
             </video>
-            <video autoplay muted loop width="888" style="display: block; margin: auto; border: none; float: center; padding-top: 5px">
-                <source src="UN-goals/draft-1-cta.mp4">
-            </video>
             <p class="spacer"></p>
 
-            <p class="processheader">Draft 2</p>
+            <p class="processheader">Refinement</p>
             <section>
-                After receiving more feedback, I realized that my concept was too metaphorical and might be hard to grasp. To make the experience more personal and relatable, I decided to include a narrative. I interviewed friends about their favorite memories of the ocean and pieced together a story from it. I also changed the color palette to include multiple colors after people commented on being confused why the color was muddy.</section>
-            <video controls autoplay muted loop width="888" style="display: block; margin: auto; border: none; float: center; padding-top: 5px">
-                <source src="UN-goals/draft-2.mp4">
-            </video>
-            <p class="spacer"></p>
+                After receiving more feedback, I realized that my concept was too metaphorical. To make the experience more personal and relatable, I decided to include a narrative. I interviewed friends about their favorite memories of the ocean and pieced together a story from it. I also changed the color palette to include multiple colors after people commented on being confused why the color was muddy.<br><br>For the second iteration in this section, I increased the font size and made transitions slower to improve legibility. I later changed to a bolder typeface, slowed transitions further, and fine tuned effects.</section>
+            <div class="row"> 
+                <div class="column3">
+                    <video controls autoplay muted loop style="display: block; margin: auto; border: none; float: center; padding-top: 5px">
+                        <source src="UN-goals/draft-2.mp4">
+                    </video>
+                </div>
+                <div class="column3">
+                    <video controls autoplay muted loop style="display: block; margin: auto; border: none; float: center; padding-top: 5px">
+                        <source src="UN-goals/draft-3.mp4">
+                    </video>
+                </div>
+                <div class="column3">
+                    <video controls autoplay muted loop style="display: block; margin: auto; border: none; float: center; padding-top: 5px">
+                        <source src="UN-goals/draft-4.mp4">
+                    </video>
+                </div>
+            </div>
 
-            <p class="processheader">Draft 3</p>
-            <section>
-                Increased the font size and made transitions slower to improve legibility.</section>
-            <video controls autoplay muted loop width="888" style="display: block; margin: auto; border: none; float: center; padding-top: 5px">
-                <source src="UN-goals/draft-3.mp4">
-            </video>
-            <p class="spacer"></p>
-            
-            <p class="processheader">Draft 4</p>
-            <section>
-                Changed to a bolder typeface and slowed transitions further, since legibility was still lacking. Fine tuned effects and transitions; blurred text.</section>
-            <video controls autoplay muted loop width="888" style="display: block; margin: auto; border: none; float: center; padding-top: 5px">
-                <source src="UN-goals/draft-4.mp4">
-            </video>
-            <p class="spacer"></p>
-            
-            <p class="processheader">Final</p>
-            <section>
-                I refined my narrative and the timing for transitions further, and also added a soundtrack and credits.</section>
-            <video controls width="1340" style="display: block; margin: auto; border: none; float: center; padding-top: 5px">
-                <source src="UN-goals/final.mp4">
-            </video>
+            <h1 class="spacer">—</h1>
+            <img src="UN-goals/final.jpg" style="max-width:888px; display: block; margin: auto; border: none; float: center">
             <p class="spacer"></p>
         </main>
 
         <footer>
             <!--           back / prev/ next -->
-                <p class="bottomlink" style="float: left"><a href="../index.html">← back to work</a></p>
-                <p class="bottomlink" style="text-align: right"><a href="#">prev</a> / <a href="poetry-visualizer.html">next</a></p>
+            <p class="bottomlink" style="float: left"><a href="../index.html">← back to work</a></p>
+            <p class="bottomlink" style="text-align: right"><a href="#">prev</a> / <a href="poetry-visualizer.html">next</a></p>
             <p class="spacer" style="padding: 30px"></p>
             <!--         footer -->
             <iframe class="footer" class="navbar" src="../footer.html"></iframe>

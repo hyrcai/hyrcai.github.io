@@ -50,7 +50,7 @@
 
         <!--        ✱page content-->
         <main>
-            <img src="paus/banner.png" style="max-width:100%; display: block; margin: auto; border: none; float: center">
+            <div style="padding:60% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/388298762?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         <header>
             <h1>Paus — conversational AI</h1>
             <p class="subtitle" style="padding-bottom: 15px">p5.js, After Effects / <i>partners: Rachel Park and Cindy Zhang</i></p>
@@ -66,23 +66,21 @@
             <p class="processheader">Form Exploration</p>
             <section>
                 After our concept was set, we explored different visual forms our conversational AI could take. We wanted our AI to have a simple, abstract form. In the end, we decided to try prototyping a sphere which would change texture to respond to input or indicate different statuses.</section>
-            <img src="paus/shape-exploration.png" style="max-width:675px; display: block; margin: auto; border: none; float: center">
+            <img src="paus/shape-exploration.png" style="max-width:670px; display: block; margin: auto; border: none; float: center">
             <p class="spacer"></p>
 
             <p class="processheader">Iteration 1</p>
             <section>
-                I started prototyping in p5 (I did most of the code for this project, since I had the most experience). This first iteration is a 2d circle with variable diameter, based largely off of code from <a target="_blank" href="#">here</a>. While it was fairly close to the form we wanted, this approach didn't allow us to fill the form with a solid color.
+                I started prototyping in p5 (I did most of the code for this project, since I had the most experience). This first iteration is a 2d circle with variable diameter, based largely off of code from <a target="_blank" href="#">here</a>. While it was fairly close to the form we wanted, we weren't satisfied with the motion, or the fact that we could only have one flat color.
             </section>
-            <video autoplay muted loop width="675px" style="display: block; margin: auto; border: none; float: center">
-                <source src="paus/#">
-            </video>
+            <iframe src="paus/iterations/2d.html" width="444px" height="444px"></iframe>
             <p class="spacer"></p>
             
             <p class="processheader">WEBGL colors</p>
             <section>
                 I started exploring WEBGL as an alternative. WEBGL a 3d library that can be used with p5. It has built in lighting functions, which offers potential for easily creating gradients or more complex color schemes. My group agreed that this approach had a lot of potential, so we decided to keep exploring it.
             </section>
-            <video autoplay muted loop width="675px" style="display: block; margin: auto; border: none; float: center">
+            <video autoplay muted loop width="444px" style="display: block; margin: auto; border: none; float: center">
                 <source src="paus/color.mp4">
             </video>
             <p class="spacer"></p>
@@ -90,12 +88,13 @@
             <p class="processheader">Palette</p>
             <section>
                 While I worked on code, my group partners worked on developing a draft palette for the different moods and states of Paus. From left to right, the colors represent neutral, alarmed, sad, and happy states.</section>
-            <img src="paus/palette.png" style="max-width:675px; display: block; margin: auto; border: none; float: center">
+            <img src="paus/palette.png" style="max-width:444px; display: block; margin: auto; border: none; float: center">
             <p class="spacer"></p>
             
             <p class="processheader">Iteration 2</p>
-            <section>In the process of trying to code a rippling sphere, I first coded a custom sphere following this <a target="_blank" href="#">tutorial</a> from Dan Schiffman. While I was able to create and manipulate it, I realized that the built-in lighting functions don't render properly with this method.
-                </section>
+            <section>In the process of trying to code a rippling sphere, I first coded a custom sphere following this <a target="_blank" href="#">tutorial</a> from Dan Schiffman. While I was able to create and manipulate it, I realized that the built-in lighting functions don't render properly with this method. I also still wasn't satisfied with the motion.
+            </section>
+            <iframe src="paus/iterations/3d.html" width="444px" height="444px"></iframe>
             <p class="spacer"></p>
 
             <p class="processheader">WEBGL texture</p>
@@ -141,6 +140,7 @@
             </video>
             <p class="spacer"></p>
             
+<!--
             <p class="processheader">Final</p>
             <section>
                 Demo video made in After Effects, showing a persona and use case.
@@ -149,6 +149,7 @@
                 <source src="paus/final-1080.mp4">
             </video>
             <p class="spacer"></p>
+-->
         </main>
 
         <footer>
