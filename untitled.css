@@ -68,10 +68,14 @@ section {
     font-weight: 400;
     max-width: 550px;
     margin: none;
+    
+/*    margin-right: 20%;*/
     margin-left: 40%;
     padding-bottom: 50px;
     color: darkgray;
     line-height: 1.4;
+/*    display: inline;*/
+    
 }
 .prompt {
     float: center;
@@ -119,9 +123,18 @@ section {
     font-family: 'Asap', sans-serif;
     font-weight: 500;
     text-transform: lowercase;
-    text-align: left;
+    
+    display: inline;
+    flex: 35%;
+    
+    text-align: right;
     margin-left: 30%;
     float: left;
+/*    max-width: 35%;*/
+/*    margin-right: 65%;*/
+/*    display: inline;*/
+/*    float: inherit;*/
+/*    background-color: antiquewhite;*/
     
 /*    text-align: right;*/
 /*    padding-right: 70%;*/
@@ -129,7 +142,6 @@ section {
 /*    float: right;*/
 /*    display: flex;*/
 /*    flex: 30%;*/
-/*    max-width: 10%;*/
     color: dimgray;
 }
 .bookmark {
@@ -180,14 +192,16 @@ figcaption {
 ol li {
     padding-top: 10px;
 }
+/*
 @media screen and (max-width: 700px) {
     section.prompt {
         padding: 50px;
     }
     section {
-        padding-right: 50px;
+        padding: 50px;
     }
 }
+*/
 /*-----------------------------------------------*/
 /*✱links*/
 
@@ -507,6 +521,21 @@ iframe {
         width: 100%;
     }
 }
+@media screen and (max-width: 710px) {
+    div .gallery {
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+    }
+    div .gallery iframe {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
 
 /*-----------------------------------------------*/
 /*✱gallery style 2: flexbox*/
@@ -540,11 +569,29 @@ iframe {
 .column video, .column2 video, .column3 video {
     width: 100%;
     padding: 2px;
+    padding-top: none;
 }
 @media screen and (max-width: 1400px) {
     .column {
         flex: 33%;
         max-width: 33%;
+    }
+    .processheader {
+        display: block;
+        float: none;
+        text-align: left;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        max-width: 650px;
+        margin: auto;
+    }
+    section, section.prompt {
+        max-width: 650px;
+        margin-left: 0;
+        margin: auto;
+        display: block;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 @media screen and (max-width: 1000px) {
