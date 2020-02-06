@@ -12,6 +12,7 @@ html {
 }
 html * {
     transition: 0.5s ease;
+    font-size: 14px;
 }
 body {
     margin: 0;
