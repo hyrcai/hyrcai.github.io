@@ -16,7 +16,7 @@ html * {
 }
 body {
     margin: 0;
-/*    font-size: 14px;*/
+    font-size: 14px;
     /*    border-top: 5px solid white;*/
     /*    border-bottom: 3px solid lightpink;*/
 }
@@ -44,7 +44,7 @@ h2 {
 h3 {
     font-family: 'Arvo', serif;
     text-align: left;
-    font-size: 1.5proem;
+    font-size: 1.5em;
     color: darkgray;
     margin: auto;
     margin-left: 25%;
@@ -248,7 +248,7 @@ nav ul {
 }
 nav ul li {
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
     padding: 50px 0 50px 50px;
 }
