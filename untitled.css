@@ -16,6 +16,7 @@ html * {
 }
 body {
     margin: 0;
+/*    font-size: 14px;*/
     /*    border-top: 5px solid white;*/
     /*    border-bottom: 3px solid lightpink;*/
 }
@@ -66,7 +67,7 @@ p {
 }
 section {
     font-family: 'Asap', sans-serif;
-    font-size: 12pt;
+    font-size: 14px;
     font-weight: 400;
     max-width: 550px;
     margin: none;
