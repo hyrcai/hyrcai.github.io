@@ -12,9 +12,28 @@ html {
     font-size: 14px;
 }
 html * {
-    transition: 0.5s ease;
+/*    transition: 0.5s ease;*/
     font-size: 14px;
+/*
+    animation-name: fade-in-up;
+    animation-duration: 0.5s;
+*/
+/*    padding-top: 0px;*/
 }
+
+/*
+@keyframes fade-in-up {
+    from {
+        padding-top: 50px;
+        opacity: 0;
+    }
+    to {
+        padding-top: 0px;
+        opacity: 1;
+    }
+}
+*/
+
 body {
     margin: 0;
     font-size: 14px;
