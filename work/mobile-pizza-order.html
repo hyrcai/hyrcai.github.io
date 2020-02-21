@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+        <title>Hannah Cai</title>
+        <meta name="description" content="Hannah Cai's Portfolio">
+        <meta name="author" content="Hannah Cai">
+        <meta name="keywords" content="Hannah, Cai, design, art, photography, code, illustration, portfolio, work">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--        links-->
+        <link rel="stylesheet" href="../untitled.css">
+        <link rel="icon" type="image/png" href="../favicon.png">
+        <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+             $("#hamburger").click(function(){
+                    $("nav ul div").toggleClass('visible');
+                   $("main").toggleClass('blur'); 
+                 $("#favicon").toggleClass('blur');
+                 $("footer").toggleClass('blur');
+                 $("#container").toggleClass('visible');
+                    $("#hamburger").toggleClass('x');
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <!--         navbar -->
+        <nav>
+            <a href="#" id="hamburger">
+                <span>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+            </a>
+            <ul>
+                <li><a target="_top" href="../index.html"><img id="favicon" src="../favicon.png"></a></li>
+                <div>
+                    <li><a class="active" target="_top" href="../index.html">Work</a></li>
+                    <li><a target="_top" href="../play.html">Play</a></li>
+                    <li><a target="_top" href="../about.html">About</a></li>
+                    <li><a target="_blank" href="../resume.pdf">Resume</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <!----------------------------------------------->
+
+        <!--        ✱page content-->
+        <main>
+            <img src="pizza1-01.png" style="max-width:100%; display: block; margin: auto; border: none; float: center">
+        <header>
+            <h1>Mario's Pizza — mobile pizza ordering experience</h1>
+            <p class="subtitle">Adobe XD</p>
+        </header>
+            
+            <section class="prompt"><p>A design challenge I received focusing the experience of ordering pizza. Specific client needs: mobile interface, choose between multiple stores, offer add-ons, and offer personalization/customization without showing too many options at once, which overwhelms and deters users.</p></section>
+            <h1 class="spacer">—</h1>
+            <p class="processheader">Research</p>
+            <section style="padding-bottom: 0">
+                I don't order pizza that often, so I started off by researching the user flow of online pizza orders. I did this by looking at various websites. I then took notes on the overall structure, which was:<br><br>landing / "order online" button / select items / customize / select add-ons / address+billing / confirmation</section>
+<!--
+            <div class="row"> 
+                <div class="column2">
+                    <img src="poetry-visualizer/m1.png">
+                </div>
+                <div class="column2">
+                    <img src="poetry-visualizer/m2.png">
+                </div>
+            </div>
+-->
+            <p class="spacer"></p>
+            
+            <p class="processheader">Pain Points</p>
+            <section>
+                Though I was already researching with the client's needs in mind, I noticed some other pain points while benchmarking existing sites. The mains things that stood out to me:<br><br>
+                <ol>
+                    <li>Sites tend to be very busy and high-contrast/high-saturation, making it difficult to navigate and read pages.</li>
+                    <li>Stores with multiple locations often ask for users to input their address before they're even shown the menu, which forces users to do extra work while providing little motivation to do so. </li>
+                    <li>A lot of the UI for customization is either dated or confusing because there are so many buttons.</li>
+                    <li>Most sites don't show any indicator of progress while progressing through order steps.</li>
+                </ol>
+                <br><br>
+                Keeping these things in mind, I decided to aim to make the overall aesthetic of my deliverable simple and modern, add an auto-locate feature, and design a system to show progress.
+                </section>
+            <div class="row"> 
+                <div class="column">
+                    <img src="mobile-pizza-order/p1.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/p2.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/p3.jpg">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/p4.jpg">
+                </div>
+            </div>
+            <p class="spacer"></p>
+            
+            <p class="processheader">Sketching</p>
+            <section>
+                Referring to my user flow and research, I did some quick wireframe sketches. I prefer to wireframe by hand before moving into digital, since it's a lot quicker.</section>
+            <div class="row"> 
+                <div class="column2">
+                    <img src="mobile-pizza-order/w1.jpg">
+                </div>
+                <div class="column2">
+                    <img src="mobile-pizza-order/w2.jpg">
+                </div>
+            </div>
+            <p class="spacer"></p>
+
+            <p class="processheader">Wireframe</p>
+            <section>
+                Moved into digital wireframes on Adobe XD. Considerations at this point:<br><br>
+                   <ul>
+                    <li>how to structure the location page</li>
+                    <li>visual aesthetic for images (round for aerial pizza view vs rounded square)</li>
+                    <li>how to make choosing pizza sizes intuitive</li>
+                    <li>breadcrumbs design</li>
+                    <li>cart layout</li>
+                </ul></section>
+            <div class="row"> 
+                <div class="column">
+                    <img src="mobile-pizza-order/ww1.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/ww2.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/ww3.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/ww4.png">
+                </div>
+            </div>
+            <p class="spacer"></p>
+
+            <p class="processheader">Wireframe 2</p>
+            <section>
+                Basic typeface and color exploration, as well as iterating on size selection.
+            </section>
+            <div class="row"> 
+                <div class="column">
+                    <img src="mobile-pizza-order/www1.png">
+                    <img src="mobile-pizza-order/www5.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/www2.png">
+                    <img src="mobile-pizza-order/www6.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/www3.png">
+                    <img src="mobile-pizza-order/www7.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/www4.png">
+                    <img src="mobile-pizza-order/www8.png">
+                </div>
+            </div>
+            <p class="spacer"></p>
+            
+                        <p class="processheader">high-fi</p>
+            <section>
+                Solidified the visual approach, added details (add/remove buttons, price placement), refined overall user flow, and created a <a href="https://xd.adobe.com/view/780f53ae-637d-4245-6355-e88e96552b67-0e3e/" target="_blank">clickable prototype</a>.
+            </section>
+            <div class="row"> 
+                <div class="column">
+                    <img src="mobile-pizza-order/f1.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/f2.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/f3.png">
+                </div>
+                <div class="column">
+                    <img src="mobile-pizza-order/f4.png">
+                </div>
+            </div>
+
+        
+            <p class="spacer"></p>
+        </main>
+
+        <footer>
+            <!--           back / prev/ next -->
+            <p class="bottomlink" style="float: left"><a href="../index.html">← back to work</a></p>
+                <p class="bottomlink" style="text-align: right"><a href="DWYW.html">prev</a> / <a href="paus.html">next</a></p>
+            <p class="spacer" style="padding: 30px"></p>
+            
+            <!--         footer -->
+            <iframe class="footer" class="navbar" src="../footer.html"></iframe>
+        </footer>
+
+    </body>
+</html>
