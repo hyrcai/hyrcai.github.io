@@ -1,6 +1,14 @@
 /*✱fonts*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Asap:400,500,600,700|PT+Sans:400,700);
 @import url('https://fonts.googleapis.com/css?family=Assistant:600,700|Palanquin+Dark|Signika+Negative:600|Signika:600&display=swap');
+@font-face {
+    font-family: "A-100-0-50", sans-serif;
+    src: url('Phase-AGX_100-0-100.ttf');
+}
+@font-face {
+    font-family: "C-0-100-0", sans-serif;
+    src: url('Phase-CGX_0-100-0.ttf');
+}
 
 /*✱text*/
 html {
@@ -100,6 +108,9 @@ section {
     line-height: 1.4;
 /*    display: inline;*/
     
+}
+b {
+    font-size: inherit;
 }
 .prompt {
     float: center;
@@ -243,21 +254,35 @@ iframe.landing {
     width: 100%;
     height: 750px;
     overflow: hidden;
+    filter: blur(10em);
+    position: fixed;
+    z-index: -10;
+    opacity: 0.5;
+    float: left;
 }
 iframe.landing:hover {
     
 }
 .herotext {
-    position: absolute;
+/*    position: absolute;*/
 /*    position: fixed;*/
-    top: 33%;
+    top: 25%;
     width: 100%;
+    font-size: 2.5em;
 /*    height: 100%;*/
 /*    z-index: -5;*/
 }
+
 .herotext h1 {
     max-width: 1000px;
     text-align: left;
+    font-weight: 300;
+/*    font-family: Asap;*/
+    margin-bottom: 0;
+}
+.herotext p {
+    padding-left: 10%;
+    font-family: "Asap";
 }
 
 /*-----------------------------------------------*/
