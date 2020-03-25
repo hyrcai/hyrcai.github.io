@@ -255,7 +255,7 @@ iframe.landing {
     height: 750px;
     overflow: hidden;
     filter: blur(10em);
-    position: fixed;
+/*    position: fixed;*/
     z-index: -10;
     opacity: 0.5;
     float: left;
@@ -264,7 +264,7 @@ iframe.landing:hover {
     
 }
 .herotext {
-/*    position: absolute;*/
+    position: absolute;
 /*    position: fixed;*/
     top: 25%;
     width: 100%;
