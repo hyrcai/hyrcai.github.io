@@ -286,6 +286,7 @@ iframe.landing:hover {
     font-family: "Asap";
 }
 
+/*
 @media not all and (min-resolution:.001dpcm) { 
     @media {
         .safari10 { 
@@ -297,6 +298,7 @@ iframe.landing:hover {
         }
     }
 }
+*/
 
 /*-----------------------------------------------*/
 /*✱navbar*/
@@ -472,6 +474,11 @@ iframe.footer {
     padding-bottom: 20px;
     position: relative;
 }
+
+.homt  {
+    z-index: 1;
+}
+
 .home img, .home video, .home3 img, .home3 video {
     width: 100%;
     height: 100%;
