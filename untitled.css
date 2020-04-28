@@ -256,7 +256,7 @@ iframe.landing {
     overflow: hidden;
     filter: blur(10em);
 /*    position: fixed;*/
-    z-index: -10;
+    z-index: -100;
     opacity: 0.5;
     float: left;
 }
@@ -279,6 +279,7 @@ iframe.landing:hover {
     font-weight: 300;
 /*    font-family: Asap;*/
     margin-bottom: 0;
+    padding-left: 10%;
 }
 .herotext p {
     padding-left: 10%;
@@ -534,6 +535,9 @@ iframe.footer {
     }
     video {
         width: 100%;
+    }
+    .landing, .herotext {
+        display: none;
     }
 }
 /*-----------------------------------------------*/
