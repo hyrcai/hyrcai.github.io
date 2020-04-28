@@ -286,6 +286,18 @@ iframe.landing:hover {
     font-family: "Asap";
 }
 
+@media not all and (min-resolution:.001dpcm) { 
+    @media {
+        .safari10 { 
+            color:#0000FF; 
+            background-color:#CCCCCC; 
+        }
+        .landing, .herotext {
+            display: none;
+        }
+    }
+}
+
 /*-----------------------------------------------*/
 /*✱navbar*/
 
