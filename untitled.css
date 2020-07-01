@@ -270,7 +270,10 @@ iframe.landing:hover {
 /*    position: fixed;*/
     top: 25%;
     width: 100%;
+/*    height: 750px;*/
     font-size: 2.5em;
+    float: left;
+    display: block;
 /*    height: 100%;*/
 /*    z-index: -5;*/
 }
@@ -476,7 +479,7 @@ iframe.footer {
     -webkit-backface-visibility: hidden;
 }
 
-.homt  {
+.home  {
     z-index: 1;
 }
 
