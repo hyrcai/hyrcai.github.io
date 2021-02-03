@@ -41,6 +41,7 @@ for (var i = 0; i < projects.length; i++) {
     thisProject.setAttribute("type", types);
     thisProject.setAttribute("medium", mediums);
 }
+//check for safari
 
 /*-----------------------------------------------*/
 //style

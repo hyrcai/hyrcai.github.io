@@ -83,6 +83,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-size: 16px;
+    transform-style: preserve-3d;
     //    overflow: hidden;
     * {
         transition: 0.5s ease;
@@ -222,12 +223,12 @@ ul, ol {
     width: 100%;
 }
 .cover:hover {
-    z-index: 10;
+    z-index: 5;
     transition: 0.75s ease;
     transition-timing-function: cubic-bezier(.25,0,.25,1.25);
 }
 .covers:hover {
-    z-index: 10;
+    z-index: 4;
 }
 .caption {
     font: italic $body;
@@ -254,9 +255,11 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    z-index: 1002;
+    z-index: 10 !important;
     width: 100%;
     background: $bg-transparent-light;
+    background-filter: blur($bg-blur); 
+    -webkit-backdrop-filter: blur($bg-blur); 
     backdrop-filter: blur($bg-blur); 
     .container {
         display: flex;
@@ -310,9 +313,10 @@ header {
     border-bottom: $border;
     padding-top: $bspacer-3;
     padding-bottom: $bspacer-2;
-    z-index: 1010 !important;
+    z-index: 10 !important;
     h2 {
         color: $off-black;
+        padding-bottom: $spacer-2;
     }
     > span:last-child {
         text-align: right;
@@ -437,7 +441,7 @@ main {
     .home {
         position: relative;
         .project:hover {
-            z-index: 1000;
+            z-index: 3;
         }
     }
     #no-matches {
@@ -447,7 +451,7 @@ main {
         top: $bspacer-2;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 1010;
+        z-index: 9;
     }
 }
 .list {
@@ -462,9 +466,11 @@ main {
         align-content: center;
         margin-bottom: $bspacer-3;
         width: 100%;
+        transform-style: preserve-3d;
     }
     .perspective {
         width: 60%;
+        transform-style: preserve-3d;
     }
     .cover {
         padding: none;
@@ -478,7 +484,7 @@ main {
         width: 40%;
         color: black;
         opacity: 1;
-        z-index: 1001;
+        z-index: 9;
         p:not([class]) {
             padding-bottom: $spacer-3;
         }
@@ -529,6 +535,8 @@ main {
         position: absolute;
         max-width: 320px;
         background: $bg-transparent-dark;
+        background-filter: blur($bg-blur); 
+        -webkit-backdrop-filter: blur($bg-blur); 
         backdrop-filter: blur($bg-blur);
         color: white;
         border: $border;
@@ -614,7 +622,6 @@ section {
         //    background: lightgray;
         height: 100%;
         width: 100%;
-        z-index: -1;
     }
 
     //    h2 {
@@ -652,7 +659,6 @@ section {
     width: 60%;
     margin: auto;
     margin-bottom: $bspacer-3;
-    z-index: 0;
     //    background-color: $bg-transparent-light;
     //    backdrop-filter: blur($bg-blur);
     background-size: 200% 100%;
@@ -703,6 +709,8 @@ section {
         text-align: center;
         background-color: $bg-transparent-dark;
         padding: $spacer-4;
+        background-filter: blur($blur); 
+        -webkit-backdrop-filter: blur($blur); 
         backdrop-filter: blur($blur);
         color: white;
     }
@@ -768,10 +776,12 @@ section {
 footer {
     position: fixed;
     bottom: 0;
-    z-index: 1002;
+    z-index: 10 !important;
     width: 100%;
     box-sizing: border-box;
     background: $bg-transparent-light;
+    background-filter: blur($bg-blur); 
+    -webkit-backdrop-filter: blur($bg-blur); 
     backdrop-filter: blur($bg-blur); 
     .container {
         border-top: $border;
