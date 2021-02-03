@@ -9,80 +9,377 @@
         <meta name="keywords" content="Hannah, Cai, design, art, photography, code, illustration, portfolio, work">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--        links-->
-        <link rel="stylesheet" href="untitled.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="favicon.png">
         <script type="text/javascript" src="jquery-3.4.0.min.js"></script>
-        <script>
-            $(document).ready(function() {
-             $("#hamburger").click(function(){
-                    $("nav ul div").toggleClass('visible');
-                   $("main").toggleClass('blur'); $("#favicon").toggleClass('blur');
-                 $("footer").toggleClass('blur');
-                 $("#container").toggleClass('visible');
-                    $("#hamburger").toggleClass('x');
-                })
-            })
-        </script>
     </head>
     <body>
         <!--         navbar -->
         <nav>
-            <a href="#" id="hamburger">
-                <span>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </span>
-            </a>
-            <ul>
-                <li><a target="_top" href="index.html"><img id="favicon" src="favicon.png"></a></li>
-                <div>
-                    <li><a target="_top" href="index.html">Work</a></li>
-                    <li><a target="_top" href="play.html">Play</a></li>
+            <div class="container">
+                <video id="logo" autoplay muted loop>
+                    <source src="logo.mp4">
+                </video>
+                <div id="site-links">
+                    <li><a target="_top" href="index.html">Home</a></li>
                     <li><a class="active" target="_top" href="about.html">About</a></li>
                     <li><a target="_blank" href="resume.pdf">Resume</a></li>
                 </div>
-            </ul>
+            </div>
         </nav>
 
         <!----------------------------------------------->
 
         <!--        ✱page content-->
-        <main>
-        <header>
-            <!--            <h1>Hey There :)</h1>-->
-        </header>
-<!--        <h1>Hi!</h1>-->
-<!--        <p class="spacer" style="padding: 50px"></p>-->
-        <img src="b.jpg" style="max-width: 200px; display: block; margin: auto; border: none; float: center; background-color:white">
-<!--            <section class="desc">me being a woodland fairy</section>-->
+
+        <main id="about">
+            <div class="home process"> 
+<!--                <article>-->
+                    <h1>Hi, I'm Hannah!</h1>
+                    <div class="flex-container" id="facts"> 
+                        <span>
+                            <p class="subtitle">I like</p>
+                            <p><a href="https://open.spotify.com/user/1253995959?si=hJs5Fd7ETUuLHH5roAHy2Q" target="_blank" class="underline">listening to music,</a></p>
+                            <p>learning new software,</p>
+                            <p>and plants</p>
+                        </span>
+                        <span>
+                            <p class="subtitle">in my free time, I</p>
+                            <p>attempt to dance,</p>
+                            <p>try to <a target="_blank" class="underline" href="https://directory.goodonyou.eco/">shop</a> <a target="_blank" class="underline" href="https://www.grove.co">sustainably</a>,</p>
+                            <p>and sing and play guitar</p>
+                        </span>
+                        <span>
+                            <p class="subtitle">to me, good design is</p>
+                            <p>clean,</p>
+                            <p>intuitive,</p>
+                            <p>and satisfying</p>
+                        </span>
+                        <span>
+                            <p class="subtitle">words I try to live by:</p>
+                            <p>be honest, modest, and kind;</p>
+                            <p>make good work for good causes;</p>
+                            <p>and always aim for and encourage growth</p>
+                        </span>
+                    </div>
+
+<!--                    <div class="linespacer"></div>-->
+
+                    <section class="flex-container">
+                        <span class="container-b">
+                            <p class="subtitle">Intro</p>
+                            <h3>
+                                I'm a designer with the heart of an artist and an appreciation for code. From CA, currently based in PA. I'm very detail-oriented and I love creating and refining visuals of all kinds. I enjoy wearing many hats and am most happy when I can work with other designers on multiple aspects of design at once. Currently working at <a href="https://www.novid.org/" target="_blank">NOVID</a> as a motion, graphic, and product designer. Previously worked on motion for Cylab and as a product and web design intern at <a href="https://www.labkind.com/" target="_blank">Labkind</a>.
+
+                                I'm graduating from Carnegie Mellon as design major and HCI minor this summer, so I'm currently actively seeking full-time positions; <a href="mailto:hannah.yanran.cai@gmail.com" target="_blank">let's chat!</a>
+                            </h3>
+                        </span>
+                        <div class="gallery-s" style="left: 96px">
+                            <div class="covers">
+                                <img src="about/cover-plant.jpg">
+                                <img src="about/cover-baby.JPG">
+                                <img src="about/cover-candy.JPG">
+                            </div>
+                        </div>
+                    </section>
+<!--                </article>-->
+
+                <article>
+                    <section class="flex-container">
+                        <span class="container-m">
+                            <p class="subtitle">long-term goals</p>
+                            <h3>
+                                If you want to learn more about my specific interests and goals in life, I've made a loosely organized list of my long-term goals, partially inspired by the idea of an <a target="_blank" href="https://impossiblehq.com/impossible-list/">impossible list</a>, best summarized as an evolving bucket list. I'm sure that my interests will change over the years, and I will continue to add to or remove from this list as they do. In the meantime, here's a snapshot. 
+                            </h3>
+                        </span>
+                    </section>
+
+                    <p class="subtitle">key</p>
+                    <p>incomplete</p>
+                    <p class="wip">work in progress</p>
+                    <p class="done">complete</p>
+                    <p class="maintained">complete & maintained</p>
+
+                    <div id="impossible-list" class="flex-container">
+                        <span>
+                            <p class="subtitle">Live</p>
+                            <ul>
+                                <li>establish a consistent morning/night routine with
+                                    <ul>
+                                        <li class="wip">at least 8 hours of sleep</li>
+                                        <li class="wip">breakfast every day</li>
+                                        <li class="wip">tea in the morning/afternoon</li>
+                                        <li>journaling</li>
+                                        <li>meditating</li>
+                                    </ul>
+                                </li>
+                                <li class="wip"><span class="maintained">work part-time at a company with a meaningful mission</span> • work full-time at a company with a meaningful mission</li>
+                                <li class="wip">live as sustainably as I can</li>
+                                <li>draw/sketch/doodle consistently</li>
+                                <li>go to 100 live shows/concerts</li>
+                                <li>eat lunch with a stranger every month</li>
+                                <li>donate consistently to charity</li>
+                                <li>own a house • furnish/design my house</li>
+                                <li>get married • have kids (?)</li>
+                            </ul>
+
+                            <p class="subtitle">Move</p>
+                            <ul>
+                                <li>run: <span class="done">2 mi every other day (summer 2020)</span> • <span class="maintained">2 mi every day (fall 2020)</span></li>
+                                <ul><li>a 5k • a 10k • a half-marathon • a marathon</li></ul>
+                                <li class="wip">get abs</li>
+                                <li>hold a plank for <span class="done">2.5 min</span> • 5 min • 10 min • 15 min • 30 min</li>
+                                <li>do a cartwheel</li>
+                                <li>hold a handstand</li>
+                                <li>consistently do streches/yoga • do splits</li>
+                            </ul>
+
+                            <p class="subtitle">Shop/curate/cultivate/adopt</p>
+                            <ul>
+                                <li>capsule wardrobe: <span class="maintained">~50 items</span> • ~30 items • ~20 items</li>
+                                <ul><li class="wip">be able to fit my entire wardrobe comfortably on 1 carry-on</li></ul>
+                                <li>count and document everything I own • own less than 300 items</li>
+                                <li>plants:</li>
+                                <ul>
+                                    <li class="maintained">air plants (2018)</li>
+                                    <li class="maintained">hydroponics (2018)</li>
+                                    <li>marimo moss balls</li>
+                                    <li>cacti & succulents</li>
+                                    <li>monstera</li>
+                                    <li>fiddle leaf fig</li>
+                                    <li>own + properly tend <span class="maintained">10 unique species</span> • 20 unique species • 30 unique species</li>
+                                </ul>
+                                <li>pets:</li>
+                                <ul>
+                                    <li>cat(s)</li>
+                                    <li>dog(s)</li>
+                                    <li>quail</li>
+                                    <li>fish: betta • angelfish • arowana</li>
+                                    <li>aquatic: shrimp • axolotl</li>
+                                </ul>
+                            </ul>
+
+                            <p class="subtitle">Compose/record</p>
+                            <ul>
+                                <li>covers/remixes: 1 song • 1 album • 5 albums</li>
+                                <li>original songs/compositions: 1 song • 1 album • 5 albums • a song for someone special</li>
+                                <ul><li>genres/styles: singer/songwriter • acapella + vocoder • generative ambient • electronic • math rock</li></ul>
+                                <li>collaborate with someone to: write a song • produce a song</li>
+                            </ul>
+
+                            <p class="subtitle">Travel</p>
+                            <ul>
+                                <li>all 50 states • take a roadtrip across the US</li>
+                                <li>the world: every continent</li>
+                                <ul><li>10 countries • 25 countries • 50 countries • 100 countries</li></ul>
+                                <li>solo travel for 1 month</li>
+                                <li>eat at a Michelin restaurant</li>
+                                <li>go national park hopping</li>
+                                <li>live on a beach for 3 months</li>
+                                <li>go tidepooling • scuba dive in a reef • swim with whales • swim in every ocean</li>
+                                <li>skydive • paraglide</li>
+                                <li>stargaze somewhere without light pollution • see the Milky Way</li>
+                                <li>see the northern lights</li>
+                            </ul>
+                        </span>
+
+                        <span>
+                            <p class="subtitle">Learn</p>
+                            <ul>
+                                <li>how to:
+                                    <ul>
+                                        <li class="done">play piano</li>
+                                        <li class="done">play flute</li>
+                                        <li class="done">play ukelele</li>
+                                        <li class="maintained">play guitar</li>
+                                        <ul>
+                                            <li>play bar chords</li>
+                                            <li>fingerpick:
+                                                <ul>
+                                                    <li>1 song • 10 songs • 25 songs</li>
+                                                    <li>1 <a target="_blank" href="https://open.spotify.com/artist/4vGrte8FDu062Ntj0RsPiZ">Polyphia</a> song • 5 Polyphia songs</li>
+                                                    <li>an original song</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <li>beatbox • beatbox flute</li>
+                                        <li>rap</li>
+                                        <li>longboard • skateboard</li>
+                                        <li>surf</li>
+                                        <li>dance</li>
+                                        <ul>
+                                            <li>learn 5 youtube choreos</li>
+                                            <li>improvise for 1 min • 5 min • 10 min • 30 min</li>
+                                        </ul>
+                                        <li>ice skate</li>
+                                    </ul>
+                                </li>
+                                <li>how to use:
+                                    <ul>
+                                        <li class="done">Garageband • Logic Pro</li>
+                                        <li class="done">Procreate</li>
+
+                                        <li>CC:</li>
+                                        <ul>
+                                            <li class="done">Illustrator</li>
+                                            <li class="done">InDesign
+                                                <ul><li>scripting</li></ul>
+                                            </li>
+                                            <li class="done">Photoshop</li>
+                                            <ul><li>frame-by-frame animation</li></ul>
+                                            <li class="maintained">After Effects</li>
+                                            <ul>
+                                                <li class="done">expressions (fall 2019)</li>
+                                                <li class="done">Lottie/Bodymovin (summer 2019)</li>
+                                                <li class="done">Duik (fall 2019)</li>
+                                                <ul><li>joysticks n sliders</li></ul>
+                                                <li>TrapCode</li>
+                                            </ul>
+                                            <li>Premiere</li>
+                                        </ul>
+                                        <li class="maintained">Figma (spring 2020)</li>
+                                        <li class="done">Max/msp/jitter (fall 2020)</li>
+                                        <li class="maintained">Cinema4d (fall 2020)</li>
+                                        <ul><li>Octane/Redshift</li></ul>
+                                        <li>TouchDesigner</li>
+                                        <li>Spline</li>
+                                        <li>Blender</li>
+                                        <ul><li>in the style of <a target="_blank" href="https://www.instagram.com/p/CHdgmIhIyVK/">Dedouze</a></li></ul>
+                                    </ul>
+                                </li>
+                                <li>how to read/write:
+                                    <ul>
+                                        <li class="done">HTML/CSS</li>
+                                        <li class="done">JS</li>
+                                        <ul>
+                                            <li class="done">jQuery</li>
+                                            <li class="done">p5.js</li>
+                                            <li class="done">basil.js</li>
+                                            <li>react.js</li>
+                                            <li>node.js</li>
+                                        </ul>
+                                        <li>full stack</li>
+                                        <li class="done">Python</li>
+                                        <li>WEBGL</li>
+                                        <li>mobile dev</li>
+                                        <ul>
+                                            <li>Android</li>
+                                            <li>iOS</li>
+                                            <li>design and develop an app</li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <p class="subtitle">Read</p>
+                            <ul>
+                                <li class="done">the daily news (2020, NYT)</li>
+                                <li>at least one Medium article daily</li>
+                                <li>books of my own choosing: 10 • 50 • 100</li>
+                            </ul>
+
+                            <p class="subtitle">Write</p>
+                            <ul>
+                                <li>an ongoing blog/journal of thoughts/reflections</li>
+                                <li>publish a book • publish a poetry book</li>
+                            </ul>
+                        </span>
+                    </div>
+
+                </article>
 
 
-        <!--
-<div class="row" style="padding-top:25px"> 
-<div class="column" style="flex:50%; max-width:50%">
-<img src="portrait.png" style="width:483px; float:right">
+
+
+                <!--
+<div class="home list"> 
+<div class="project">
+<div class="cover">
+<img src="about/cover-baby.JPG">
 </div>
-
-<div class="column" style="flex:50%; max-width:50%">
-<iframe src="play/p5/painting-photo-filter.html" height="480" width="480" style="float:left"></iframe>
+<div class="label">
+<p class="caption">baby me</p>
+</div>	
+</div>
+<div class="project">
+<div class="cover">
+<img src="about/cover-swan.jpeg">
+</div>
+<div class="label">
+<p class="caption">I'm secretly a woodland fairy</p>
+</div>	
+</div>
+<div class="project">
+<div class="cover">
+<img src="about/cover-candy.JPG">
+</div>
+<div class="label">
+<p class="caption">tasting sugar art in China with my cousin</p>
+</div>	
+</div>
+<div class="project">
+<div class="cover">
+<video autoplay muted loop>
+<source src="about/cover-hmm.mov">
+</video>
+</div>
+<div class="label">
+<p class="caption">🤔</p>
+</div>	
+</div>
+<div class="project">
+<div class="cover">
+<img src="about/cover-plant.jpg">
+</div>
+<div class="label">
+<p class="caption">one of my plants!</p>
+</div>	
 </div>
 </div>
 -->
-            <section class="prompt"><p>Hi! I'm <span style="color: black; font-weight: 500">Hannah Cai</span>, a third-year communication/graphic design student at Carnegie Mellon University's School of Design. I’m passionate about visual design, creative coding, web design, data visualization, music, and motion. I aim to create designs that are elegant, clean, and practical, yet delightful; my goal is to not only make things usable, but also beautiful.</p>
-                <br><p>I previously interned at <a href="https://www.labkind.com/" target="_blank">Labkind</a> as a web and UI designer, and have done freelance work in branding, motion, and illustration.</p>
-                <br><p>When I'm not doing work, you can probably find me <a href="https://open.spotify.com/user/1253995959?si=hJs5Fd7ETUuLHH5roAHy2Q" target="_blank">curating playlists</a>, working on a side project, playing guitar, taking care of my plants, or trying to pick up urban dance.</p>
-            </section>
-            <br>
-            <p class="subtitle" style="padding: 0px; font-size: 14px; font-weight: 500; color: black"><br>get in touch!<br>hannah.yanran.cai@gmail.com</p>
+
+                <!--
+<span>
+<p>
+I'm a designer with the heart of an artist and an appreciation for code. From CA, currently based in PA. I'm very detail-oriented and I love creating and refining visuals of all kinds. I enjoy wearing many hats and am most happy when I can work with other designers on multiple aspects of design at once. Currently working at NOVID as a motion, graphic, and product designer. Previously worked on motion for Cylab and as a product and web design intern at <a href="https://www.labkind.com/" target="_blank">Labkind</a>.
+</p>
+<p>
+I'm graduating from Carnegie Mellon as design major and HCI minor this summer! Currently actively seeking full-time positions.
+Get in touch! hannah.yanran.cai@gmail.com
+</p>
+</span>
+
+<p class="note">last updated []</p>
+-->
 
 
-            <p class="spacer" style="padding: 60px"></p>
-        </main>
+                </main>
 
-        <footer>
-            <!--         footer -->
-            <iframe class="footer" class="navbar" src="footer.html"></iframe>
-        </footer>
-    </body>
-</html>
+
+            <footer>
+                <div class="container">
+                    <div id="social-links">
+                        <a target="_blank" href="https://www.instagram.com/hyrcai/"><img src="instagram.svg"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/hannah-cai/"><img src="linkedin.svg"></a>
+                    </div>
+                    <div id="messages">
+                        <p>thank you for visiting! :)</p>
+                        <p>have a great day!</p>
+                        <p>🎵 currently listening to: <a target="_blank" href="https://open.spotify.com/track/2IFFKj9orAsQOOS0JRhHAW">Anderson .Paak - JEWELZ</a></p>
+                        <p>🎵 currently listening to: <a target="_blank" href="https://open.spotify.com/track/7jI6Se0BWVcF7ALTjQUBup">Lauv - Miss Me</a></p>
+                        <p>🎵 currently listening to: <a target="_blank" href="https://open.spotify.com/track/5rtc8Mp22059tlkPbSuKrk">The Nor'easters - The End of Love</a></p>
+                        <p>🎥 currently re-watching: <a target="_blank" href="https://youtu.be/WLxE_its-3k?t=240">Farewell - Witness (Tungtwist Remix) • Franklin Yu Choreography</a></p>
+                        <p>🎥 currently re-watching: <a target="_blank" href="https://www.youtube.com/watch?v=4DuNkr3oAEU">Låpsley - Station • Tessandra Chavez Choreography</a></p>
+                    </div>
+                    <p id="credits">© Hannah Cai • 2021</p>
+                </div>
+            </footer>
+            <!--
+<footer>
+footer 
+<iframe class="footer" class="navbar" src="footer.html"></iframe>
+</footer>
+-->
+            </body>
+        <script type="text/javascript" src="style-process.js"></script>
+        </html>

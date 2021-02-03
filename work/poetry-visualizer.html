@@ -9,256 +9,328 @@
         <meta name="keywords" content="Hannah, Cai, design, art, photography, code, illustration, portfolio, work">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--        links-->
-        <link rel="stylesheet" href="../untitled.css">
+        <link rel="stylesheet" href="../style.css">
         <link rel="icon" type="image/png" href="../favicon.png">
         <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
-        <script>
-            $(document).ready(function() {
-             $("#hamburger").click(function(){
-                    $("nav ul div").toggleClass('visible');
-                   $("main").toggleClass('blur'); 
-                 $("#favicon").toggleClass('blur');
-                 $("footer").toggleClass('blur');
-                 $("#container").toggleClass('visible');
-                    $("#hamburger").toggleClass('x');
-                })
-            })
-        </script>
     </head>
     <body>
         <!--         navbar -->
         <nav>
-            <a href="#" id="hamburger">
-                <span>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </span>
-            </a>
-            <ul>
-                <li><a target="_top" href="../index.html"><img id="favicon" src="../favicon.png"></a></li>
-                <div>
-                    <li><a class="active" target="_top" href="../index.html">Work</a></li>
-                    <li><a target="_top" href="../play.html">Play</a></li>
+            <div class="container">
+                <video id="logo" autoplay muted loop>
+                    <source src="../logo.mp4">
+                </video>
+                <div id="site-links">
+                    <li><a target="_top" href="../index.html">Home</a></li>
                     <li><a target="_top" href="../about.html">About</a></li>
                     <li><a target="_blank" href="../resume.pdf">Resume</a></li>
                 </div>
-            </ul>
+            </div>
         </nav>
 
         <!----------------------------------------------->
 
         <!--        ✱page content-->
-        <main>
-            <img src="poetry-bg-01.png" style="max-width:100%; display: block; margin: auto; border: none; float: center">
         <header>
-            <h1>python and basil.js poetry visualizer</h1>
-            <p class="subtitle">creative code, InDesign</p>
+            <span class="container-m">
+                <h1>Synesthesia</h1>
+                <h2>A programmatic poetry visualizer made with text processing and InDesign scripts.</h2>
+                <button type="code"></button><button type="data visualization"></button><button class="spacer"></button><button medium="Python"></button><button medium="Javascript"></button><button medium="InDesign"></button>
+                <div class="linespacer"></div>
+                <div class="flex-container equal">
+                    <span>
+                        <p class="subtitle">deliverables</p>
+                        <p>Python and basil.js scripts, generated graphics</p>
+                    </span>
+                    <span>
+                        <p class="subtitle">category</p>
+                        <p>personal work, classwork</p>
+                    </span>
+                    <span>
+                        <p class="subtitle">timeframe</p>
+                        <p>fall 2018, ~five weeks</p>
+                    </span>
+                </div>
+            </span>
+            <div class="gallery-s">
+                <div class="covers">
+                    <img src="poetry-bg-01.png">
+                </div>
+            </div>
         </header>
-            
-            <section class="prompt"><p>This was a self-defined final project for two classes: Computational Design (p5/basil.js) and Coding for Humanists (Python, text analysis). Based on the requirements of the two final projects, I decided to make a poetry visualizer that uses computation to identify and highlight a poetic aspect such as rhyme, rhythm (meter), or assonance within poetry or song lyrics.</p></section>
-            <h1 class="spacer">—</h1>
-            <p class="processheader">Moodboard</p>
-            <section>
-                I first looked for examples of data vis and structures that could be used for data vis for inspiration. See the full board <a href="https://www.pinterest.com/hyrcai/datavis/" target="_blank">here</a>.</section>
-            <div class="row"> 
-                <div class="column2">
-                    <img src="poetry-visualizer/m1.png">
-                </div>
-                <div class="column2">
-                    <img src="poetry-visualizer/m2.png">
-                </div>
-            </div>
-            <p class="spacer"></p>
-            
-            <p class="processheader">Research</p>
-            <section>
-                I then looked for existing examples of what I was trying to achieve. A google search shows a lot of fanmade, manually created content identifying rhyme in rap lyrics; Vox does something similar with their video <a target="_blank" href="https://www.vox.com/2016/5/19/11701976/rapping-deconstructed-best-rhymers-of-all-time">rapping, deconstructed</a>.</section>
-            <div class="row"> 
-                <div class="column2">
-                    <img src="poetry-visualizer/m00.png">
-                </div>
-                <div class="column2">
-                    <img src="poetry-visualizer/m0.jpg">
-                </div>
-            </div>
-            <p class="spacer"></p>
-            
-            <p class="processheader">Sketches</p>
-            <section>
-                Since the typical way to visualized rhymes seemed to be through simply highlighting text, I tried brainstorming different ways to visualize rhyme. I also decided that I would focus on assonance (vowel sounds) instead of just rhyme, since it gave a more complete picture of the composition of a text.</section>
-            <div class="row"> 
-                <div class="column">
-                    <img src="poetry-visualizer/b1.jpg">
-                    <img src="poetry-visualizer/b5.jpg">
-                    <img src="poetry-visualizer/b9.jpg">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/b2.jpg">
-                    <img src="poetry-visualizer/b6.jpg">
-                    <img src="poetry-visualizer/b10.jpg">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/b3.jpg">
-                    <img src="poetry-visualizer/b7.jpg">
-                    <img src="poetry-visualizer/b11.jpg">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/b4.jpg">
-                    <img src="poetry-visualizer/b8.jpg">
-                    <img src="poetry-visualizer/b12.jpg">
-                </div>
-            </div>
-            <p class="spacer"></p>
 
-            <p class="processheader">Surveys</p>
-            <section>
-                I asked friends and classmates to fill out a worksheet to gather more inspiration for possible visual directions. At this point, I was considering visualizing meter as well as assonance, so I asked participants to try and visualize that as well.</section>
-            <div class="row"> 
-                <div class="column">
-                    <img src="poetry-visualizer/s1.jpg">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/s2.jpg">
-                </div><div class="column">
-                    <img src="poetry-visualizer/s3.jpg">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/s4.jpg">
-                </div>
-            </div>
-            <p class="spacer"></p>
+        <main>
+            <div class="home process">
+                <article id="overview">
+                    <section>
+                        <p class="sectiontitle">Overview</p>
+                        <h2 class="big-question">Poetry is rich in literary elements like rhyme, meter, and alliteration.<br>Could these be parsed and visualized programmatically?</h2>
+                        <h3 class="container-m">I have always loved poetry, so I chose to focus on it for my self-defined final project for two classes: Computational Design (creative coding) and Coding for Humanists (Python text analysis). My goal was to make a visualizer that uses computation to identify and highlight a poetic aspect within poetry and song lyrics.</h3>
+                    </section>
+                </article>
 
-            <p class="processheader">Python</p>
-            <section>
-                Identifying assonance with Python turned out to be a lot trickier than I expected. My overall method was something like this:<br>
-                <ol>
-                <li>
-                    import corpus (I was using a small corpus I created of a few favorite songs and poems)</li>
-                <li>strip punctuation, tokenize to words, convert to lowercase</li>
-                    <li>look up pronunciations with the CMU pronouncing dictionary</li>
-                    <li>extract vowel phones from pronunciations</li>
-                    <li>look up syllables of each word with a hyphenation library</li>
-                    <li>store syllables and phones  into a data file</li>
-                </ol><br>
-                Even though this was the best method I was able to come up with, I still ran into a lot of issues. The CMU pronouncing dictionary is a literal dictionary, so I had to manually find and fix pronounciations of missing words.<br><br>Additionally, I needed to break words into syllables, but couldn't find any packages for it, so I used a hyphenation package instead. This also resulted in a lot of errors, since hyphenation doesn't break words into their smallest syllables to preserve legibility (another thing I had to manually fix).<br><br>
-                After spending a lot of time looking through and trying many methods of parsing meter, I decided to leave it out of my final visualization, since none of the methods I found were accurate enough to add anything meaningful.
-            </section>
-            <img src="poetry-visualizer/python.png" style="flex: 50%; max-width:800px; display: block; margin: auto; border: none; float: center">
-            <div class="desc">output from <a target="_blank" href="https://github.com/quadrismegistus/prosodic">prosodic</a>, testing parsing for meter</div>
-            <p class="spacer"></p>
-            
-                        <p class="processheader">Iteration 1</p>
-            <section>
-                Before moving into basil.js, I tried using Python to generate basil code. This way, I wouldn't have to export a file and read it in a different program; I could simply generate a basil file. I eventually moved away this method because it didn't allow me to easily run for loops in basil, forcing me to generate an excessive number of lines of code. I also couldn't figure out how to get position data for characters using this method, so all of the spacing between syllables is wrong. However, this iteration does serve as a proof of concept that my final idea was achievable in the framework that I was using.
-            </section>
-            <div class="row"> 
-                <div class="column2">
-                    <img src="poetry-visualizer/i1-1.png">
-                </div>
-                <div class="column2">
-                    <img src="poetry-visualizer/i1-2.png">
-                </div>
-            </div>
-            <p class="spacer"></p>
+                <article> 
+                    <section class="flex-container">
+                        <span class="container-m">
+                            <p class="sectiontitle">Research</p>
+                            <h2>Moodboard</h2>
+                            <h3>I first looked for examples of data vis and abstract structures for inspiration.</h3>
+                            <p><a href="https://www.pinterest.com/hyrcai/datavis/" target="_blank">see the full board</a></p>
+                        </span>
+                        <div class="gallery-s">
+                            <div class="covers">
+                                <img src="poetry-visualizer/m1.png">
+                                <img src="poetry-visualizer/m2.png">
+                            </div>
+                        </div>
+                    </section>
 
-            <p class="processheader">basil.js</p>
-            <section>Basil.js is a javascript framework that runs in Adobe InDesign, and it's the main program I used for the visualization aspect of this project. I opted for basil for the visuals for a few reasons; first, it was required for one of my final projects, and second, it generated print-ready files that I could use to make posters or a book. My  method in basil:<br>
-                <ol>
-                <li>
-                    import corpus</li>
-                <li>render text (title/author/body)</li>
-                    <li>comb through the data file, generating a color for each vowel sound
-</li>
-                    <li>referencing the data file, comb through the body, highlighting each syllable with its respective vowel’s color
-</li>
-                </ol><br>
-            Similarly with Python, I ran into many issues. Basil isn't a very robust platform; it's fairly buggy and not well-kept. I found that the function for parsing csv files was broken, so I had to regenerate data files as txt files and parse them in basil. Additionally, basil has no built in system for grabbing parts of words; I had to modify the built in functions for parsing characters and words in order to achieve what I wanted. 
-                </section>
-            <img src="poetry-visualizer/basil.png" style="flex: 50%; max-width:800px; display: block; margin: auto; border: none; float: center">
-            <div class="desc">progress shot: errors in red</div>
-            <p class="spacer"></p>
+                    <section class="flex-container">
+                        <span class="container-m">
+                            <p class="sectiontitle">Research</p>
+                            <h2>Benchmarking</h2>
+                            <h3>I then looked for existing examples of what I was trying to achieve. Most examples I found simply used color coding to identify rhymes.</h3>
+                            <p><b>right:</b> fan analyzations of rap lyrics and a screencap from Vox's <a target="_blank" href="https://www.vox.com/2016/5/19/11701976/rapping-deconstructed-best-rhymers-of-all-time">rapping, deconstructed</a>, </p>
+                        </span>
+                        <div class="gallery-s">
+                            <div class="covers">
+                                <img src="poetry-visualizer/m00.png">
+                                <img src="poetry-visualizer/m0.jpg">
+                            </div>
+                        </div>
+                    </section>
 
-            <p class="processheader">Digital Sketches</p>
-            <section>
-                Once I got the basil program to work properly, I started experimenting with different visual approaches. I referenced my earlier sketches, but also tried some new things, including suggestions from my professors.</section>
-            <div class="row"> 
-                <div class="column3">
-                    <img src="poetry-visualizer/r1.png">
-                    <img src="poetry-visualizer/g1.png">
-                    <img src="poetry-visualizer/c1.png">
-                    <img src="poetry-visualizer/a1.png">
-                </div>
-                <div class="column3">
-                    <img src="poetry-visualizer/r2.png">
-                    <img src="poetry-visualizer/g2.png">
-                    <img src="poetry-visualizer/c2.png">
-                    <img src="poetry-visualizer/a2.png">
-                </div>
-                <div class="column3">
-                    <img src="poetry-visualizer/r3.png">
-                    <img src="poetry-visualizer/g3.png">
-                    <img src="poetry-visualizer/c3.png">
-                    <img src="poetry-visualizer/a3.png">
-                </div>
+                    <section class="callout">
+                        <p class="sectiontitle">Insight</p>
+                        <h2>Here, I decided to focus on assonance (or vowel sounds) instead of rhyme, since it reveals more complex patterns.</h2>
+                        <h3>There are many kinds of rhyme, with "true rhyme" being the best known (eg "see" and "be"). However, similar vowel sounds also create noticeable rhymes. The example from Vox, above, highlights examples of assonance (eg "glass" and "ask").</h3>
+                    </section>
+
+                    <section>
+                        <span class="flex-container">
+                            <span class="container-s">
+                                <p class="sectiontitle">Research</p>
+                                <h2>Surveys</h2>
+                            </span>
+                            <span class="container-m">
+                                <h3>I asked friends and classmates to fill out a worksheet to gather inspiration for possible visual directions, and to see how people with no context of my project would try to interpret assonance and meter.</h3>
+                            </span>
+                        </span>
+                        <div class="gallery-b">
+                            <div class="covers">
+                                <img src="poetry-visualizer/s1.jpg">
+                                <img src="poetry-visualizer/s2.jpg">
+                                <img src="poetry-visualizer/s3.jpg">
+                                <img src="poetry-visualizer/s4.jpg">
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article> 
+                    <section>
+                        <span class="flex-container">
+                            <span class="container-s">
+                                <p class="sectiontitle">Prototyping</p>
+                                <h2>Sketches</h2>
+                            </span>
+                            <span class="container-m">
+                                <h3>Next, I brainstormed different ways of visualizing assonance by sketching on printouts of one of my favorite poems. Each of these sketches traces occurences of a single vowel sound.</h3>
+                            </span>
+                        </span>
+                        <div class="gallery-b">
+                            <div class="covers">
+                                <img src="poetry-visualizer/b1.jpg">
+                                <img src="poetry-visualizer/b2.jpg">
+                                <img src="poetry-visualizer/b3.jpg">
+                                <img src="poetry-visualizer/b4.jpg">
+                                <img src="poetry-visualizer/b5.jpg">
+                                <img src="poetry-visualizer/b6.jpg">
+                                <img src="poetry-visualizer/b7.jpg">
+                                <img src="poetry-visualizer/b8.jpg">
+                                <img src="poetry-visualizer/b9.jpg">
+                                <img src="poetry-visualizer/b10.jpg">
+                                <img src="poetry-visualizer/b11.jpg">
+                                <img src="poetry-visualizer/b12.jpg">
+<!--
+                                <img src="poetry-visualizer/bb1.jpg">
+                                <img src="poetry-visualizer/bb2.jpg">
+-->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <span class="flex-container">
+                            <span class="container-b">
+                                <p class="sectiontitle">Prototyping</p>
+                                <h2>Python</h2>
+                                <h3>While working on the visual design, I was also starting to build the programmatic side of things. Identifying assonance with Python turned out to be a lot trickier than I expected.* My overall method was something like this:</h3>
+                                <ol><li>
+                                    import corpus (I was using a small corpus I created of a few favorite songs and poems)</li>
+                                    <li>strip punctuation, tokenize to words, convert to lowercase</li>
+                                    <li>look up pronunciations with the CMU pronouncing dictionary*</li>
+                                    <li>extract vowel phones from pronunciations</li>
+                                    <li>look up syllables of each word with a hyphenation library*</li>
+                                    <li>store syllables and phones  into a data file</li></ol>
+                                <p>*The CMU pronouncing dictionary is a literal {dictionary}, so I had to manually find and fix pronounciations of words that weren't included. Additionally, I needed to break words into syllables, but couldn't find any packages for it, so I used a hyphenation package instead. This also resulted in a lot of errors I had to manually fix (hyphenation doesn't break words into their smallest syllables, in order to preserve legibility).</p>
+                            </span>
+                            <div class="gallery-s">
+                                <div class="covers">
+                                    <img src="poetry-visualizer/python.png">
+                                </div>
+                                <!--                                <p class="caption">output from <a target="_blank" href="https://github.com/quadrismegistus/prosodic">prosodic</a>, testing parsing for meter</p>-->
+                            </div>
+                        </span>
+                    </section>
+
+                    <section class="callout">
+                        <p class="sectiontitle">!</p>
+                        <h2>After spending a lot of time looking through and trying many methods of parsing meter, I decided to leave it out of my final visualization, since none of the methods I found were accurate enough to add anything meaningful. :(</h2>
+                        <h3>You can see the output from <a target="_blank" href="https://github.com/quadrismegistus/prosodic">prosodic</a>, one of the packages I was testing, above—note the inaccuracies in the last line, and on hyphenated words.</h3>
+                    </section>
+
+                    <section>
+                        <span class="flex-container">
+                            <span class="container-b">
+                                <p class="sectiontitle">Prototyping</p>
+                                <h2>Proof of concept</h2>
+                                <h3>Before moving into basil.js, I tried using Python to generate basil code, to simplify my workflow. I eventually moved away from this because it didn't allow me to easily run for loops in basil, resulting in an excessive amount of code. However, this iteration does serve as a proof of concept that my final idea was achievable in the framework that I was using!</h3>
+                                <p>*At this point, I hadn't figured out how to get position data for characters, so all of the spacing between syllables is off.</p>
+                            </span>
+                            <div class="gallery-s">
+                                <div class="covers">
+                                    <img src="poetry-visualizer/i1-1.png">
+                                    <img src="poetry-visualizer/i1-2.png">
+                                </div>
+                            </div>
+                        </span>
+                    </section>
+
+                    <section>
+                        <span class="flex-container">
+                            <span class="container-b">
+                                <p class="sectiontitle">Prototyping</p>
+                                <h2>Javascript</h2>
+                                <h3>Generating basil code was a bust, so I started coding directly in basil. For some background, <a href="http://basiljs.ch/about/" target="_blank">basil.js</a> is a javascript framework that runs in Adobe InDesign. I used basil for a few reasons; first, it was required for one of my final projects, and second, through InDesign, I could generate print-ready files that I could use to make posters or a book. My  method in basil:</h3>
+                                <ol>
+                                    <li>
+                                        import corpus</li>
+                                    <li>render text (title/author/body)</li>
+                                    <li>comb through the data file, generating a color for each vowel sound
+                                    </li>
+                                    <li>referencing the data file, comb through the body, highlighting each syllable with its respective vowel’s color
+                                    </li>
+                                </ol><br>
+                                <p>
+                                    <b>right:</b> progress shot, errors in red
+                                </p>
+                            </span>
+                            <div class="gallery-s">
+                                <div class="covers">
+                                    <img src="poetry-visualizer/basil.png">
+                                </div>
+                                <!--                            <p class="caption">progress shot: errors in red</p>-->
+                            </div>
+                        </span>
+                    </section>
+                </article>
+
+                <article>
+                    <section>
+                        <span class="flex-container">
+                            <span class="container-s">
+                                <p class="sectiontitle">Refinement</p>
+                                <h2>Exploration</h2>
+                            </span>
+                            <span class="container-m"> 
+                                <h3>It took a while, but I finally got the basil script to work properly! I then started experimenting with different visual approaches. I referenced my earlier sketches, but also tried some new things, including suggestions from my professors.</h3>
+                            </span>
+                        </span>
+                        <div class="gallery-b">
+                            <div class="covers">
+                                <img src="poetry-visualizer/r1.png">
+                                <img src="poetry-visualizer/g1.png">
+                                <img src="poetry-visualizer/c1.png">
+                                <img src="poetry-visualizer/a1.png">
+                                <img src="poetry-visualizer/r2.png">
+                                <img src="poetry-visualizer/g2.png">
+                                <img src="poetry-visualizer/c2.png">
+                                <img src="poetry-visualizer/a2.png">
+                                <img src="poetry-visualizer/r3.png">
+                                <img src="poetry-visualizer/g3.png">
+                                <img src="poetry-visualizer/c3.png">
+                                <img src="poetry-visualizer/a3.png">
+                                <img src="poetry-visualizer/1.png">
+                                <img src="poetry-visualizer/2.png">
+                                <img src="poetry-visualizer/3.png">
+                                <img src="poetry-visualizer/color1.png">
+                                <img src="poetry-visualizer/color2.png">
+                                <img src="poetry-visualizer/circles-7.jpg">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <span class="flex-container">
+                            <span class="container-s">
+                                <p class="sectiontitle">Refinement</p>
+                                <h2>Final</h2>
+                            </span>
+                            <span class="container-m">
+                                <h3>In the end, I decided on this approach (I took a lot of inspiration from <a href="https://laurendicioccio.com/paintings-/172" target="_blank">Lauren Dicioccio</a>'s work), because it felt the most dynamic and visually interesting. While it sacrifices some legibility, I felt like this organic approach did the best job of both showcasing the data and creating something that could be admired from a distance.</h3>
+                            </span>
+                        </span>
+                        <div class="gallery-b">
+                            <div class="covers">
+                                <img src="poetry-visualizer/f1.png">
+                                <!--                                <img src="poetry-visualizer/f2.png">-->
+                                <img src="poetry-visualizer/ff1.png">
+                                <img src="poetry-visualizer/ff2.png">
+                                <img src="poetry-visualizer/ff3.png">
+                                <!--                                <img src="poetry-visualizer/ff4.png">-->
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article>
+                    <section>
+                        <div class="container-m">
+                            <p class="sectiontitle">Refinement</p>
+                            <h2>Future Steps</h2>
+                        </div>
+                        <section class="container-m">
+                            <h3>Due to time and not being very familiar with basil, I wasn't able to try implementing many of the more complex visualizations I had sketched, so that's something I can definitely keep exploring. Additionally, my original plan was to create a book of visualizations; I might follow through with that that in the future, especially since I've learned how to hand bind books. 
+                                <br><br>I’d also love to expand this into a standalone website, with options for user input and interactivity. However, in order to do that, I’d first have to making the code much more robust, which would probably involve exploring APIs and other methods for parsing pronunciations and syllables. Since I'm still a beginner to coding, I probably won't try anything that ambitious unless I collaborate with someone else.
+                                <br><br>Overall, even though I struggled and ran into a lot of unforseen issues, I enjoyed this project and learned a lot! Visualizing poetry is a niche that hasn't really been filled yet, and I'd love to explore it more, whether manually or programmatically.</h3>
+                        </section>
+                    </section>
+                </article>
+
             </div>
-            <div class="row"> 
-                <div class="column">
-                    <img src="poetry-visualizer/1.png">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/2.png">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/3.png">
-                </div>
-                <div class="column">
-                    <img src="poetry-visualizer/4.png">
-                </div>
-            </div>
-            <h1 class="spacer">—</h1>
-            
-            <p class="processheader">Final</p>
-            <section>
-                I decided on this aesthetic (inspired by <a href="https://laurendicioccio.com/paintings-/172" target="_blank">Lauren Dicioccio</a>'s work) in the end because it felt the most dynamic and visually interesting. While it sacrifices some legibility, this is a data visualization project, and I think that this organic approach showcases the data best.</section>
-            <div class="row"> 
-                <div class="column2">
-                    <img src="poetry-visualizer/f1.png">
-                </div>
-                <div class="column2">
-                    <img src="poetry-visualizer/f2.png">
-                </div>
-            </div>
-            <div class="row"> 
-                <div class="column3">
-                    <img src="poetry-visualizer/ff4.png">
-                </div>
-                <div class="column3">
-                    <img src="poetry-visualizer/ff1.png">
-                </div>
-                <div class="column3">
-                    <img src="poetry-visualizer/ff2.png">
-                </div>
-            </div>
-            <p class="spacer"></p>
-            
-            <p class="processheader">Future Steps</p>
-            <section>
-                My original plan was to create a book of visualizations; I might follow through on that in the future. I’d also love to expand this into a standalone website, with options for user input and interactivity. However, in order to do that, I’d have to put a lot more work into making the code more robust first (this would probably involve exploring APIs and other methods for grabbing pronunciations and syllables, changing the entire framework of my program).
-                <br><br>Overall, even though I struggled a lot and ran into a lot of unforseen issues, I enjoyed this project and learned a lot! Visualizing poetry is a niche that hasn't really been filled yet, and I'd love to explore it more.
-</section>
-            <p class="spacer"></p>
         </main>
 
         <footer>
-            <!--           back / prev/ next -->
-            <p class="bottomlink" style="float: left"><a href="../index.html">← back to work</a></p>
-                <p class="bottomlink" style="text-align: right"><a href="UN-goals-video.html">prev</a> / <a href="bickham-script.html">next</a></p>
-            <p class="spacer" style="padding: 30px"></p>
-            
-            <!--         footer -->
-            <iframe class="footer" class="navbar" src="../footer.html"></iframe>
+            <div class="container">
+                <div id="social-links">
+                    <a target="_blank" href="https://www.instagram.com/hyrcai/"><img src="../instagram.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/hannah-cai/"><img src="../linkedin.svg"></a>
+                </div>
+                <div id="messages">
+                    <p>thank you for visiting! :)</p>
+                    <p>have a great day!</p>
+                    <p>🎵 currently listening to: <a target="_blank" href="https://open.spotify.com/track/2IFFKj9orAsQOOS0JRhHAW">Anderson .Paak - JEWELZ</a></p>
+                    <p>🎵 currently listening to: <a target="_blank" href="https://open.spotify.com/track/7jI6Se0BWVcF7ALTjQUBup">Lauv - Miss Me</a></p>
+                    <p>🎵 currently listening to: <a target="_blank" href="https://open.spotify.com/track/5rtc8Mp22059tlkPbSuKrk">The Nor'easters - The End of Love</a></p>
+                    <p>🎥 currently re-watching: <a target="_blank" href="https://youtu.be/WLxE_its-3k?t=240">Farewell - Witness (Tungtwist Remix) • Franklin Yu Choreography</a></p>
+                    <p>🎥 currently re-watching: <a target="_blank" href="https://www.youtube.com/watch?v=4DuNkr3oAEU">Låpsley - Station • Tessandra Chavez Choreography</a></p>
+                </div>
+                <p id="credits">© Hannah Cai • 2021</p>
+            </div>
         </footer>
+
+        <script type="text/javascript" src="../style-process.js"></script>
 
     </body>
 </html>
