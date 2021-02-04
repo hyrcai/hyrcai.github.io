@@ -113,11 +113,14 @@ function styleList(visibleProjects) {
             var height = thisCover.clientHeight;
             var factor = covers.length * 0.01;
             if (width > height) {
-                thisCover.style.maxWidth = winWidth * (0.2 - factor) + "px";
-            } else if (height > width) {
-                thisCover.style.maxWidth = winWidth * (0.12 - factor) + "px";
-            } else {
-                thisCover.style.maxWidth = winWidth * (0.12 - factor) + "px";
+                thisCover.style.width = winWidth * (0.2 - factor) + "px";
+            }
+            if (height > width) {
+                thisCover.firstElementChild.style.height = winWidth * (0.2 - factor) + "px";
+                thisCover.firstElementChild.style.width = "auto";
+            }
+            if (width == height) {
+                thisCover.style.width = winWidth * (0.12 - factor) + "px";
             }
         }
     }
@@ -163,16 +166,20 @@ function styleGallery(visibleProjects) {
             var factor = covers.length * 0.01;
             if (width > height) {
                 thisCover.style.maxWidth = winWidth * (0.12 - factor) + "px";
-            } else if (height > width) {
-                thisCover.style.maxWidth = winWidth * (0.1 - factor) + "px";
+            }
+            if (height > width) {
+                thisCover.firstElementChild.style.height = winWidth * (0.12 - factor) + "px";
+                thisCover.firstElementChild.style.width = "auto";
 
-            } else {
+//                thisCover.firstElementChild.style.width = "auto";
+            }
+            if (width == height) {
                 thisCover.style.maxWidth = winWidth * (0.1 - factor) + "px";
             }
         }
     }
     // set height to position footer properly  🟩
-    home.style.height = "";
+    home.style.height = y + (margin * 2) + "px";
 }
 
 /*-----------------------------------------------*/
@@ -218,7 +225,7 @@ function handleMouseMove(event) {
         /*-------------------------------------*/
         // gallery view 
         if (home.classList.contains('gallery')) {
-            //add pe
+            //add perspective based on mouse position
             var perspective = getPerspective(12);
             home.style.transform = "rotateX(" + perspective[1] + "deg) rotateY(" + perspective[0] + "deg)";
             
@@ -228,7 +235,7 @@ function handleMouseMove(event) {
             thisLabel.style.top = mouseY - offsetY + margin + 'px';
             if (thisProject.matches(':hover')) {
                 thisLabel.style.opacity = 1;
-                thisLabel.style.zIndex = 1001;
+//                thisLabel.style.zIndex = 1010 + ;
             }
         }
     }

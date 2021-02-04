@@ -102,10 +102,14 @@ function style(galleries) {
             var height = thisCover.clientHeight;
             var factor = numCovers * 0.006;
             if (width > height) {
-                thisCover.style.maxWidth = winWidth * (size - factor) + "px";
+                thisCover.firstElementChild.style.maxWidth = winWidth * (size - factor) + "px";
+//                thisCover.style.height = "auto";
             } else if (height > width) {
-                thisCover.style.maxWidth = winWidth * ((size * 0.8) - factor) + "px";
-//                console.log((0.12 - factor));
+//                thisCover.style.maxWidth = winWidth * ((size * 0.8) - factor) + "px";
+////                console.log((0.12 - factor));
+                thisCover.firstElementChild.style.height = winWidth * (size - factor) + "px";
+                thisCover.firstElementChild.style.width = "auto";
+
             } else {
                 thisCover.style.maxWidth = winWidth * ((size * 0.8) - factor) + "px";
             }

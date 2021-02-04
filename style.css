@@ -139,25 +139,25 @@ ul, ol {
   width: 100%;
   margin-right: 1.25em; }
 
+.covers {
+  z-index: -2 !important; }
+
 .cover {
   transition: 0.5s ease;
   position: absolute;
-  z-index: -1;
+  z-index: -1 !important;
   line-height: 0;
   box-sizing: border-box;
   transform-origin: center;
-  box-shadow: 0 0.5em 3em #e6e6e6; }
-
-.cover * {
-  width: 100%; }
+  box-shadow: 0 0.5em 3em #e6e6e6;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  object-fit: contain; }
 
 .cover:hover {
-  z-index: 5;
+  z-index: 100 !important;
   transition: 0.75s ease;
   transition-timing-function: cubic-bezier(0.25, 0, 0.25, 1.25); }
-
-.covers:hover {
-  z-index: 4; }
 
 .caption {
   font: italic 300 0.875em/1.4 "Asap", Asap, sans-serif;
@@ -168,7 +168,7 @@ nav {
   display: flex;
   flex-direction: column;
   position: fixed;
-  z-index: 10 !important;
+  z-index: 1001 !important;
   width: 100%;
   background: rgba(250, 250, 250, 0.64);
   background-filter: blur(8px);
@@ -213,8 +213,7 @@ header {
   width: auto;
   border-bottom: 1px solid black;
   padding-top: 9em;
-  padding-bottom: 6em;
-  z-index: 10 !important; }
+  padding-bottom: 6em; }
   header h2 {
     color: #323232;
     padding-bottom: 0.5em; }
@@ -324,17 +323,23 @@ main {
     text-align: center;
     padding-bottom: 3em; }
   main .home {
-    position: relative; }
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+    main .home .project {
+      z-index: -10 !important;
+      transform-style: preserve-3d;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0); }
     main .home .project:hover {
-      z-index: 3; }
+      z-index: -5 !important; }
   main #no-matches {
     width: calc(100% - 96px);
     text-align: center;
     position: absolute;
     top: 6em;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 9; }
+    transform: translateX(-50%); }
 
 .list {
   padding-top: 3em; }
@@ -346,11 +351,9 @@ main {
     justify-content: space-between;
     align-content: center;
     margin-bottom: 9em;
-    width: 100%;
-    transform-style: preserve-3d; }
+    width: 100%; }
   .list .perspective {
-    width: 60%;
-    transform-style: preserve-3d; }
+    width: 60%; }
   .list .cover {
     padding: none;
     margin: none;
@@ -361,14 +364,11 @@ main {
   .list .label {
     width: 40%;
     color: black;
-    opacity: 1;
-    z-index: 9; }
+    opacity: 1; }
     .list .label p:not([class]) {
       padding-bottom: 0.75em; }
   .list img, .list video, .list iframe {
     width: 100%; }
-  .list .cover iframe {
-    transform: "scale(0.5)"; }
   .list .title {
     font: 500 1.5em/1.6 "Open Sans", Open Sans, sans-serif;
     padding-bottom: 0.5em; }
@@ -379,15 +379,23 @@ main {
 
 .gallery {
   padding-bottom: 12em;
-  perspective: 0px;
-  width: calc(100% + 192px); }
-  .gallery .project, .gallery .cover {
+  width: calc(100% + 192px);
+  z-index: 0; }
+  .gallery .container {
+    position: relative;
+    z-index: -1010 !important; }
+  .gallery .project {
     position: absolute;
     width: 100%;
     padding: none;
     margin: none;
     line-height: 0;
     display: block; }
+  .gallery .project {
+    z-index: -10 !important;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0); }
   .gallery img, .gallery video, .gallery iframe {
     width: 100%;
     will-change: transform; }
@@ -405,7 +413,10 @@ main {
     backdrop-filter: blur(8px);
     color: white;
     border: 1px solid black;
-    line-height: 1.6; }
+    line-height: 1.6;
+    z-index: 1010 !important;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0); }
     .gallery .label .title {
       font: 500 1.25em/1.6 "Open Sans", Open Sans, sans-serif;
       text-transform: capitalize;
@@ -438,8 +449,7 @@ main {
   border-top: none; }
 .process article {
   border-top: 1px solid black;
-  padding-top: 9em;
-  z-index: -1; }
+  padding-top: 9em; }
 .process p {
   padding-top: 0.25em;
   line-height: 1.6;
@@ -468,9 +478,7 @@ section {
   border-bottom: 1px solid black;
   width: 60%;
   margin: auto;
-  margin-bottom: 9em;
-  background-size: 200% 100%;
-  background-position: 50% 0; }
+  margin-bottom: 9em; }
   .callout .flex-container {
     padding: 1.5em 0;
     text-align: left; }
@@ -496,7 +504,8 @@ section {
 .gallery-b, .gallery-s {
   height: 9em;
   padding-bottom: 15em;
-  position: relative; }
+  position: relative;
+  z-index: 10 !important; }
   .gallery-b .cover, .gallery-s .cover {
     position: absolute; }
   .gallery-b .caption, .gallery-s .caption {
@@ -556,13 +565,15 @@ section {
 footer {
   position: fixed;
   bottom: 0;
-  z-index: 10 !important;
+  z-index: 2000 !important;
   width: 100%;
   box-sizing: border-box;
   background: rgba(250, 250, 250, 0.64);
   background-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px); }
+  backdrop-filter: blur(8px);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0); }
   footer .container {
     border-top: 1px solid black;
     padding: 1.5em 0;
@@ -576,7 +587,7 @@ footer {
     align-items: center;
     justify-content: space-between; }
   footer #social-links a {
-    padding-right: 1.25em; }
+    padding-right: 1.5em; }
   footer #social-links img {
     width: 1.25em;
     height: auto;
@@ -589,7 +600,7 @@ footer {
     color: dimgrey; }
 
 /*-----------------------------------------------*/
-@media (max-width: 575.98px) {
+@media (min-width: 0px) and (max-width: 767px) {
   nav .container {
     padding: 1.5em 0; }
   nav #logo {
@@ -604,9 +615,9 @@ footer {
     transform: translateX(0.6em); }
 
   header {
+    margin: 0 3em;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 0 3em; }
+    align-items: flex-start; }
     header #filter {
       display: none; }
 
@@ -665,8 +676,9 @@ footer {
 
   .callout, #overview {
     text-align: left !important;
-    width: auto; } }
-@media (max-width: 767.98px) {
+    width: auto;
+    margin: 0; } }
+@media (min-width: 768px) and (max-width: 991px) {
   nav .container {
     padding: 1.5em 0; }
   nav #logo {
@@ -745,7 +757,7 @@ footer {
 
   .callout .flex-container span {
     padding: 0.5em 0; } }
-@media (max-width: 991.98px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   header {
     flex-direction: column;
     margin: 0 6em;
