@@ -120,7 +120,7 @@ function styleList(visibleProjects) {
                 thisCover.firstElementChild.style.width = "auto";
             }
             if (width == height) {
-                thisCover.style.width = winWidth * (0.12 - factor) + "px";
+                thisCover.style.width = winWidth * (0.15 - factor) + "px";
             }
         }
     }
@@ -158,23 +158,23 @@ function styleGallery(visibleProjects) {
 
             //set position
             thisCover.style.left = x + xVariation + (margin * 2) + "px";
-            thisCover.style.top = y + yVariation - header.offsetHeight + (margin * 6) + "px";
+            thisCover.style.top = y + yVariation - header.offsetHeight + (margin * 10) + "px";
 
             // scale by width or height 🟩
             var width = thisCover.clientWidth;
             var height = thisCover.clientHeight;
             var factor = covers.length * 0.01;
             if (width > height) {
-                thisCover.style.maxWidth = winWidth * (0.12 - factor) + "px";
+                thisCover.style.maxWidth = winWidth * (0.14 - factor) + "px";
             }
             if (height > width) {
-                thisCover.firstElementChild.style.height = winWidth * (0.12 - factor) + "px";
+                thisCover.firstElementChild.style.height = winWidth * (0.14 - factor) + "px";
                 thisCover.firstElementChild.style.width = "auto";
 
 //                thisCover.firstElementChild.style.width = "auto";
             }
             if (width == height) {
-                thisCover.style.maxWidth = winWidth * (0.1 - factor) + "px";
+                thisCover.style.maxWidth = winWidth * (0.12 - factor) + "px";
             }
         }
     }
@@ -206,7 +206,7 @@ function handleMouseMove(event) {
             var thisCover = covers[c];
             var dist = calculateDistance(thisCover, mouseX, mouseY);
             if (dist < threshold) {
-                thisCover.style.transform = 'translate(-50%, -50%) scale(' + (1 + (threshold - (dist)) / (threshold / 1.5)) + ')';
+                thisCover.style.transform = 'translate(-50%, -50%) scale(' + (1 + (threshold - (dist)) / (threshold)) + ')';
             } else {
                 thisCover.style.transform = 'translate(-50%, -50%) scale(1)';
             }
