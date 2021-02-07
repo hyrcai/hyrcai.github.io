@@ -101,7 +101,7 @@ function styleList(visibleProjects) {
             let thisCover = covers[c];
 
             // add some randomness
-            factor = 0.5;
+            factor = 0.4;
             xVariation = getRandomNumber(-variation * (covers.length * factor), variation * (covers.length * factor), 0);
             yVariation = getRandomNumber(-variation * (covers.length * factor), variation * (covers.length * factor), 0);
             // set
@@ -152,13 +152,13 @@ function styleGallery(visibleProjects) {
             y = Math.ceil((i + 1) / columns) * yInterval;
 
             // add some randomness 🟩
-            factor = margin;
+            factor = margin / 2;
             xVariation = getRandomNumber(-variation - (covers.length * factor), variation + (covers.length * factor), margin);
             yVariation = getRandomNumber(-variation - (covers.length * factor), variation + (covers.length * factor), margin);
 
             //set position
             thisCover.style.left = x + xVariation + (margin * 2) + "px";
-            thisCover.style.top = y + yVariation - header.offsetHeight + (margin * 10) + "px";
+            thisCover.style.top = y + yVariation - header.offsetHeight + (margin * 6) + "px";
 
             // scale by width or height 🟩
             var width = thisCover.clientWidth;
@@ -227,7 +227,7 @@ function handleMouseMove(event) {
         if (home.classList.contains('gallery')) {
             //add perspective based on mouse position
             var perspective = getPerspective(12);
-            home.style.transform = "rotateX(" + perspective[1] + "deg) rotateY(" + perspective[0] + "deg)";
+            home.querySelector('.container').style.transform = "rotateX(" + perspective[1] + "deg) rotateY(" + perspective[0] + "deg)";
             
             //show label if mouse is over cover
             thisLabel.style.opacity = 0;

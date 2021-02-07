@@ -140,7 +140,7 @@ function handleMouseMove(event) {
             var thisCover = covers[c];
             var dist = calculateDistance(thisCover, mouseX, mouseY);
             if (dist < threshold) {
-                thisCover.style.transform = 'scale(' + (1 + (threshold - (dist)) / (threshold * 0.5)) + ')';
+                thisCover.style.transform = 'scale(' + (1 + (threshold - (dist)) / (threshold * 0.6)) + ')';
             } else {
                 thisCover.style.transform = 'scale(1)';
             }
