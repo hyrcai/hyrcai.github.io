@@ -151,8 +151,6 @@ ul, ol {
   box-sizing: border-box;
   transform-origin: center;
   box-shadow: 0 0.5em 3em #e6e6e6;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
   object-fit: contain; }
 
 .cover:hover {
@@ -400,8 +398,7 @@ main {
       backdrop-filter: blur(8px);
       color: white;
       border: 1px solid black;
-      line-height: 1.6;
-      z-index: 1010 !important; }
+      line-height: 1.6; }
       .gallery .project .label .title {
         font: 500 1.25em/1.6 "Open Sans", Open Sans, sans-serif;
         text-transform: capitalize;
@@ -422,6 +419,8 @@ main {
         margin-right: 0.25em; }
   .gallery .project:hover {
     z-index: 100 !important; }
+    .gallery .project:hover .label {
+      z-index: 1010 !important; }
   .gallery img, .gallery video, .gallery iframe {
     width: 100%;
     will-change: transform; }

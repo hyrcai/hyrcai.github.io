@@ -222,9 +222,8 @@ ul, ol {
     box-sizing: border-box;
     transform-origin: center;
     box-shadow: 0 $spacer-2 $margin $grey-b1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    //    transform-style: flat;
+//    -webkit-transform: translate3d(0, 0, 0);
+//    transform: translate3d(0, 0, 0);
     object-fit: contain;
 }
 .cover * {
@@ -576,7 +575,7 @@ main {
             line-height: 1.6;
                        
 //                                transform-style: preserve-3d;
-            z-index: 1010 !important;
+//            z-index: 1010 !important;
 
             .title {
                 font: $h3;
@@ -610,6 +609,8 @@ main {
         //        transform: translate3d(0, 0, 0);
         //        -webkit-transform: translate3d(0, 0, 0);
         .label {
+            z-index: 1010 !important;
+
 //            transform: translateZ($bspacer-5);
 //            transform-style: preserve-3d;
 
