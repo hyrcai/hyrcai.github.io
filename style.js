@@ -115,11 +115,11 @@ function styleList(visibleProjects) {
             if (width > height) {
                 thisCover.style.width = winWidth * (0.2 - factor) + "px";
             }
-            if (height > width) {
+            else if (height > width) {
                 thisCover.firstElementChild.style.height = winWidth * (0.2 - factor) + "px";
                 thisCover.firstElementChild.style.width = "auto";
             }
-            if (width == height) {
+            else if (width == height) {
                 thisCover.style.width = winWidth * (0.15 - factor) + "px";
             }
         }
@@ -167,13 +167,13 @@ function styleGallery(visibleProjects) {
             if (width > height) {
                 thisCover.style.maxWidth = winWidth * (0.14 - factor) + "px";
             }
-            if (height > width) {
+            else if (height > width) {
                 thisCover.firstElementChild.style.height = winWidth * (0.14 - factor) + "px";
                 thisCover.firstElementChild.style.width = "auto";
 
-//                thisCover.firstElementChild.style.width = "auto";
+                //                thisCover.firstElementChild.style.width = "auto";
             }
-            if (width == height) {
+            else if (width == height) {
                 thisCover.style.maxWidth = winWidth * (0.12 - factor) + "px";
             }
         }
@@ -190,10 +190,10 @@ function handleMouseMove(event) {
     var mouseX = event.pageX;
     var mouseY = event.pageY;
 
-//    //position cursor
-//    cursor.style.top = 2 + mouseY + "px";
-//    cursor.style.left = 2 + mouseX + "px";
-//    console.log(cursor.style.left, mouseX);
+    //    //position cursor
+    //    cursor.style.top = 2 + mouseY + "px";
+    //    cursor.style.left = 2 + mouseX + "px";
+    //    console.log(cursor.style.left, mouseX);
 
     //get projects
     for (var i = 0; i < projects.length; i++) {
@@ -228,14 +228,14 @@ function handleMouseMove(event) {
             //add perspective based on mouse position
             var perspective = getPerspective(12);
             home.querySelector('.container').style.transform = "rotateX(" + perspective[1] + "deg) rotateY(" + perspective[0] + "deg)";
-            
+
             //show label if mouse is over cover
             thisLabel.style.opacity = 0;
             thisLabel.style.left = mouseX - (144) - (thisLabel.offsetWidth / 2) + 'px';
             thisLabel.style.top = mouseY - offsetY + margin + 'px';
             if (thisProject.matches(':hover')) {
                 thisLabel.style.opacity = 1;
-//                thisLabel.style.zIndex = 1010 + ;
+                //                thisLabel.style.zIndex = 1010 + ;
             }
         }
     }

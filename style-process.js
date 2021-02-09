@@ -59,7 +59,7 @@ function style(galleries) {
 
         columns = Math.floor(gWidth / 300);
         xInterval = (gWidth - (margin * 3)) / columns;
-        yInterval = gWidth / (columns * (2 - (numCovers * 0.02)));
+        yInterval = gWidth / (columns * (2 - (numCovers * 0.01)));
 
         for (var c = 0; c < numCovers; c++) {
             let thisCover = covers.children[c];
@@ -77,7 +77,7 @@ function style(galleries) {
             // get position
             if (numCovers > 3) {
                 x = Math.ceil((c + 1) % columns) * xInterval + (margin * 2);
-                y = Math.ceil((c + 1) / columns) * yInterval - (margin * 2);
+                y = Math.ceil((c + 1) / columns) * yInterval - (margin * 3);
                 variation = 160;
                 size = 0.2;
             } else {
@@ -90,12 +90,12 @@ function style(galleries) {
             // add some randomness 🟩
             factor = 1;
             xVariation = getRandomNumber(-variation - (numCovers * factor), variation + (numCovers * factor), margin);
-            yVariation = getRandomNumber(-variation - (numCovers), variation + (numCovers), margin);
+            yVariation = getRandomNumber(-variation - (numCovers / 2), variation + (numCovers / 2), margin);
 //            console.log(variation - (numCovers * factor));
 
             //set position
             thisCover.style.left = x + xVariation + "px";
-            thisCover.style.top = y + yVariation + "px";
+            thisCover.style.top = y + yVariation + margin + "px";
 
             // scale by width or height 🟨
             var width = thisCover.clientWidth;
