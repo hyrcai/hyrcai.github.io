@@ -82,7 +82,7 @@ iframe {
 
 ul, li {
   margin: 0;
-  line-height: 1.6; }
+  line-height: 1.6 !important; }
 
 ul, ol {
   font: 300 0.875em/1.4 "Asap", Asap, sans-serif;
@@ -471,8 +471,7 @@ button:focus {
   border-top: 1px solid black;
   padding-top: 9em; }
 .process p {
-  padding-top: 0.25em;
-  line-height: 1.6;
+  line-height: 1.6 !important;
   color: #323232; }
 .process .note {
   font: 300 0.75em "Asap", Asap, sans-serif;
@@ -552,7 +551,7 @@ section {
 
 /*-----------------------------------------------*/
 #about {
-  padding-top: 9em; }
+  padding-top: 12em; }
   #about h1 {
     padding-bottom: 1em; }
   #about #facts {
@@ -562,13 +561,14 @@ section {
   #about #key {
     margin-top: 1.25em; }
   #about #impossible-list {
-    font: 300 0.875em/1.4 "Asap", Asap, sans-serif;
     padding-bottom: 9em; }
     #about #impossible-list > span {
       width: 50%;
       margin-right: 3em; }
     #about #impossible-list li {
-      color: #323232; }
+      color: #323232;
+      font: 300 0.875em/1.4 "Asap", Asap, sans-serif;
+      line-height: 1.6; }
       #about #impossible-list li a {
         font-weight: 500; }
     #about #impossible-list .subtitle {
@@ -586,21 +586,21 @@ section {
 /*-----------------------------------------------*/
 @media (min-width: 0px) and (max-width: 767px) {
   nav .container {
-    padding: 1.5em 0; }
+    padding: 1.5em 0 !important; }
   nav #logo {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     background: url("favicon.png");
     background-size: cover;
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.25em !important;
+    height: 1.25em !important;
     padding-left: 1.25em;
     transform: translateX(0.6em); }
 
   header {
-    margin: 0 3em;
-    flex-direction: column;
+    margin: 0 3em !important;
+    flex-direction: column !important;
     align-items: flex-start; }
     header #filter {
       display: none; }
@@ -609,7 +609,7 @@ section {
     display: none; }
 
   main {
-    padding: 0 3em; }
+    padding: 0 3em !important; }
     main .list .project {
       flex-direction: column-reverse; }
       main .list .project .label, main .list .project .perspective {
@@ -623,6 +623,9 @@ section {
           transform: translate(0, 0) !important;
           position: static;
           margin: 3em 0; }
+
+  #about {
+    padding-top: 12em !important; }
 
   footer #messages {
     display: none; }
@@ -654,6 +657,9 @@ section {
   .gallery-s, .gallery-b {
     transform: rotate(0) !important; }
 
+  .gallery-b {
+    margin-top: 0; }
+
   .gallery-b .cover {
     transform: scale(2.5) !important;
     margin-left: 3em; }
@@ -661,29 +667,30 @@ section {
   .callout, #overview {
     text-align: left !important;
     width: auto;
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 9em; }
 
   .gallery-s .cover, .gallery-s .cover * {
     max-width: calc(100vw - 6em) !important;
     height: auto !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
   nav .container {
-    padding: 1.5em 0; }
+    padding: 1.5em 0 !important; }
   nav #logo {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     background: url("favicon.png");
     background-size: cover;
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.25em !important;
+    height: 1.25em !important;
     padding-left: 1.25em;
     transform: translateX(0.6em); }
 
   header {
-    flex-direction: column;
-    margin: 0 3em;
-    align-items: flex-start; }
+    flex-direction: column !important;
+    margin: 0 3em !important;
+    align-items: flex-start !important; }
     header #filter {
       display: none; }
 
@@ -691,7 +698,7 @@ section {
     display: none; }
 
   main {
-    padding: 0 3em;
+    padding: 0 3em !important;
     padding-bottom: 6em !important; }
     main .list .project {
       flex-direction: column-reverse; }
@@ -706,6 +713,9 @@ section {
           transform: translate(0, 0) !important;
           position: static;
           margin: 3em 0; }
+
+  #about {
+    padding-top: 12em !important; }
 
   footer #messages {
     display: none; }
@@ -752,8 +762,8 @@ section {
     height: auto !important; } }
 @media (min-width: 992px) and (max-width: 1200px) {
   header {
-    flex-direction: column;
-    margin: 0 6em;
+    flex-direction: column !important;
+    margin: 0 6em !important;
     align-items: flex-start; }
     header h2 {
       padding-bottom: 0.75em; }
@@ -766,7 +776,7 @@ section {
     display: none; }
 
   main {
-    padding: 0 6em;
+    padding: 0 6em !important;
     padding-bottom: 6em !important; }
     main .list .project {
       flex-direction: column-reverse; }

@@ -148,7 +148,7 @@ iframe {
 }
 ul, li {
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.6 !important;
 }
 ul, ol {
     font: $body;
@@ -704,8 +704,8 @@ button:focus {
         //        backdrop-filter: blur($bg-blur);
     }
     p {
-        padding-top: $spacer-1;
-        line-height: 1.6;
+//        padding-top: $spacer-1;
+        line-height: 1.6 !important;
         color: $off-black;
     }
     .note {
@@ -838,7 +838,7 @@ section {
 /*-----------------------------------------------*/
 //about 🟨
 #about {
-    padding-top: $bspacer-3;
+    padding-top: $bspacer-4;
     h1 {
         padding-bottom: $spacer-4;
     }
@@ -852,7 +852,6 @@ section {
         margin-top: $spacer-5;
     }
     #impossible-list {
-        font: $body;
         padding-bottom: $bspacer-3;
         > span {
             width: 50%;
@@ -860,6 +859,8 @@ section {
         }
         li {
             color: $off-black;
+            font: $body;
+            line-height: 1.6;
             a {
                 font-weight: $secondary-bold;
             }
@@ -889,7 +890,7 @@ section {
     nav {
         //change to static logo
         .container {
-            padding: $spacer-6 0;
+            padding: $spacer-6 0 !important;
         }
         #logo {
             display: block;
@@ -897,15 +898,15 @@ section {
             box-sizing: border-box;
             background: url("favicon.png");
             background-size: cover;
-            width: $spacer-5; 
-            height: $spacer-5; 
+            width: $spacer-5 !important; 
+            height: $spacer-5 !important; 
             padding-left: $spacer-5; 
             transform: translateX(0.6em);
         }
     }
     header {
-        margin: 0 $margin;
-        flex-direction: column;
+        margin: 0 $margin !important;
+        flex-direction: column !important;
         align-items: flex-start;
         #filter {
             display: none;
@@ -915,7 +916,7 @@ section {
         display: none;
     }
     main {
-        padding: 0 $margin;
+        padding: 0 $margin !important;
         .list {
             .project {
                 flex-direction: column-reverse;
@@ -937,6 +938,9 @@ section {
 
             }
         }
+    }
+    #about {
+        padding-top: $bspacer-4 !important;
     }
     footer #messages {
         display: none;
@@ -971,6 +975,9 @@ section {
     .gallery-s, .gallery-b {
         transform: rotate(0) !important;
     }
+    .gallery-b {
+        margin-top: 0;
+    }
     .gallery-b .cover {
         transform: scale(2.5) !important;
         margin-left: $margin;
@@ -979,6 +986,7 @@ section {
         text-align: left !important;
         width: auto;
         margin: 0;
+        margin-bottom: $bspacer-3;
     }
     .gallery-s .cover, .gallery-s .cover * {
         max-width: calc(100vw - 6em) !important;
@@ -992,7 +1000,7 @@ section {
     nav {
         //change to static logo
         .container {
-            padding: $spacer-6 0;
+            padding: $spacer-6 0 !important;
         }
         #logo {
             display: block;
@@ -1000,16 +1008,16 @@ section {
             box-sizing: border-box;
             background: url("favicon.png");
             background-size: cover;
-            width: $spacer-5; 
-            height: $spacer-5; 
+            width: $spacer-5 !important; 
+            height: $spacer-5 !important; 
             padding-left: $spacer-5; 
             transform: translateX(0.6em);
         }
     }
     header {
-        flex-direction: column;
-        margin: 0 $margin;
-        align-items: flex-start;
+        flex-direction: column !important;
+        margin: 0 $margin !important;
+        align-items: flex-start !important;
         #filter {
             display: none;
         }
@@ -1018,7 +1026,7 @@ section {
         display: none;
     }
     main {
-        padding: 0 $margin;
+        padding: 0 $margin !important;
         padding-bottom: $bspacer-2 !important;
         .list {
             .project {
@@ -1041,6 +1049,9 @@ section {
 
             }
         }
+    }
+    #about {
+        padding-top: $bspacer-4 !important;
     }
     footer #messages {
         display: none;
@@ -1096,8 +1107,8 @@ section {
 @media (min-width: 992px) and (max-width: 1200px) {
     //home 🟩
     header {
-        flex-direction: column;
-        margin: 0 $bspacer-2;
+        flex-direction: column !important;
+        margin: 0 $bspacer-2 !important;
         align-items: flex-start;
         h2 {
             padding-bottom: $spacer-3;
@@ -1113,7 +1124,7 @@ section {
         display: none;
     }
     main {
-        padding: 0 $bspacer-2;
+        padding: 0 $bspacer-2 !important;
         padding-bottom: $bspacer-2 !important;
         .list {
             .project {
