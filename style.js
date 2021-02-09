@@ -166,6 +166,7 @@ function styleGallery(visibleProjects) {
             var factor = covers.length * 0.01;
             if (width > height) {
                 thisCover.style.maxWidth = winWidth * (0.14 - factor) + "px";
+                thisCover.style.width = "100%";
             }
             else if (height > width) {
                 thisCover.firstElementChild.style.height = winWidth * (0.14 - factor) + "px";
