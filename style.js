@@ -59,6 +59,7 @@ var factor;
 
 // style covers based on active view 🟩
 styleVisibleProjects();
+styleVisibleProjects();
 document.addEventListener('click', (event) => {
     styleVisibleProjects();
 })
@@ -114,9 +115,14 @@ function styleList(visibleProjects) {
             var factor = covers.length * 0.01;
             if (width > height) {
                 thisCover.style.width = winWidth * (0.2 - factor) + "px";
+                console.log("width" + width + " " + height);
+                console.log(thisCover);
             } else if (height > width) {
                 thisCover.firstElementChild.style.height = winWidth * (0.2 - factor) + "px";
                 thisCover.firstElementChild.style.width = "auto";
+                console.log("height" + height + " " + width);
+                console.log(thisCover);
+
             } else if (width == height) {
                 thisCover.style.width = winWidth * (0.15 - factor) + "px";
             }
