@@ -114,12 +114,10 @@ function styleList(visibleProjects) {
             var factor = covers.length * 0.01;
             if (width > height) {
                 thisCover.style.width = winWidth * (0.2 - factor) + "px";
-            }
-            else if (height > width) {
+            } else if (height > width) {
                 thisCover.firstElementChild.style.height = winWidth * (0.2 - factor) + "px";
                 thisCover.firstElementChild.style.width = "auto";
-            }
-            else if (width == height) {
+            } else if (width == height) {
                 thisCover.style.width = winWidth * (0.15 - factor) + "px";
             }
         }
@@ -167,14 +165,12 @@ function styleGallery(visibleProjects) {
             if (width > height) {
                 thisCover.style.maxWidth = winWidth * (0.14 - factor) + "px";
                 thisCover.style.width = "100%";
-            }
-            else if (height > width) {
+            } else if (height > width) {
                 thisCover.firstElementChild.style.height = winWidth * (0.14 - factor) + "px";
                 thisCover.firstElementChild.style.width = "auto";
 
                 //                thisCover.firstElementChild.style.width = "auto";
-            }
-            else if (width == height) {
+            } else if (width == height) {
                 thisCover.style.maxWidth = winWidth * (0.12 - factor) + "px";
             }
         }
