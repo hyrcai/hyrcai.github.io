@@ -26,6 +26,7 @@
         </script>
     </head>
     <body>
+       <div id="loader"></div>
         <!--         navbar -->
         <nav>
             <div class="container">
@@ -244,6 +245,10 @@
         </footer>
 
         <script type="text/javascript" src="../style-process.js"></script>
-
+        <script>
+            $(window).on('load', function() {
+                $('#loader').addClass('hidden');
+            });
+        </script>
     </body>
 </html>

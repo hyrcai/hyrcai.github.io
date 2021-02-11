@@ -94,6 +94,30 @@ html {
 body {
     margin: 0;
 }
+#loader {
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    z-index: 3000 !important;
+    text-align: center;
+    background-color: $bg;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    overflow: hidden;
+//    backdrop-filter: blur($blur);
+    * {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: $spacer-6;
+        height: $spacer-6;
+    }
+}
 b, i {
     font-size: inherit;
 }
@@ -190,7 +214,7 @@ ul, ol {
     visibility: hidden;
     filter: blur($blur);
     display: none;
-    transition: visibility 0s, opacity 0.75s ease, filter 0.75s ease, transform 0.75s ease, margin-top 0.75s ease, display 0.75s;
+    transition: visibility 0.75s, opacity 0.75s ease, filter 0.75s ease, transform 0.75s ease, margin-top 0.75s ease, display 0.75s;
 }
 .no-transition {
     -webkit-transition: none !important;
@@ -601,7 +625,6 @@ button {
     color: $off-black;
     font: $body;
     border: none;
-    line-height: normal;
 }
 button.spacer:after {
     content: "•";

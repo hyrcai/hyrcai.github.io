@@ -19,6 +19,7 @@
 
     </head>
     <body>
+        <div id="loader"></div>
         <!--         navbar -->
         <!--
 <nav>
@@ -80,7 +81,7 @@
                 <button class="text" id="gallery">gallery</button>
             </div>
 
-            <div class="home list"> 
+            <div class="home list">
                 <div class="container">
                     <div id="no-matches" class="hidden">
                         <h3>No projects found :(</h3>
@@ -119,7 +120,7 @@
                                 <button type="motion"></button><button type="UI/UX"></button><button type="graphic"></button><button type="data visualization"></button><button type="illustration"></button><button class="spacer"></button><button medium="Figma"></button><button medium="After Effects"></button>
                                 <div class="linespacer"></div>
                                 <p class="subtitle">Deliverables</p>
-                                <p>Spot animations, cohesive design system, logo revamp, various app features and flows, various print flyers and signs, various social media posts, and more</p>
+                                <p>motion, design system, UI/UX, print, and more</p>
                                 <p class="subtitle">Category</p>
                                 <p>Client Work</p>
                                 <p class="subtitle">Team Members</p>
@@ -625,7 +626,12 @@
 
         <!--        <script type="text/javascript" src="drag.js"></script>-->
         <script>
+            $(window).on('load', function() {
+                $('#loader').addClass('hidden');
+            });
+
             $(document).ready(function() {
+
 
                 //add footer
                 //                $("#footer").load("footer.html"); 
@@ -779,7 +785,7 @@
                 }
             })
         </script>
-        <script type="text/javascript" src="style.js" defer></script>
 
+        <script type="text/javascript" src="style.js" defer></script>
     </body>
 </html>
