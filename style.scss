@@ -50,6 +50,7 @@ $bspacer-2: 6em;
 $bspacer-3: 9em;
 $bspacer-4: 12em;
 $bspacer-5: 15em;
+$bspacer-6: 18em;
 // margin
 $margin: $bspacer-1;
 
@@ -80,6 +81,7 @@ html {
     box-sizing: border-box;
     transition: 0.5s ease;
     max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-size: 16px;
@@ -108,7 +110,7 @@ body {
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     overflow: hidden;
-//    backdrop-filter: blur($blur);
+    //    backdrop-filter: blur($blur);
     * {
         position: absolute;
         top: 50%;
@@ -246,8 +248,8 @@ ul, ol {
     box-sizing: border-box;
     transform-origin: center;
     box-shadow: 0 $spacer-2 $margin $grey-b1;
-//    -webkit-transform: translate3d(0, 0, 0);
-//    transform: translate3d(0, 0, 0);
+    //    -webkit-transform: translate3d(0, 0, 0);
+    //    transform: translate3d(0, 0, 0);
     object-fit: contain;
 }
 .cover * {
@@ -289,7 +291,7 @@ html {
         flex-direction: column;
         position: fixed;
         z-index: 2000 !important;
-        width: 100%;
+        width: 100vw;
         background: $bg-transparent-light;
         background-filter: blur($bg-blur); 
         -webkit-backdrop-filter: blur($bg-blur); 
@@ -417,7 +419,7 @@ html {
             }
         }
     }
-    
+
     //landing + collections 🟥
     main {
         position: relative;
@@ -507,13 +509,13 @@ html {
         padding-bottom: $bspacer-4;
         width: calc(100% + 192px);
         //    z-index: 0 !important;
-//        .container {
-//            position: relative;
-//            z-index: -10 !important;
-//            transform-style: preserve-3d;
-//            transform: translate3d(0, 0, 0);
-//            -webkit-transform: translate3d(0, 0, 0);
-//        }
+        //        .container {
+        //            position: relative;
+        //            z-index: -10 !important;
+        //            transform-style: preserve-3d;
+        //            transform: translate3d(0, 0, 0);
+        //            -webkit-transform: translate3d(0, 0, 0);
+        //        }
 
         .project {
             position: absolute;
@@ -727,7 +729,7 @@ button:focus {
         //        backdrop-filter: blur($bg-blur);
     }
     p {
-//        padding-top: $spacer-1;
+        //        padding-top: $spacer-1;
         line-height: 1.6 !important;
         color: $off-black;
     }
@@ -1217,5 +1219,12 @@ section {
 }
 
 @media (min-width: 2000px) {
-    
+    //process 🟩
+    .gallery-b .cover, .gallery-s .cover {
+        transform: scale(0.4) !important;
+//        margin: $margin;
+    }
+    .gallery-b, .gallery-s {
+        margin: $bspacer-6 0;
+    }
 }
