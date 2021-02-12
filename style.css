@@ -853,10 +853,10 @@ section {
     max-width: calc(100vw - 12em) !important;
     height: auto !important; } }
 @media (min-width: 2000px) {
-  .gallery-b .cover, .gallery-s .cover {
-    transform: scale(0.4) translate(-100%, -100%) !important; }
+  .gallery-s {
+    margin-bottom: 18em; }
 
-  .gallery-b, .gallery-s {
-    margin: 18em 0; } }
+  .gallery-b {
+    margin: 12em 0; } }
 
 /*# sourceMappingURL=style.css.map */
