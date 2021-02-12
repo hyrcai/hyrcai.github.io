@@ -1221,7 +1221,7 @@ section {
 @media (min-width: 2000px) {
     //process 🟩
     .gallery-b .cover, .gallery-s .cover {
-        transform: scale(0.4) !important;
+        transform: scale(0.4) translate(-100%, -100%) !important;
 //        margin: $margin;
     }
     .gallery-b, .gallery-s {

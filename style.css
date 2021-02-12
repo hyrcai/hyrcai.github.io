@@ -854,7 +854,7 @@ section {
     height: auto !important; } }
 @media (min-width: 2000px) {
   .gallery-b .cover, .gallery-s .cover {
-    transform: scale(0.4) !important; }
+    transform: scale(0.4) translate(-100%, -100%) !important; }
 
   .gallery-b, .gallery-s {
     margin: 18em 0; } }
