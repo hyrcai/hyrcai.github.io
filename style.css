@@ -343,10 +343,10 @@ html {
       font: 500 1.25em/1.6 "Open Sans", Open Sans, sans-serif;
       padding-bottom: 1em;
       color: #323232; }
-  html .gallery {
+  html .gallery, html .subgallery {
     padding-bottom: 12em;
     width: calc(100% + 192px); }
-    html .gallery .project {
+    html .gallery .project, html .subgallery .project {
       position: absolute;
       width: 100%;
       padding: none;
@@ -354,7 +354,7 @@ html {
       line-height: 0;
       display: block;
       z-index: -10 !important; }
-      html .gallery .project .label {
+      html .gallery .project .label, html .subgallery .project .label {
         padding: 16px;
         opacity: 0;
         text-align: left;
@@ -367,7 +367,7 @@ html {
         color: white;
         border: 1px solid black;
         line-height: 1.6; }
-        html .gallery .project .label .title {
+        html .gallery .project .label .title, html .subgallery .project .label .title {
           font: 500 1.25em/1.6 "Open Sans", Open Sans, sans-serif;
           text-transform: capitalize;
           padding-bottom: 8px;
@@ -375,24 +375,24 @@ html {
           position: relative;
           top: 0;
           /*    font-weight: 600;*/ }
-        html .gallery .project .label .desc {
+        html .gallery .project .label .desc, html .subgallery .project .label .desc {
           font: 300 0.875em/1.4 "Asap", Asap, sans-serif;
           position: relative;
           padding-bottom: 16px;
           top: 0; }
-        html .gallery .project .label .subtitle, html .gallery .project .label .linespacer, html .gallery .project .label p:not([class]) {
+        html .gallery .project .label .subtitle, html .gallery .project .label .linespacer, html .gallery .project .label p:not([class]), html .subgallery .project .label .subtitle, html .subgallery .project .label .linespacer, html .subgallery .project .label p:not([class]) {
           display: none; }
-        html .gallery .project .label .spacer {
+        html .gallery .project .label .spacer, html .subgallery .project .label .spacer {
           color: white;
           margin-right: 0.25em; }
-    html .gallery .project:hover {
+    html .gallery .project:hover, html .subgallery .project:hover {
       z-index: 100 !important; }
-      html .gallery .project:hover .label {
+      html .gallery .project:hover .label, html .subgallery .project:hover .label {
         z-index: 1010 !important; }
-    html .gallery img, html .gallery video, html .gallery iframe {
+    html .gallery img, html .gallery video, html .gallery iframe, html .subgallery img, html .subgallery video, html .subgallery iframe {
       width: 100%;
       will-change: transform; }
-    html .gallery iframe {
+    html .gallery iframe, html .subgallery iframe {
       pointer-events: none; }
 
 caption {
@@ -565,11 +565,11 @@ section {
 
 .gallery-b {
   width: 100%;
-  margin-top: 6em; }
+  margin: 6em; }
 
 .gallery-s {
   width: 60%;
-  margin: auto; }
+  margin-bottom: 18em; }
 
 /*-----------------------------------------------*/
 #about {

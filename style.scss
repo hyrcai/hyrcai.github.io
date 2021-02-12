@@ -505,7 +505,7 @@ html {
             color: $off-black;
         }
     }
-    .gallery {
+    .gallery, .subgallery {
         padding-bottom: $bspacer-4;
         width: calc(100% + 192px);
         //    z-index: 0 !important;
@@ -853,11 +853,11 @@ section {
 }
 .gallery-b {
     width: 100%;
-    margin-top: $bspacer-2;
+    margin: $bspacer-2;
 }
 .gallery-s {
     width: 60%;
-    margin: auto;
+    margin-bottom: $bspacer-6;
 }
 
 /*-----------------------------------------------*/

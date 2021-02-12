@@ -58,7 +58,6 @@ var factor;
 
 // style covers based on active view 🟩
 styleVisibleProjects();
-styleVisibleProjects();
 document.addEventListener('click', (event) => {
     styleVisibleProjects();
 })
@@ -71,6 +70,9 @@ function styleVisibleProjects() {
     else if (home && home.classList.contains('gallery')) {
         visibleProjects = document.querySelectorAll('.project:not(.hidden)');
         styleGallery(visibleProjects);
+    }
+    else if (home && home.classList.contains('subgallery')) {
+        styleSubgallery();
     }
 }
 function styleList(visibleProjects) {
@@ -179,6 +181,62 @@ function styleGallery(visibleProjects) {
     // set height to position footer properly  🟩
     home.style.height = y + (margin * 2) + "px";
 }
+function styleSubgallery(visibleProjects) {
+    //    for (var i = 0; i < visibleProjects.length; i++) {
+    
+    let covers = document.getElementsByClassName('cover');
+    variation = margin * 4;
+    offsetY -= margin * 2;
+    
+    // position variables
+    columns = Math.floor(winWidth / 400);
+    xInterval = (winWidth - (margin * 4)) / columns;
+    yInterval = xInterval * 1.2;
+
+    for (var c = 0; c < covers.length; c++) {
+        let thisCover = covers[c];
+        let thisProject = thisCover.closest('.project');
+
+        let thisLabel = thisProject.querySelector('.label');
+
+        // hide all labels 🟩
+        thisLabel.classList.add('no-transition');
+        thisLabel.style.opacity = 0;
+        thisLabel.offsetHeight;
+        thisLabel.classList.remove('no-transition');
+
+        // get position
+        x = Math.ceil((c + 1) % columns) * xInterval + (margin * 2);
+        y = Math.ceil((c + 1) / columns) * yInterval;
+
+        // add some randomness 🟩
+//        factor = margin / 2;
+        xVariation = getRandomNumber(-variation, variation, margin);
+        yVariation = getRandomNumber(-variation, variation, margin);
+//        xVariation = 1;
+//        yVariation = 1;
+
+        //set position
+        thisCover.style.left = x + xVariation + (margin * 2) + "px";
+        thisCover.style.top = y + yVariation - header.offsetHeight + (margin * 6) + "px";
+
+        // scale by width or height 🟩
+        var width = thisCover.clientWidth;
+        var height = thisCover.clientHeight;
+        if (width > height) {
+            thisCover.style.maxWidth = winWidth * (0.14) + "px";
+            thisCover.style.width = "100%";
+        } else if (height > width) {
+            thisCover.firstElementChild.style.height = winWidth * (0.14) + "px";
+            thisCover.firstElementChild.style.width = "auto";
+        } else if (width == height) {
+            thisCover.style.maxWidth = winWidth * (0.12) + "px";
+        }
+    }
+    //    }
+    // set height to position footer properly  🟩
+    home.style.height = y + (margin * 2) + "px";
+}
 
 /*-----------------------------------------------*/
 //mouse interactions
@@ -222,7 +280,7 @@ function handleMouseMove(event) {
 
         /*-------------------------------------*/
         // gallery view 
-        if (home.classList.contains('gallery')) {
+        if (home.classList.contains('gallery') || home.classList.contains('subgallery')) {
             //add perspective based on mouse position
             var perspective = getPerspective(12);
             home.querySelector('.container').style.transform = "rotateX(" + perspective[1] + "deg) rotateY(" + perspective[0] + "deg)";
