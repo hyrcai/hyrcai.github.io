@@ -24,21 +24,25 @@ messages[show].style.display = "inline";
 // add type and medium attributes to projects
 for (var i = 0; i < projects.length; i++) {
     var thisProject = projects[i];
-    let thisLabel = thisProject.querySelector('.label');
-    var labelButtons = thisLabel.getElementsByTagName('button');
-    var types = "";
-    var mediums = "";
-    for (var b = 0; b < labelButtons.length; b++) {
-        var thisTag = labelButtons[b];
-        if (thisTag.getAttribute('type')) {
-            types += thisTag.getAttribute('type') + " ";
+    if (thisProject.querySelector('.label')) {
+        let thisLabel = thisProject.querySelector('.label');
+        
+        var labelButtons = thisLabel.getElementsByTagName('button');
+        var types = "";
+        var mediums = "";
+        for (var b = 0; b < labelButtons.length; b++) {
+            var thisTag = labelButtons[b];
+            if (thisTag.getAttribute('type')) {
+                types += thisTag.getAttribute('type') + " ";
+            }
+            if (thisTag.getAttribute('medium')) {
+                mediums += thisTag.getAttribute('medium') + " ";
+            }
         }
-        if (thisTag.getAttribute('medium')) {
-            mediums += thisTag.getAttribute('medium') + " ";
-        }
+        thisProject.setAttribute("type", types);
+        thisProject.setAttribute("medium", mediums);
     }
-    thisProject.setAttribute("type", types);
-    thisProject.setAttribute("medium", mediums);
+    
 }
 //check for safari
 
@@ -197,14 +201,19 @@ function styleSubgallery(visibleProjects) {
         let thisCover = covers[c];
         let thisProject = thisCover.closest('.project');
 
-        let thisLabel = thisProject.querySelector('.label');
+        let thisLabel = false;
+        if (thisProject.querySelector('.label')) {
+            thisLabel = thisProject.querySelector('.label');
+        }
 
         // hide all labels 🟩
-        thisLabel.classList.add('no-transition');
-        thisLabel.style.opacity = 0;
-        thisLabel.offsetHeight;
-        thisLabel.classList.remove('no-transition');
-
+        if (thisLabel) {
+            thisLabel.classList.add('no-transition');
+            thisLabel.style.opacity = 0;
+            thisLabel.offsetHeight;
+            thisLabel.classList.remove('no-transition');
+        }
+        
         // get position
         x = Math.ceil((c + 1) % columns) * xInterval + (margin * 2);
         y = Math.ceil((c + 1) / columns) * yInterval;
@@ -262,7 +271,7 @@ function handleMouseMove(event) {
             var thisCover = covers[c];
             var dist = calculateDistance(thisCover, mouseX, mouseY);
             if (dist < threshold) {
-                thisCover.style.transform = 'translate(-50%, -50%) scale(' + (1 + (threshold - (dist)) / (threshold)) + ')';
+                thisCover.style.transform = 'translate(-50%, -50%) scale(' + (1 + (threshold - (dist)) / (threshold / 2)) + ')';
             } else {
                 thisCover.style.transform = 'translate(-50%, -50%) scale(1)';
             }
@@ -286,10 +295,13 @@ function handleMouseMove(event) {
             home.querySelector('.container').style.transform = "rotateX(" + perspective[1] + "deg) rotateY(" + perspective[0] + "deg)";
 
             //show label if mouse is over cover
-            thisLabel.style.opacity = 0;
-            thisLabel.style.left = mouseX - (144) - (thisLabel.offsetWidth / 2) + 'px';
-            thisLabel.style.top = mouseY - offsetY + margin + 'px';
-            if (thisProject.matches(':hover')) {
+            if (thisLabel) {
+                thisLabel.style.opacity = 0;
+                thisLabel.style.left = mouseX - (144) - (thisLabel.offsetWidth / 2) + 'px';
+                thisLabel.style.top = mouseY - offsetY + margin + 'px';
+            }
+            
+            if (thisProject.matches(':hover') && home.classList.contains('gallery')) {
                 thisLabel.style.opacity = 1;
                 //                thisLabel.style.zIndex = 1010 + ;
             }

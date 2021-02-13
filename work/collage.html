@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+        <title>Hannah Cai</title>
+        <meta name="description" content="Hannah Cai's Portfolio">
+        <meta name="author" content="Hannah Cai">
+        <meta name="keywords" content="Hannah, Cai, design, art, photography, code, illustration, portfolio, work">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--        links-->
+        <link rel="stylesheet" href="../style.css">
+        <script type="text/javascript" src="../jquery-3.4.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#hamburger").click(function(){
+                    $("nav ul div").toggleClass('visible');
+                    $("main").toggleClass('blur'); 
+                    $("#favicon").toggleClass('blur');
+                    $("footer").toggleClass('blur');
+                    $("#project").toggleClass('visible');
+                    $("#hamburger").toggleClass('x');
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <!--         navbar -->
+        <nav>
+            <div class="container">
+                <video id="logo" autoplay muted loop>
+                    <source src="../logo.mp4">
+                </video>
+                <div id="site-links">
+                    <li><a target="_top" href="../index.html">Home</a></li>
+                    <li><a target="_top" href="../about.html">About</a></li>
+                    <li><a target="_blank" href="../resume.pdf">Resume</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------------------------------->
+
+
+        <header style="pointer-events: none">
+            <span> 
+                <h1>Collage</h1>
+                <h2>Miscellaneous digital and traditional collages I've made.</h2>
+            </span>
+            <div id="filter">
+                <!--                <div class="toggle"><button class="active text" id="any">match any tags</button><button class="text" id="all">match all tags</button></div>-->
+                <!--                <p>filter by <b>type:</b></p>-->
+                <button type="motion"></button><button type="graphic"></button><button type="photography"></button>
+                <div class="linespacer"></div>
+                <!--                <p>filter by <b>medium:</b></p>-->
+                <button medium="InDesign"></button><button medium="Photoshop"></button><button medium="Figma"></button><button medium="Procreate"></button><button medium="traditional media"></button>
+            </div>
+        </header>
+
+        <!--        ✱page content-->
+        <main>
+            <!--
+<div id="view" class="toggle">
+<button class="text" id="list">list view</button>
+<button class="text active" id="gallery">gallery view</button>
+</div>
+-->
+            <!--
+<header>
+<h1>collage</h1>
+<p class="subtitle">Procreate, Photoshop, Illustrator, paper; <i>sorted chronologically</i></p>
+</header>
+-->
+
+            <div class="home subgallery">
+                <div class="container">
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/all-seeing.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">All-seeing</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/cavernous.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Cavernous</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/echo.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Echo</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/EDEN_-_Wake_Up-1.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/EDEN_-_Wake_Up-2.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">EDEN - Wake Up</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/flamingo.JPG">
+                        </div>
+                        <div class="label">
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/house_of_cards-1.png">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/house_of_cards-2.png">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/house_of_cards-3.png">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/house_of_cards-4.png">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/house_of_cards-5.png">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/house_of_cards-6.png">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/house_of_cards-7.png">
+                        </div>
+                        <div class="label">
+                            <p class="caption">House of Cards</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="InDesign"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/magazines-1.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/magazines-2.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/magazines-3.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/magazines-4.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/magazines-5.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/magazines-6.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/magazines-7.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/magazines-8.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/magazines-9.jpg">
+                        </div>
+                        <div class="label">
+                            <button type="collage"></button><button class="spacer"></button><button medium="traditional media"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/modern_kandinsky.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="caption">A Modern Kandinsky</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Photoshop"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/moon_mining.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Moon Mining</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/mountainous_I.JPG">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/mountainous_II.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Mountainous</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/perspective.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Perspective</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/pittsburgh-1.JPG">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/pittsburgh-2.JPG">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/pittsburgh-3.JPG">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/pittsburgh-4.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Pittsburgh</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/sleepwalking.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Sleepwalking</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/street_songs.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Street Songs</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/tangram.png">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Tangram</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="InDesign"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/the_photographer.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="caption">The Photographer</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="traditional media"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/time.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Time</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/underwater_astronaut.JPG">
+                        </div>
+                        <div class="label">
+                            <p class="caption">Underwater Astronaut</p>
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="cover">
+                            <img src="collage/untitled-1.JPG">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-2.JPG">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-3.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-4.JPG">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-5.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-6.JPG">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-7.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-8.JPG">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-9.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-10.jpg">
+                        </div>
+                        <div class="cover">
+                            <img src="collage/untitled-11.PNG">
+                        </div>
+                        <div class="label">
+                            <button type="collage"></button><button class="spacer"></button><button medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div id="social-links">
+                    <a target="_blank" href="https://www.instagram.com/hyrcai/"><img src="../instagram.svg"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/hannah-cai/"><img src="../linkedin.svg"></a>
+                </div>
+                <div id="messages">
+                    <p>thank you for visiting! :)</p>
+                    <p>have a great day!</p>
+                    <p>🎵 currently listening to: <a href="https://open.spotify.com/track/2IFFKj9orAsQOOS0JRhHAW">Anderson .Paak - JEWELZ</a></p>
+                    <p>🎵 currently listening to: <a href="https://open.spotify.com/track/7jI6Se0BWVcF7ALTjQUBup">Lauv - Miss Me</a></p>
+                    <p>🎵 currently listening to: <a href="https://open.spotify.com/track/5rtc8Mp22059tlkPbSuKrk">The Nor'easters - The End of Love</a></p>
+                    <p>🎥 currently watching: <a href="https://youtu.be/WLxE_its-3k?t=240">Farewell - Witness (Tungtwist Remix) • Franklin Yu Choreography</a></p>
+                    <p>🎥 currently watching: <a href="https://www.youtube.com/watch?v=4DuNkr3oAEU">Låpsley - Station • Tessandra Chavez Choreography</a></p>
+                </div>
+                <p id="credits">© Hannah Cai • 2021</p>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="../style.js"></script>
+        <script>
+            $(document).ready(function() {
+
+                //add footer
+                //                $("#footer").load("footer.html"); 
+
+                //                $("body").addClass('hidden');
+
+                //hamburger menu
+                //                $("#hamburger").click(function(){
+                //                    $("nav ul div").toggleClass('visible');
+                //                    $("main").toggleClass('blur'); $("#favicon").toggleClass('blur');
+                //                    $("footer").toggleClass('blur'); $("#container").toggleClass('visible');
+                //                    $("#hamburger").toggleClass('x');
+                //                })
+
+                //filter & toggles 🟩
+                $("button").click(function(event){
+                    // make clicked tags active 🟩
+                    var clicked = $(event.target);
+                    if (!clicked.hasClass('text')){
+                        clicked.toggleClass('active');
+                    }
+                    // handle toggles 🟩
+                    if (clicked.parent(".toggle") && !clicked.hasClass('active') && clicked.hasClass('text')) {
+                        clicked.parent().children().toggleClass('active');
+                        //                        
+                        // toggle list/gallery view 🟩
+                        if ($("#list.active").length == 1) {
+                            $(".home").toggleClass('gallery').toggleClass('list');
+                        } else if ($("#gallery.active").length == 1) {
+                            $(".home").toggleClass('gallery').toggleClass('list');
+                        }
+                    }
+
+                    //handle active filter tags 🟩
+                    // type tags
+                    if (clicked.attr('type')) {
+                        //if specific tags active
+                        if ($("#filter button.active[type!='all']")  && (clicked.attr('type')!=='all') && clicked.attr('type')) {
+                            $("#filter button[type][type='all']").removeClass('active');
+                        }
+                        // if "all" active
+                        else if ($("#filter button.active[type='all']")) {
+                            $("#filter button.active[type][type!='all']").removeClass('active');
+                        }
+                        // if none active, turn on "all"
+                        if ($("#filter button.active[type]").length == 0) {
+                            ($("#filter button[type][type='all']")).addClass('active');
+                        }
+                    }
+                    // medium tags
+                    else if (clicked.attr('medium')) {
+                        // if specific tags active
+                        if ($("#filter button.active[medium!='all']")  && (clicked.attr('medium')!=='all') && clicked.attr('medium')) {
+                            $("#filter button[medium][medium='all']").removeClass('active');
+                        }
+                        // if "all" active
+                        else if ($("#filter button.active[medium='all']")) {
+                            $("#filter button.active[medium][medium!='all']").removeClass('active');
+                        }
+                        // if none active, turn on "all"
+                        if ($("#filter button.active[medium]").length == 0) {
+                            ($("#filter button[medium][medium='all']")).addClass('active');
+                        }
+                    }
+
+                    //show active tags 🟩
+                    // match any
+                    if ($("#any.active").length == 1) {
+                        $("#filter button.active[type]").each(function(){
+                            $("div[class*='project'][type*='" + $(this).attr('type') + "']").removeClass('hidden');
+                        })
+                        $("#filter button.active[medium]").each(function(){
+                            $("div[class*='project'][medium*='" + $(this).attr('medium') + "']").removeClass('hidden');
+                        })
+                    }
+                    // match all
+                    if ($("#all.active").length == 1) {
+                        $("div[class*='project'][type*='" + types + "'][medium*='" + mediums + "']").removeClass('hidden');
+                    }
+                    //show projects with active tags 
+                    var types = "";
+                    var mediums = "";
+                    // hide all projects
+                    $("div[class*='project']").addClass('hidden');
+                    // show projects with active type tags
+                    $("#filter button.active[type]").each(function(){
+                        types += $(this).attr('type') + " ";
+                    }) 
+                    // show projects with active medium tags
+                    $("#filter button.active[medium]").each(function(){
+                        mediums += $(this).attr('medium') + " ";
+                    }) 
+                    //show all projects if reset 
+                    if ($("#filter button.active[type='all']").length == 1 && $("#filter button.active[medium='all']").length == 1 && $("#all.active").length == 0) {
+                        $("div[class*='project']").removeClass('hidden');
+                    }
+
+                    //show message if no projects found 🟨
+                    if ($("div[class*='project']").length == $("div[class*='project'][class*='hidden']").length) {
+                        $("#no-matches").removeClass('hidden');
+                    } else {
+                        $("#no-matches").addClass('hidden');
+                    }
+                })
+            })
+        </script>
+
+    </body>
+</html>

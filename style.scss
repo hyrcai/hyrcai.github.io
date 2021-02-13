@@ -268,6 +268,9 @@ ul, ol {
     font: italic $body;
     padding-bottom: $spacer-3;
 }
+.final {
+    border: $border;
+}
 
 /*-----------------------------------------------*/
 //main navigation 🟩
@@ -504,6 +507,9 @@ html {
             padding-bottom: $spacer-4;
             color: $off-black;
         }
+    }
+    .subgallery .cover {
+        transform: translate(-50%, -50%);
     }
     .gallery, .subgallery {
         padding-bottom: $bspacer-4;
@@ -853,11 +859,15 @@ section {
 }
 .gallery-b {
     width: 100%;
-    margin: $bspacer-2;
+    margin: $bspacer-3;
+    margin-left: $margin;
 }
 .gallery-s {
     width: 60%;
     margin-bottom: $bspacer-6;
+}
+header .gallery-s {
+    margin-bottom: 0;
 }
 
 /*-----------------------------------------------*/

@@ -185,6 +185,9 @@ ul, ol {
   font: italic 300 0.875em/1.4 "Asap", Asap, sans-serif;
   padding-bottom: 0.75em; }
 
+.final {
+  border: 1px solid black; }
+
 /*-----------------------------------------------*/
 html {
   position: absolute; }
@@ -343,6 +346,8 @@ html {
       font: 500 1.25em/1.6 "Open Sans", Open Sans, sans-serif;
       padding-bottom: 1em;
       color: #323232; }
+  html .subgallery .cover {
+    transform: translate(-50%, -50%); }
   html .gallery, html .subgallery {
     padding-bottom: 12em;
     width: calc(100% + 192px); }
@@ -565,11 +570,15 @@ section {
 
 .gallery-b {
   width: 100%;
-  margin: 6em; }
+  margin: 9em;
+  margin-left: 3em; }
 
 .gallery-s {
   width: 60%;
   margin-bottom: 18em; }
+
+header .gallery-s {
+  margin-bottom: 0; }
 
 /*-----------------------------------------------*/
 #about {
