@@ -111,7 +111,7 @@ function style(galleries) {
                 thisCover.firstElementChild.style.width = "auto";
 
             } else {
-                thisCover.style.maxWidth = winWidth * ((size * 0.8) - factor) + "px";
+                thisCover.firstElementChild.style.maxWidth = winWidth * (size - factor) + "px";
             }
         }
         thisGallery.style.height = y + "px";
