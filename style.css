@@ -693,7 +693,8 @@ header .gallery-s {
 
   .gallery-b .cover {
     transform: scale(2.5) !important;
-    margin-left: 3em; }
+    margin-left: 3em;
+    object-fit: contain; }
 
   #overview {
     text-align: left !important;
