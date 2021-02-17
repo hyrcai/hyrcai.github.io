@@ -392,9 +392,9 @@ html {
             padding: $spacer-6 0;
             position: relative;
             left: $margin;
-            width: -moz-calc(100% - 96px);
-            width: -webkit-calc(100% - 96px);
-            width: calc(100% - 96px);
+            width: -moz-calc(100vw - 96px);
+            width: -webkit-calc(100vw - 96px);
+            width: calc(100vw - 96px);
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -1011,16 +1011,22 @@ header .gallery-s {
         transform: rotate(0) !important;
     }
     .gallery-b {
-        margin-top: 0;
+        margin-left: $spacer-3;
     }
     .gallery-b .cover {
         transform: scale(2.5) !important;
         margin-left: $margin;
     }
-    .callout, #overview {
+    #overview {
         text-align: left !important;
         width: auto;
         margin: 0;
+    }
+    .callout {
+        text-align: left !important;
+        width: auto;
+        margin: 0;
+        padding: 6em 0;
         margin-bottom: $bspacer-3;
     }
     .gallery-s .cover, .gallery-s .cover * {
