@@ -379,7 +379,7 @@ html {
         position: fixed;
         bottom: 0;
         z-index: 2000 !important;
-        width: 100%;
+        width: 100vw;
         box-sizing: border-box;
         background: $bg-transparent-light;
         background-filter: blur($bg-blur); 
