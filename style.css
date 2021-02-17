@@ -17,8 +17,8 @@ html {
   padding: 0;
   box-sizing: border-box;
   transition: 0.5s ease;
-  max-width: 100%;
-  width: 100%;
+  max-width: 100vw;
+  width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 16px;
@@ -676,7 +676,7 @@ header .gallery-s {
   .gallery-s, .container-s, .container-m {
     width: 100%; }
 
-  .gallery-s, .gallery-s .covers, .gallery-s .cover {
+  .gallery-s, .gallery-s .covers, .gallery-s .cover, .gallery-b, .gallery-b .covers, .gallery-b .cover {
     max-width: 100vw !important;
     transform: translate(0, 0) !important;
     position: static;
@@ -687,14 +687,6 @@ header .gallery-s {
 
   .gallery-s, .gallery-b {
     transform: rotate(0) !important; }
-
-  .gallery-b {
-    margin-left: 0.75em; }
-
-  .gallery-b .cover {
-    transform: scale(2.5) !important;
-    margin-left: 3em;
-    object-fit: contain; }
 
   #overview {
     text-align: left !important;
@@ -708,7 +700,7 @@ header .gallery-s {
     padding: 6em 0;
     margin-bottom: 9em; }
 
-  .gallery-s .cover, .gallery-s .cover * {
+  .gallery-s .cover, .gallery-s .cover *, .gallery-b .cover, .gallery-b .cover * {
     max-width: calc(100vw - 6em) !important;
     height: auto !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
