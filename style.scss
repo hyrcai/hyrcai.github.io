@@ -116,10 +116,19 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: $spacer-6;
-        height: $spacer-6;
+        width: $margin;
+        height: $margin;
     }
 }
+//#loader:after {
+//    background: url(favicon.png);
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//    width: $spacer-6;
+//    height: $spacer-6;
+//}
 b, i {
     font-size: inherit;
 }

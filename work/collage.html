@@ -25,6 +25,11 @@
         </script>
     </head>
     <body>
+        <div id="loader">
+            <video autoplay muted loop>
+                <source src="../logo.mp4">
+            </video>
+        </div>
         <!--         navbar -->
         <nav>
             <div class="container">
@@ -481,6 +486,11 @@
                     }
                 })
             })
+        </script>
+        <script>
+            $(window).on('load', function() {
+                $('#loader').addClass('hidden');
+            });
         </script>
 
     </body>
