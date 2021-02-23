@@ -446,6 +446,10 @@ html {
             position: relative;
             -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+            
+//            .container {
+//                transform: 
+//            }
 
 
             //        .project {
@@ -462,6 +466,7 @@ html {
             //            //            transform: translate3d(0, 0, 0);
             //            //            -webkit-transform: translate3d(0, 0, 0);
             //        }
+            
         }
         #no-matches {
             width: calc(100% - 96px);
@@ -473,7 +478,7 @@ html {
         }
     }
     .list {
-        padding-top: $margin;
+        padding-top: $bspacer-2;
         .project:not(.spotlight) {
             display: none;
         }
@@ -519,6 +524,12 @@ html {
     }
     .subgallery .cover {
         transform: translate(-50%, -50%);
+    }
+    .gallery {
+        padding-top: $bspacer-2;
+        .cover {
+            transform: translate(-50%, -50%);
+        }
     }
     .gallery, .subgallery {
         padding-bottom: $bspacer-4;

@@ -312,7 +312,7 @@ html {
       left: 50%;
       transform: translateX(-50%); }
   html .list {
-    padding-top: 3em; }
+    padding-top: 6em; }
     html .list .project:not(.spotlight) {
       display: none; }
     html .list .project {
@@ -348,6 +348,10 @@ html {
       color: #323232; }
   html .subgallery .cover {
     transform: translate(-50%, -50%); }
+  html .gallery {
+    padding-top: 6em; }
+    html .gallery .cover {
+      transform: translate(-50%, -50%); }
   html .gallery, html .subgallery {
     padding-bottom: 12em;
     width: calc(100% + 192px); }
