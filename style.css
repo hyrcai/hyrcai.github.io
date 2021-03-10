@@ -142,7 +142,7 @@ ul, ol {
   visibility: hidden;
   filter: blur(12px);
   display: none;
-  transition: visibility 0.75s, opacity 0.75s ease, filter 0.75s ease, transform 0.75s ease, margin-top 0.75s ease, display 0.75s; }
+  transition: visibility 0.75s ease, opacity 0.75s ease, filter 0.75s ease, transform 0.75s ease, margin-top 0.75s ease, display 0.75s ease; }
 
 .no-transition {
   -webkit-transition: none !important;
@@ -156,6 +156,9 @@ ul, ol {
   flex-direction: row;
   align-content: center;
   justify-content: space-between; }
+
+.flex-container img, .flex-container video, .flex-container span {
+  width: 100%; }
 
 .flex-container.equal * {
   flex-wrap: wrap;
@@ -187,6 +190,33 @@ ul, ol {
 
 .final {
   border: 1px solid black; }
+
+.display-b {
+  width: 100%;
+  padding-top: 6em;
+  line-height: 0; }
+  .display-b .flex-container {
+    margin-bottom: 1.5em;
+    flex-shrink: 2; }
+  .display-b .flex-container span:first-child {
+    margin-right: 1.5em; }
+  .display-b .flex-container img, .display-b .flex-container video {
+    box-shadow: 0 0.5em 3em #e6e6e6; }
+
+.display-b > img, .display-b > video {
+  width: 100%;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0.5em 3em #e6e6e6; }
+
+.progress {
+  width: 100%;
+  font: 500 0.875em/1.4 "Asap", Asap, sans-serif;
+  border-top: 1px solid black;
+  text-transform: capitalize;
+  padding: 1em 0; }
+
+.progress:before {
+  content: "read more"; }
 
 /*-----------------------------------------------*/
 html {
@@ -317,7 +347,7 @@ html {
       display: none; }
     html .list .project {
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column-reverse;
       justify-content: space-between;
       align-content: center;
       margin-bottom: 9em;
@@ -332,7 +362,7 @@ html {
       transform-origin: center;
       transform: translate(-50%, -50%); }
     html .list .label {
-      width: 40%;
+      width: 100%;
       color: black;
       opacity: 1; }
       html .list .label p:not([class]) {

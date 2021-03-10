@@ -225,7 +225,7 @@ ul, ol {
     visibility: hidden;
     filter: blur($blur);
     display: none;
-    transition: visibility 0.75s, opacity 0.75s ease, filter 0.75s ease, transform 0.75s ease, margin-top 0.75s ease, display 0.75s;
+    transition: visibility 0.75s ease, opacity 0.75s ease, filter 0.75s ease, transform 0.75s ease, margin-top 0.75s ease, display 0.75s ease;
 }
 .no-transition {
     -webkit-transition: none !important;
@@ -239,6 +239,9 @@ ul, ol {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
+}
+.flex-container img, .flex-container video, .flex-container span {
+    width: 100%;
 }
 .flex-container.equal * {
     flex-wrap: wrap;
@@ -279,6 +282,38 @@ ul, ol {
 }
 .final {
     border: $border;
+}
+.display-b {
+    width: 100%;
+    padding-top: $bspacer-2;
+    line-height: 0;
+    .flex-container {
+        margin-bottom: $spacer-6;
+        flex-shrink: 2;
+    }
+    .flex-container span:first-child {
+        margin-right: $spacer-6;
+    }
+    .flex-container img, .flex-container video {
+//        margin: 0 $spacer-4;
+        box-shadow: 0 $spacer-2 $margin $grey-b1;
+    }
+}
+.display-b > img, .display-b > video {
+    width: 100%;
+    margin-bottom: $spacer-6;
+    box-shadow: 0 $spacer-2 $margin $grey-b1;
+}
+.progress {
+    width: 100%;
+    font: $body-bold;
+    border-top: $border;
+//    border-bottom: $border;
+    text-transform: capitalize;
+    padding: $spacer-4 0;
+}
+.progress:before {
+    content: "read more";
 }
 
 /*-----------------------------------------------*/
@@ -484,7 +519,7 @@ html {
         }
         .project {
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: column-reverse;
             justify-content: space-between;
             align-content: center;
             margin-bottom: $bspacer-3;
@@ -502,7 +537,7 @@ html {
             transform: translate(-50%, -50%);
         }
         .label {
-            width: 40%;
+            width: 100%;
             color: black;
             opacity: 1;
             p:not([class]) {

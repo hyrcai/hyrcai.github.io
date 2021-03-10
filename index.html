@@ -21,10 +21,10 @@
     </head>
     <body>
         <div id="loader">
-<!--
-            <video autoplay muted loop>
-                <source src="logo.mp4">
-            </video>
+            <!--
+<video autoplay muted loop>
+<source src="logo.mp4">
+</video>
 -->
         </div>
         <!--         navbar -->
@@ -57,8 +57,8 @@
                     </video>
                 </a>
                 <div id="site-links">
-                    <li><a class="active" target="_top" href="index.html">spotlight</a></li>
-                    <li><a target="_top" href="gallery.html">gallery</a></li>
+                    <li><a id="spotlight" class="active" target="_top" href="index.html">spotlight</a></li>
+                    <li><a id="gallery" target="_top" href="gallery.html">gallery</a></li>
                     <li><a target="_top" href="about.html">About</a></li>
                     <li><a target="_blank" href="Hannah_Cai-resume.pdf">Resume</a></li>
                 </div>
@@ -84,11 +84,11 @@
 
         <!--        ✱page content-->
         <main>
-<!--
-            <div id="view" class="toggle">
-                <button class="active text" id="list">spotlight</button>
-                <button class="text" id="gallery">gallery</button>
-            </div>
+            <!--
+<div id="view" class="toggle">
+<button class="active text" id="list">spotlight</button>
+<button class="text" id="gallery">gallery</button>
+</div>
 -->
 
             <div class="home list">
@@ -100,30 +100,104 @@
 
                     <a href="work/NOVID.html">
                         <div class="project spotlight">
-                            <div class="perspective">
-                                <div class="cover">
-                                    <img src="work/NOVID/graphic/yardsign.jpeg">
+                            <div class="display-b">
+                                <div class="flex-container">
+                                    <span>
+                                        <img src="work/NOVID/design-system/branding.gif">
+                                    </span>
+                                    <span>
+                                        <img src="work/NOVID/UI:UX/light-dark.png">
+                                    </span>
                                 </div>
-                                <div class="cover">
-                                    <img src="work/NOVID/design-system/color-contrast.png">
+                                <video autoplay muted loop>
+                                    <source src="work/NOVID/UI:UX/report-flow.mov">
+                                </video>
+                                <div class="flex-container">
+                                    <span>
+                                        <img src="work/NOVID/UI:UX/onboarding.png">
+                                    </span>
+                                    <span>
+                                        <video autoplay muted loop>
+                                            <source src="work/NOVID/motion/walking.mp4">
+                                        </video>
+                                    </span>
                                 </div>
-                                <div class="cover">
-                                    <img src="work/NOVID/UI:UX/report-full-flow.png">
+                                <video autoplay muted loop>
+                                    <source src="work/NOVID/UI:UX/radar-motion.mov">
+                                </video>
+                                <div class="flex-container">
+                                    <span>
+                                        <video autoplay muted loop>
+                                            <source src="work/NOVID/motion/hand.mp4">
+                                        </video>
+                                    </span>
+                                    <span>
+                                        <video autoplay muted loop>
+                                            <source src="work/NOVID/motion/landing-scrapped.mp4">
+                                        </video>
+                                    </span>
                                 </div>
-                                <div class="cover">
-                                    <video autoplay muted loop>
-                                        <source src="work/NOVID/motion/landing-scrapped.mp4">
-                                    </video>
+                                <img src="work/NOVID/design-system/app-type.png">
+
+                                <div class="flex-container">
+                                    <span>
+                                        <img src="work/NOVID/design-system/colors.png">
+                                    </span>
+                                    <span>
+                                        <img src="work/NOVID/design-system/color-contrast.png">
+                                    </span>
                                 </div>
-                                <div class="cover">
-                                    <video autoplay muted loop>
-                                        <source src="work/NOVID/motion/walking.mp4">
-                                    </video>
+                                <img src="work/NOVID/UI:UX/modules.png">
+                                <div class="flex-container">
+                                    <span>
+                                        <img src="work/NOVID/design-system/buttons-1.png">
+                                    </span>
+                                    <span>
+                                        <img src="work/NOVID/design-system/icons.gif">
+                                    </span>
                                 </div>
-                                <div class="cover">
-                                    <img src="work/NOVID/cover.png">
+                                <video autoplay muted loop>
+                                    <source src="work/NOVID/motion/community-dash.mp4">
+                                </video>
+                                <div class="flex-container">
+                                    <span>
+                                        <img src="work/NOVID/graphic/Harvard.png">
+                                    </span>
+                                    <span>
+                                        <img src="work/NOVID/graphic/campus.png">
+                                    </span>
                                 </div>
+                                <!--                <img src="NOVID/graphic/posters.png">-->
+
                             </div>
+                            <!--
+
+<div class="perspective">
+<div class="cover">
+<img src="work/NOVID/graphic/yardsign.jpeg">
+</div>
+<div class="cover">
+<img src="work/NOVID/design-system/color-contrast.png">
+</div>
+<div class="cover">
+<img src="work/NOVID/UI:UX/report-full-flow.png">
+</div>
+<div class="cover">
+<video autoplay muted loop>
+<source src="work/NOVID/motion/landing-scrapped.mp4">
+</video>
+</div>
+<div class="cover">
+<video autoplay muted loop>
+<source src="work/NOVID/motion/walking.mp4">
+</video>
+</div>
+<div class="cover">
+<img src="work/NOVID/cover.png">
+</div>
+</div>
+-->
+
                             <div class="label">
                                 <p class="title">NOVID</p>
                                 <p class="desc">The future of contact tracing and pandemic response: a cross-platform service visualizing the status of your social circle.</p>
@@ -143,20 +217,37 @@
 
                     <a href="work/poetry-visualizer.html">
                         <div class="project spotlight">
-                            <div class="perspective">
-                                <div class="cover">
-                                    <img src="work/poetry-visualizer/b7.jpg">
+                            <div class="display-b">
+                                <img src="work/poetry-bg-01.png">
+                                <div class="flex-container">
+                                    <span>
+                                        <img src="work/poetry-visualizer/love-song-1.jpg">
+                                    </span>
+                                    <span>
+                                        <img src="work/poetry-visualizer/love-song-2.jpg">
+                                    </span>
                                 </div>
-                                <div class="cover">
-                                    <img src="work/poetry-visualizer/basil.png">
-                                </div>
-                                <div class="cover">
-                                    <img src="work/poetry-visualizer/c3.png">
-                                </div>
-                                <div class="cover">
-                                    <img src="work/poetry-bg-01.png">
-                                </div>
+                                <video autoplay muted loop>
+                                    <source src="work/poetry-visualizer/script.mov">
+                                </video>
                             </div>
+
+                            <!--
+<div class="perspective">
+<div class="cover">
+<img src="work/poetry-visualizer/b7.jpg">
+</div>
+<div class="cover">
+<img src="work/poetry-visualizer/basil.png">
+</div>
+<div class="cover">
+<img src="work/poetry-visualizer/c3.png">
+</div>
+<div class="cover">
+<img src="work/poetry-bg-01.png">
+</div>
+</div>
+-->
                             <div class="label">
                                 <p class="title">Synesthesia</p>
                                 <p class="desc">A programmatic poetry visualizer made with text processing and InDesign scripts.</p>
@@ -174,11 +265,30 @@
 
                     <a href="work/UN-goals-video.html">
                         <div class="project spotlight">
-                            <div class="perspective">
-                                <div class="cover">
-                                    <img src="work/UN.gif">
+                            <div class="display-b">
+                                <div style="padding:56.25% 0 0 0;position:relative"><iframe src="https://player.vimeo.com/video/385099932?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                <div class="flex-container" style="margin-top: 24px">
+                                    <span>
+                                        <video autoplay muted loop>
+                                            <source src="work/UN-goals/scene-2.mov">
+                                        </video>
+                                    </span>
+                                    <span>
+                                        <video autoplay muted loop>
+                                            <source src="work/UN-goals/scene-1.mov">
+                                        </video>
+                                    </span>
                                 </div>
+
                             </div>
+
+                            <!--
+<div class="perspective">
+<div class="cover">
+<img src="work/UN.gif">
+</div>
+</div>
+-->
                             <div class="label">
                                 <p class="title">UN SDG #14: Life Under Water</p>
                                 <p class="desc">A motion piece  aligned with the UN Sustainable Development Goals campaign, aiming to promote awareness and action.</p>
@@ -250,13 +360,13 @@
                     // handle toggles 
                     if (clicked.parent(".toggle") && !clicked.hasClass('active') && clicked.hasClass('text')) {
                         clicked.parent().children().toggleClass('active');
-                        //                        
-                        // toggle list/gallery view 🟩
-                        if ($("#list.active").length == 1) {
-                            $(".home").removeClass('gallery').addClass('list');
-                        } else if ($("#gallery.active").length == 1) {
-                            $(".home").removeClass('list').addClass('gallery');
-                        }
+                        //                        //                        
+                        //                        // toggle list/gallery view 🟩
+                        //                        if ($("#list.active").length == 1) {
+                        //                            $(".home").removeClass('gallery').addClass('list');
+                        //                        } else if ($("#gallery.active").length == 1) {
+                        //                            $(".home").removeClass('list').addClass('gallery');
+                        //                        }
                     }
                     //mark active filter tags
                     // type tags
@@ -296,7 +406,7 @@
 
                     //show projects with active tags 🟩
                     //match any
-                    if ($("#list.active").length == 1 && $("#any.active").length == 1) {
+                    if ($("#spotlight.active").length == 1 && $("#any.active").length == 1) {
                         $("#filter button.active[type]").each(function(){
                             $("div[class*='project spotlight'][type*='" + $(this).attr('type') + "']").removeClass('hidden');
                             $("div[class*='spotlight'][type*='" + $(this).attr('type') + "']").parent().removeClass('hidden');
@@ -329,7 +439,7 @@
                             mediums += $(this).attr('medium') + " ";
                         })
                         // list view
-                        if ($("#list.active").length == 1) {
+                        if ($("#spotlight.active").length == 1) {
                             $("div[class*='project spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).removeClass('hidden');
                             $("div[class*='spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).parent().removeClass('hidden');
                         } 
@@ -347,7 +457,7 @@
                     }
 
                     //show message if no projects found 🟩
-                    if ($("#list.active")) {
+                    if ($("#spotlight.active")) {
                         if ($("div[class*='project spotlight']").length == $("div[class*='project spotlight'][class*='hidden']").length) {
                             $("#no-matches").removeClass('hidden');
                         } else {

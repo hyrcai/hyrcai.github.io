@@ -15,10 +15,10 @@
     </head>
     <body>
         <div id="loader">
-<!--
-            <video autoplay muted loop>
-                <source src="../logo.mp4">
-            </video>
+            <!--
+<video autoplay muted loop>
+<source src="../logo.mp4">
+</video>
 -->
         </div>
         <!--         navbar -->
@@ -32,7 +32,7 @@
                 <div id="site-links">
                     <li><a target="_top" href="../index.html">spotlight</a></li>
                     <li><a target="_top" href="../gallery.html">gallery</a></li>
-                    <li><a class="active" target="_top" href="../about.html">About</a></li>
+                    <li><a target="_top" href="../about.html">About</a></li>
                     <li><a target="_blank" href="../Hannah_Cai-resume.pdf">Resume</a></li>
                 </div>
             </div>
@@ -68,10 +68,11 @@
             </span>
             <div class="gallery-s">
                 <div class="covers">
-                    <img src="NOVID/cover.png">
+                    <img src="NOVID/UI:UX/light-dark.png">
                 </div>
             </div>
         </header>
+
 
         <main>
             <div class="home process">
@@ -458,7 +459,7 @@
                             </div>
                         </div>
                     </section>
-                    
+
                     <section>
                         <span class="flex-container">
                             <span class="container-s">
@@ -611,7 +612,11 @@
         <script>
             $(window).on('load', function() {
                 $('#loader').addClass('hidden');
+                $(".progress").click(function() {
+                    $("main").toggleClass('hidden');
+                });
             });
+
         </script>
     </body>
 </html>
