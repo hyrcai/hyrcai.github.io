@@ -240,7 +240,7 @@ ul, ol {
     align-content: center;
     justify-content: space-between;
 }
-.flex-container img, .flex-container video, .flex-container span {
+.flex-container img, .flex-container video, .flex-container span:not(.container-m, .container-s) {
     width: 100%;
 }
 .flex-container.equal * {
@@ -994,6 +994,9 @@ header .gallery-s {
             padding-left: $spacer-5; 
             transform: translateX(0.6em);
         }
+        #gallery {
+            display: none;
+        }
     }
     header {
         margin: 0 $margin !important;
@@ -1001,6 +1004,9 @@ header .gallery-s {
         align-items: flex-start;
         #filter {
             display: none;
+        }
+        h2 {
+            padding-bottom: 0 !important;
         }
     }
     #view {
@@ -1026,9 +1032,11 @@ header .gallery-s {
                         margin: $margin 0;
                     }
                 }
-
             }
         }
+    }
+    .display-b .flex-container span:first-child {
+        margin-bottom: $spacer-6;
     }
     #about {
         padding-top: $bspacer-4 !important;
@@ -1114,11 +1122,14 @@ header .gallery-s {
         }
     }
     header {
-        flex-direction: column !important;
+        flex-direction: row !important;
         margin: 0 $margin !important;
         align-items: flex-start !important;
         #filter {
             display: none;
+        }
+        h2 {
+            padding-bottom: 0 !important;
         }
     }
     #view {
@@ -1148,6 +1159,9 @@ header .gallery-s {
 
             }
         }
+    }
+    .display-b .flex-container span:first-child {
+        margin-bottom: $spacer-6;
     }
     #about {
         padding-top: $bspacer-4 !important;
@@ -1208,9 +1222,9 @@ header .gallery-s {
     header {
         flex-direction: column !important;
         margin: 0 $bspacer-2 !important;
-        align-items: flex-start;
+        align-items: flex-start !important;
         h2 {
-            padding-bottom: $spacer-3;
+            padding-bottom: 0 !important;
         }
         span {
             height: auto;
@@ -1246,6 +1260,9 @@ header .gallery-s {
                 }
             }
         }
+    }
+    .display-b .flex-container span:first-child {
+        margin-bottom: $spacer-6;
     }
     footer #messages {
         display: none;

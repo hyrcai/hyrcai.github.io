@@ -157,7 +157,7 @@ ul, ol {
   align-content: center;
   justify-content: space-between; }
 
-.flex-container img, .flex-container video, .flex-container span {
+.flex-container img, .flex-container video, .flex-container span:not(.container-m, .container-s) {
   width: 100%; }
 
 .flex-container.equal * {
@@ -662,6 +662,8 @@ header .gallery-s {
     height: 1.25em !important;
     padding-left: 1.25em;
     transform: translateX(0.6em); }
+  nav #gallery {
+    display: none; }
 
   header {
     margin: 0 3em !important;
@@ -669,6 +671,8 @@ header .gallery-s {
     align-items: flex-start; }
     header #filter {
       display: none; }
+    header h2 {
+      padding-bottom: 0 !important; }
 
   #view {
     display: none; }
@@ -688,6 +692,9 @@ header .gallery-s {
           transform: translate(0, 0) !important;
           position: static;
           margin: 3em 0; }
+
+  .display-b .flex-container span:first-child {
+    margin-bottom: 1.5em; }
 
   #about {
     padding-top: 12em !important; }
@@ -752,11 +759,13 @@ header .gallery-s {
     transform: translateX(0.6em); }
 
   header {
-    flex-direction: column !important;
+    flex-direction: row !important;
     margin: 0 3em !important;
     align-items: flex-start !important; }
     header #filter {
       display: none; }
+    header h2 {
+      padding-bottom: 0 !important; }
 
   #view {
     display: none; }
@@ -777,6 +786,9 @@ header .gallery-s {
           transform: translate(0, 0) !important;
           position: static;
           margin: 3em 0; }
+
+  .display-b .flex-container span:first-child {
+    margin-bottom: 1.5em; }
 
   #about {
     padding-top: 12em !important; }
@@ -828,9 +840,9 @@ header .gallery-s {
   header {
     flex-direction: column !important;
     margin: 0 6em !important;
-    align-items: flex-start; }
+    align-items: flex-start !important; }
     header h2 {
-      padding-bottom: 0.75em; }
+      padding-bottom: 0 !important; }
     header span {
       height: auto; }
     header #filter {
@@ -855,6 +867,9 @@ header .gallery-s {
           transform: translate(0, 0) !important;
           position: static;
           margin: 3em 0; }
+
+  .display-b .flex-container span:first-child {
+    margin-bottom: 1.5em; }
 
   footer #messages {
     display: none; }

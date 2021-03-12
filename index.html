@@ -20,35 +20,7 @@
 
     </head>
     <body>
-        <div id="loader">
-            <!--
-<video autoplay muted loop>
-<source src="logo.mp4">
-</video>
--->
-        </div>
-        <!--         navbar -->
-        <!--
-<nav>
-<a href="#" id="hamburger">
-<span>
-<div></div>
-<div></div>
-<div></div>
-</span>
-</a>
-<div class="radial-blur"></div>
-<ul>
-<li><a target="_top" href="index.html"><img id="favicon" src="favicon.png"></a></li>
-<div>
-<li><a class="active" target="_top" href="index.html">Home</a></li>
-<li><a target="_top" href="about.html">About</a></li>
-<li><a target="_blank" href="resume.pdf">Resume</a></li>
-</div>
-</ul>
-</nav>
--->
-        <!--        <div id="cursor"><p></p></div>-->
+        <div id="loader"></div>
         <nav>
             <div class="container">
                 <a target="_top" href="index.html">
@@ -84,13 +56,6 @@
 
         <!--        ✱page content-->
         <main>
-            <!--
-<div id="view" class="toggle">
-<button class="active text" id="list">spotlight</button>
-<button class="text" id="gallery">gallery</button>
-</div>
--->
-
             <div class="home list">
                 <div class="container">
                     <div id="no-matches" class="hidden">
@@ -110,7 +75,7 @@
                                     </span>
                                 </div>
                                 <video autoplay muted loop>
-                                    <source src="work/NOVID/UI:UX/report-flow.mov">
+                                    <source src="work/NOVID/UI:UX/report-flow.mp4">
                                 </video>
                                 <div class="flex-container">
                                     <span>
@@ -170,34 +135,6 @@
                                 <!--                <img src="NOVID/graphic/posters.png">-->
 
                             </div>
-                            <!--
-
-<div class="perspective">
-<div class="cover">
-<img src="work/NOVID/graphic/yardsign.jpeg">
-</div>
-<div class="cover">
-<img src="work/NOVID/design-system/color-contrast.png">
-</div>
-<div class="cover">
-<img src="work/NOVID/UI:UX/report-full-flow.png">
-</div>
-<div class="cover">
-<video autoplay muted loop>
-<source src="work/NOVID/motion/landing-scrapped.mp4">
-</video>
-</div>
-<div class="cover">
-<video autoplay muted loop>
-<source src="work/NOVID/motion/walking.mp4">
-</video>
-</div>
-<div class="cover">
-<img src="work/NOVID/cover.png">
-</div>
-</div>
--->
-
                             <div class="label">
                                 <p class="title">NOVID</p>
                                 <p class="desc">The future of contact tracing and pandemic response: a cross-platform service visualizing the status of your social circle.</p>
@@ -218,7 +155,7 @@
                     <a href="work/poetry-visualizer.html">
                         <div class="project spotlight">
                             <div class="display-b">
-                                <img src="work/poetry-bg-01.png">
+                                <img src="work/poetry-visualizer/final-mockup.png">
                                 <div class="flex-container">
                                     <span>
                                         <img src="work/poetry-visualizer/love-song-1.jpg">
@@ -231,23 +168,6 @@
                                     <source src="work/poetry-visualizer/script.mov">
                                 </video>
                             </div>
-
-                            <!--
-<div class="perspective">
-<div class="cover">
-<img src="work/poetry-visualizer/b7.jpg">
-</div>
-<div class="cover">
-<img src="work/poetry-visualizer/basil.png">
-</div>
-<div class="cover">
-<img src="work/poetry-visualizer/c3.png">
-</div>
-<div class="cover">
-<img src="work/poetry-bg-01.png">
-</div>
-</div>
--->
                             <div class="label">
                                 <p class="title">Synesthesia</p>
                                 <p class="desc">A programmatic poetry visualizer made with text processing and InDesign scripts.</p>
@@ -281,14 +201,6 @@
                                 </div>
 
                             </div>
-
-                            <!--
-<div class="perspective">
-<div class="cover">
-<img src="work/UN.gif">
-</div>
-</div>
--->
                             <div class="label">
                                 <p class="title">UN SDG #14: Life Under Water</p>
                                 <p class="desc">A motion piece  aligned with the UN Sustainable Development Goals campaign, aiming to promote awareness and action.</p>
@@ -303,7 +215,6 @@
                             </div>	
                         </div>
                     </a>
-
                 </div>
             </div>
         </main>
@@ -327,7 +238,6 @@
             </div>
         </footer>
 
-        <!--        <script type="text/javascript" src="drag.js"></script>-->
         <script>
             $(window).on('load', function() {
                 $('#loader').addClass('hidden');
@@ -360,13 +270,6 @@
                     // handle toggles 
                     if (clicked.parent(".toggle") && !clicked.hasClass('active') && clicked.hasClass('text')) {
                         clicked.parent().children().toggleClass('active');
-                        //                        //                        
-                        //                        // toggle list/gallery view 🟩
-                        //                        if ($("#list.active").length == 1) {
-                        //                            $(".home").removeClass('gallery').addClass('list');
-                        //                        } else if ($("#gallery.active").length == 1) {
-                        //                            $(".home").removeClass('list').addClass('gallery');
-                        //                        }
                     }
                     //mark active filter tags
                     // type tags
