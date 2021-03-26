@@ -133,7 +133,9 @@
                         <div class="project spotlight">
                             <div class="perspective">
                                 <div class="cover">
-                                    <img src="work/UN-goals/cover.gif">
+                                    <video autoplay muted loop>
+                                        <source src="work/UN-goals/cover.mov">
+                                    </video>
                                 </div>
                             </div>
                             <div class="label">
@@ -376,7 +378,7 @@
                     </div>	
 
                     <div class="project">
-                        <a href="work/mobile-pizza-order/final-mockup.png">
+                        <a href="work/mobile-pizza-order.html">
 
                             <div class="perspective">
                                 <div class="cover">
@@ -665,27 +667,27 @@
 
                     // hide all projects
                     $("div[class*='project']").addClass('hidden');
-                    $("div[class*='spotlight']").parent().addClass('hidden');
+//                    $("div[class*='spotlight']").parent().addClass('hidden');
 
                     //show projects with active tags 🟩
                     //match any
                     if ($("#list.active").length == 1 && $("#any.active").length == 1) {
                         $("#filter button.active[type]").each(function(){
                             $("div[class*='project spotlight'][type*='" + $(this).attr('type') + "']").removeClass('hidden');
-                            $("div[class*='spotlight'][type*='" + $(this).attr('type') + "']").parent().removeClass('hidden');
+//                            $("div[class*='spotlight'][type*='" + $(this).attr('type') + "']").parent().removeClass('hidden');
                         })
                         $("#filter button.active[medium]").each(function(){
                             $("div[class*='project spotlight'][medium*='" + $(this).attr('medium') + "']").removeClass('hidden');
-                            $("div[class*='spotlight'][medium*='" + $(this).attr('medium') + "']").parent().removeClass('hidden');
+//                            $("div[class*='spotlight'][medium*='" + $(this).attr('medium') + "']").parent().removeClass('hidden');
                         })
                     } else if ($("#gallery.active").length == 1 && $("#any.active").length == 1) {
                         $("#filter button.active[type]").each(function(){
                             $("div[class*='project'][type*='" + $(this).attr('type') + "']").removeClass('hidden');
-                            $("div[class*='spotlight'][type*='" + $(this).attr('type') + "']").parent().removeClass('hidden');
+//                            $("div[class*='spotlight'][type*='" + $(this).attr('type') + "']").parent().removeClass('hidden');
                         })
                         $("#filter button.active[medium]").each(function(){
                             $("div[class*='project'][medium*='" + $(this).attr('medium') + "']").removeClass('hidden');
-                            $("div[class*='spotlight'][medium*='" + $(this).attr('medium') + "']").parent().removeClass('hidden');
+//                            $("div[class*='spotlight'][medium*='" + $(this).attr('medium') + "']").parent().removeClass('hidden');
                         })
                     }
 
@@ -704,19 +706,19 @@
                         // list view
                         if ($("#list.active").length == 1) {
                             $("div[class*='project spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).removeClass('hidden');
-                            $("div[class*='spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).parent().removeClass('hidden');
+//                            $("div[class*='spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).parent().removeClass('hidden');
                         } 
                         // gallery view
                         else if ($("#gallery.active").length == 1) {
                             $("div[class*='project']" + chainValues("type", types) + chainValues("medium", mediums)).removeClass('hidden');
-                            $("div[class*='spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).parent().removeClass('hidden');
+//                            $("div[class*='spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).parent().removeClass('hidden');
                         }
                     }
 
                     //show all projects if reset 🟩
                     if ($("#filter button.active[type='all']").length == 1 && $("#filter button.active[medium='all']").length == 1 && $("#all.active").length == 0) {
                         $("div[class*='project']").removeClass('hidden');
-                        $("div[class*='spotlight']").parent().removeClass('hidden');
+//                        $("div[class*='spotlight']").parent().removeClass('hidden');
                     }
 
                     //show message if no projects found 🟩
