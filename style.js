@@ -184,6 +184,9 @@ function styleGallery(visibleProjects) {
     }
     // set height to position footer properly  🟩
     home.style.height = y + (margin * 2) + "px";
+    if (visibleProjects.length == 0) {
+//        document.body.style.height = "100vh";
+    }
 }
 function styleSubgallery(visibleProjects) {
     //    for (var i = 0; i < visibleProjects.length; i++) {
