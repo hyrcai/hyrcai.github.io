@@ -798,6 +798,7 @@ button:focus {
         font: $note;
         font-weight: $secondary-normal;
         color: $grey;
+        padding-bottom: 4px;
     }
     ol.big * {
         font: $h3;

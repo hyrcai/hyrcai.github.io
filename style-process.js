@@ -103,7 +103,7 @@ function style(galleries) {
             var factor = numCovers * 0.006;
             if (width > height) {
                 thisCover.firstElementChild.style.maxWidth = winWidth * (size - factor) + "px";
-//                thisCover.style.height = "auto";
+                thisCover.style.height = "auto";
             } else if (height > width) {
 //                thisCover.style.maxWidth = winWidth * ((size * 0.8) - factor) + "px";
 ////                console.log((0.12 - factor));
