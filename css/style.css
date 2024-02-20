@@ -48,7 +48,6 @@ html * {
 
 body {
   margin: 0;
-  opacity: 0;
 }
 
 #loader {
@@ -62,6 +61,7 @@ body {
   text-align: center;
   background-color: rgb(250, 250, 250);
   transform: none;
+  opacity: 1;
 }
 #loader #loader-image {
   position: absolute;

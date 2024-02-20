@@ -115,7 +115,7 @@ html {
 
 body {
     margin: 0;
-    opacity: 0;
+    // opacity: 0;
 }
 
 #loader {
@@ -129,6 +129,7 @@ body {
     text-align: center;
     background-color: $bg;
     transform: none;
+    opacity: 1;
 
     #loader-image {
         position: absolute;

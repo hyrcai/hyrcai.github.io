@@ -1,7 +1,7 @@
 // hide loader on load
 $(window).on('load', function () {
-    $('body').css('opacity', '1');
-    setTimeout(function() { 
+    // $('body').css('opacity', '1');
+    setTimeout(function () {
         $('#loader').addClass('hidden');
         $('html').css('overflow-y', 'auto');
     }, 3000);
