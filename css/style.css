@@ -1132,6 +1132,7 @@ section {
   }
 }
 @media (max-width: 800px) {
+  nav #case-studies,
   nav #gallery,
   nav #about {
     display: none;
