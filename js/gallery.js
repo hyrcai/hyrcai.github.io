@@ -195,7 +195,7 @@ function styleElements(elements) {
             var width, height;
             var thisVideo;
             if (mobile.matches) {
-                winFactor = 2.5;
+                winFactor = 2.25;
             } else if (landscape.matches) {
                 winFactor = 1.75;
             } else if (tablet.matches) {
@@ -242,7 +242,7 @@ if (tablet.matches) {
         setTimeout(() => {
             scrollTop = document.documentElement.scrollTop;
             positionElements((winWidth / 2) - margin, winHeight / 2, winHeight / 2, scrollTop)
-        }, "50")
+        }, "325")
     })
 } else {
     document.addEventListener('mousemove', (event) => {
@@ -258,7 +258,7 @@ if (tablet.matches) {
         setTimeout(() => {
             scrollTop = document.documentElement;
             positionElements(mousePageX, mousePageY, mouseClientY);
-        }, "50")
+        }, "750")
     })
 }
 

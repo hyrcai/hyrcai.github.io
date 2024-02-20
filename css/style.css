@@ -1204,7 +1204,6 @@ section {
   }
   #gallery {
     padding-top: 0;
-    padding-bottom: 0;
   }
   .frame.container-m.indent {
     width: calc(100% - 3em) !important;
