@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<div class="container">
+        <div id="social-links">
+                <a target="_blank" href="https://www.linkedin.com/in/hannah-cai/"><img
+                                src="/assets/icons8-ios17-linkedin.svg" class="link-out"></a>
+                <a target="_blank" href="mailto:hannah.yanran.cai@gmail.com"><img src="/assets/icons8-ios17-mail.svg"
+                                class="link-out"></a>
+        </div>
+        <div id="messages">
+                <p>Song rec 01 • <a target="_blank"
+                                href="https://open.spotify.com/track/6vTJnMrj7G1aUQZF5PdJRC?si=a65fcd1923ba4807"
+                                class="link-out">Darci •
+                                Blackout</a> 🎵</p>
+                <p>Song rec 02 • <a target="_blank"
+                                href="https://open.spotify.com/track/7Dlf6X3rMud7k5yLxewmKK?si=0ffe875521cd4a1a"
+                                class="link-out">CloZee
+                                •
+                                VISIONS</a> 🎵</p>
+                <p>Song rec 03 • <a target="_blank"
+                                href="https://open.spotify.com/track/3fsCI7Yh2CdfEVrffbU2of?si=98a16a41469e4e0d"
+                                class="link-out">ford. •
+                                Craving - Instrumental</a> 🎵</p>
+                <p>Song rec 04 • <a target="_blank"
+                                href="https://open.spotify.com/track/0TLAptKgYxe7F0KewWH6X6?si=33da550adc2e4f24"
+                                class="link-out">James
+                                Blake,
+                                Bon Iver • I Need A Forest Fire</a> 🎵</p>
+                <p>Song rec 05 • <a target="_blank"
+                                href="https://open.spotify.com/track/0OXwZN2RuPFI8NlPoQXoXh?si=e7225f698e9e4381"
+                                class="link-out">Matt
+                                Fax •
+                                Beyond Belief</a> 🎵</p>
+                <p>Song rec 06 • <a target="_blank"
+                                href="https://open.spotify.com/track/7iPlcFvOMOzt6v0QvcAueZ?si=928d87a875a94f7c"
+                                class="link-out">The
+                                1975 •
+                                I Always Wanna Die (Sometimes)</a> 🎵</p>
+                <p>Song rec 07 • <a target="_blank"
+                                href="https://open.spotify.com/track/1ojCQ0v59O77rKZbwN8aQh?si=cee6225806a74ace"
+                                class="link-out">Tourist
+                                •
+                                EST</a> 🎵</p>
+        </div>
+        <div id="credits">
+                <p>Coded by & © Hannah Cai 2024</p>
+        </div>
+</div>
+<script>
+        // load a random message in the footer
+        let messages = document.getElementById('messages').getElementsByTagName('p');
+        var show = getRandomNumber(0, messages.length, 0);
+        messages[show].style.display = "inline";
+</script>
+
+</html>

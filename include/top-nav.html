@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<div class="container">
+    <a target="_top" href="/index.html">
+        <img id="logo" src="/assets/logo.svg">
+    </a>
+    <div id="site-links">
+        <li><a id="case-studies" target="_top" href="/index.html#case-studies-bookmark">Work</a></li>
+        <li><a id="gallery" target="_top" href="/index.html#gallery-bookmark">Gallery</a></li>
+        <li><a id="about" target="_top" href="/index.html#about-bookmark">About</a></li>
+        <li><i><a target="_blank" href="/documents/hannah-cai-resume-feb-2024.pdf" class="link-out">Resume</a></i></li>
+    </div>
+</div>
+
+<script>
+    // set top nav links as active/inactive on click and scroll
+    const navLinks = document.querySelectorAll('a[id]');
+    const navBookmarks = document.querySelectorAll('[id*=-bookmark]');
+    markActive();
+    $(window).scroll(function () {
+        markActive();
+    });
+    function markActive() {
+        for (var i = 0; i < navBookmarks.length; i++) {
+            $(navLinks[i]).removeClass('active');
+            if ((i < navBookmarks.length - 1) && scrolledIntoView(navBookmarks[i]) && (scrolledIntoView(navBookmarks[i]) !== scrolledIntoView(navBookmarks[i + 1]))) {
+                $(navLinks[i]).addClass('active');
+            } else if (i == navBookmarks.length - 1 && scrolledIntoView(navBookmarks[i])) {
+                $(navLinks[i]).addClass('active');
+            }
+        }
+    }
+    function scrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+        return ((elemTop >= docViewTop) && (elemBottom <= docViewBottom)
+            || (elemTop <= docViewTop) && (elemBottom >= docViewBottom)
+            || (elemTop <= docViewTop) && (elemBottom <= docViewBottom));
+    }
+</script>
+
+</html>

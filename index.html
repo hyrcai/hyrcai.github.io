@@ -1,397 +1,727 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale=1.0>
-        <title>Hannah Cai</title>
-        <meta name="description" content="Hannah Cai's Design Portfolio">
-        <meta name="author" content="Hannah Cai">
-        <meta name="keywords" content="Hannah, Cai, design, art, photography, code, illustration, portfolio, work">
-        <meta name="google-site-verification" content="JGrP8BXNJNBg2uohZgIWQxuzI93cD21uToJz0VMjBfI"/>
-        <meta property="og:image" content="work/NOVID/UI:UX/light-dark.png"/>
 
-        <!--        links-->
-        <!--        <base href="https://hannah-cai.github.io/">-->
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="favicon.png">
-        <script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
+    <title>Hannah Cai</title>
+    <meta name="description" content="Hannah Cai's Design Portfolio">
+    <meta name="author" content="Hannah Cai">
+    <meta name="keywords" content="Hannah, Cai, product, design, ui, ux, portfolio, work, art, code">
+    <meta name="google-site-verification" content="JGrP8BXNJNBg2uohZgIWQxuzI93cD21uToJz0VMjBfI" />
+    <meta property="og:image" content="/assets/logo-loader.gif" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <!-- hotjar tracking code -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3822991, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
 
-
-    </head>
-    <body>
-        <div id="loader"></div>
-        <nav>
-            <div class="container">
-                <a target="_top" href="index.html">
-                    <video id="logo" autoplay muted loop>
-                        <source src="logo.mp4">
-                    </video>
+<body>
+    <div data-include="loader"></div>
+    <div id="cursor" class="auto"></div>
+    <nav>
+        <div data-include="top-nav"></div>
+    </nav>
+    <main>
+        <section id="case-studies-bookmark">
+            <span class="container-b">
+                <p class="XL">Hey, I'm <i>Hannah</i>, a Chinese-American designer based in the Bay Area. My work so far
+                    centers mainly on <i>visual & product design</i>, but I also have a keen interest in motion,
+                    both conventional and generative art, and data-visualization.<br><br>
+                    I previously worked at
+                    <a href="https://www.terraformation.com/" target="_blank" class="link-out">Terraformation</a>
+                    and <a href="https://www.novid.org/" target="_blank" class="link-out">NOVID,</a> on projects like
+                    <i>these:</i>
+                </p>
+            </span>
+            <div class="list">
+                <a href="/case-studies/Terraformation/visual-refresh.html">
+                    <div class="case-study link-in">
+                        <div class="label">
+                            <p class="title">Refreshing Terraformation's visual language</p>
+                            <p class="desc">Rebranding product visuals to align with our company branding and values.
+                            </p>
+                            <button type="Branding"></button><button type="Design Systems"></button><button
+                                type="UI/UX"></button><button class="spacer"></button><button medium="Figma"></button>
+                            <div class="flex-container equal">
+                                <span>
+                                    <p class="subtitle">Deliverables</p>
+                                    <p>Team exercises, design options, final specs</p>
+                                </span>
+                                <span>
+                                    <p class="subtitle">Key Skills</p>
+                                    <p>Systems thinking, design tokens, interaction design, leadership</p>
+                                </span>
+                                <span>
+                                    <p class="subtitle">Collaborators</p>
+                                    <p>Chudo Loo (Senior Designer), Nicole Wilke (Product Manager)</p>
+                                </span>
+                                <span>
+                                    <p class="subtitle">Timeframe</p>
+                                    <p>Fall 2022</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="display-grid">
+                            <div class="flex-container">
+                                <span>
+                                    <img src="case-studies/Terraformation/visual-refresh/final/log-in.jpg">
+                                </span>
+                                <span>
+                                    <img src="case-studies/Terraformation/visual-refresh/final/onboarding.jpg">
+                                </span>
+                            </div>
+                            <div class="flex-container">
+                                <span>
+                                    <img src="case-studies/Terraformation/visual-refresh/final/home.jpg">
+                                </span>
+                                <span>
+                                    <img src="case-studies/Terraformation/visual-refresh/final/sensor-dashboard.jpg">
+                                </span>
+                            </div>
+                            <div class="flex-container">
+                                <span>
+                                    <img src="case-studies/Terraformation/visual-refresh/final/nursery-species.jpg">
+                                </span>
+                                <span>
+                                    <img src="case-studies/Terraformation/visual-refresh/final/accession-details.jpg">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </a>
-                <div id="site-links">
-                    <li><a id="spotlight" class="active" target="_top" href="index.html">spotlight</a></li>
-                    <li><a id="gallery" target="_top" href="gallery.html">gallery</a></li>
-                    <li><a target="_top" href="about.html">About</a></li>
-                    <li><a target="_blank" href="Hannah_Cai-resume.pdf">Resume</a></li>
-                </div>
+                <a href="/case-studies/NOVID/onboarding.html">
+                    <div class="case-study link-in">
+                        <div class="label">
+                            <p class="title">Re-vamping NOVID's onboarding flow</p>
+                            <p class="desc">Animating and re-designing the app's onboarding flow to
+                                build user trust, particularly around enabling permissions.</p>
+                            <button type="Motion"></button><button type="Illustration"></button><button
+                                type="UI/UX"></button><button class="spacer"></button><button
+                                medium="Figma"></button><button medium="After Effects"></button>
+                            <div class="flex-container equal">
+                                <span>
+                                    <p class="subtitle">Deliverables</p>
+                                    <p>Lottie .json animations, Figma screens and prototypes</p>
+                                </span>
+                                <span>
+                                    <p class="subtitle">Key Skills</p>
+                                    <p>Prototyping, animation, content design/copywriting</p>
+                                </span>
+                                <span>
+                                    <p class="subtitle">Timeframe</p>
+                                    <p>Summer 2020</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="display-grid">
+                            <div class="flex-container">
+                                <span>
+                                    <img src="case-studies/NOVID/onboarding/ui/onboarding.jpg">
+                                </span>
+                                <span>
+                                    <video autoplay muted loop>
+                                        <source src="case-studies/NOVID/onboarding/animations/final/walking.mov">
+                                    </video>
+                                </span>
+                            </div>
+                            <div class="flex-container">
+                                <span>
+                                    <video autoplay muted loop>
+                                        <source src="case-studies/NOVID/onboarding/animations/final/hand.mov">
+                                    </video>
+                                </span>
+                                <span>
+                                    <video autoplay muted loop>
+                                        <source src="case-studies/NOVID/onboarding/ui/final.mov">
+                                    </video>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/case-studies/NOVID/design-system.html">
+                    <div class="case-study link-in">
+                        <div class="label">
+                            <p class="title">Creating NOVID's design system</p>
+                            <p class="desc">Defining and establishing a design system to bring cohesion and
+                                accessibility to NOVID's mobile app and website.</p>
+                            <button type="Design Systems"></button><button type="Branding"></button><button
+                                type="UI/UX"></button><button class="spacer"></button><button medium="Figma"></button>
+                            <div class="flex-container equal">
+                                <span>
+                                    <p class="subtitle">Deliverables</p>
+                                    <p>Figma components and libraries, specs for engineers</p>
+                                </span>
+                                <span>
+                                    <p class="subtitle">Key Skills</p>
+                                    <p>Systems thinking, designing for accessibility</p>
+                                </span>
+                                <span>
+                                    <p class="subtitle">Collaborators</p>
+                                    <p>Bennett Huffman (Product Designer)</p>
+                                </span>
+                                <span>
+                                    <p class="subtitle">Timeframe</p>
+                                    <p>Fall 2020</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="display-grid">
+                            <div class="flex-container">
+                                <span>
+                                    <img src="case-studies/NOVID/design-system/branding/logo-light-dark.gif">
+                                </span>
+                                <span>
+                                    <img src="case-studies/NOVID/design-system/app/new.jpg">
+                                </span>
+                            </div>
+                            <div class="flex-container">
+                                <span>
+                                    <img src="case-studies/NOVID/design-system/color-contrast.jpg">
+                                </span>
+                                <span>
+                                    <img src="case-studies/NOVID/design-system/app/modules.jpg">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </nav>
-        <header>
-            <span> 
-                <h1>Hannah Cai</h1>
-                <h2>Designer, artist, and amateur coder.
-                    Currently at <a href="https://www.novid.org/" target="_blank">NOVID</a>.</h2>
-            </span>
-            <span id="filter">
-                <div class="toggle"><button class="active text" id="any">match any tags</button><button class="text" id="all">match all tags</button></div>
-                <p>filter by <b>type:</b></p>
-                <button type="all" class="active"></button><button type="motion"></button><button type="graphic"></button><button type="UI/UX"></button><button type="data visualization"></button><button type="3d"></button><button type="code"></button><button type="illustration"></button><button type="photography"></button>
-                <div class="linespacer"></div>
-                <p>filter by <b>medium:</b></p>
-                <button medium="all" class="active"></button><button medium="After Effects"></button><button medium="Illustrator"></button><button medium="InDesign"></button><button medium="Photoshop"></button><button medium="XD"></button><button medium="Figma"></button><button medium="Cinema4d"></button><button medium="Max/Msp/Jitter"></button><button medium="Procreate"></button><button medium="HTML/CSS"></button><button medium="Javascript"></button><button medium="traditional media"></button>
-            </span>
-        </header>
+        </section>
 
-        <!----------------------------------------------->
+        <section id="gallery-bookmark">
+            <span class="flex-container">
+                <span class="container-m">
+                    <p class="XL">
+                        Though I'm a designer by trade, I've always been an <i>artist at heart</i>, and
+                        I believe that it shows in my work, both professional and personal.
+                    </p>
+                </span>
+                <span id="filter" class="container-s">
+                    <div class="toggle"><button class="active text" id="any">match any tags</button><button class="text"
+                            id="all">match all tags</button></div>
+                    <div>
+                        <p>filter by <b>type:</b></p>
+                        <button type="all" class="active"></button><button type="Motion"></button><button
+                            type="Graphic"></button><button type="Print"></button><button type="UI/UX"></button><button
+                            type="Data-Visualization"></button><button type="Code"></button><button
+                            type="3d"></button><button type="Art"></button><button type="Illustration"></button><button
+                            type="Collage"></button><button type="Photography"></button>
+                    </div>
+                    <div class="linespacer"></div>
+                    <div>
+                        <p>filter by <b>medium:</b></p>
+                        <button medium="all" class="active"></button><button medium="After Effects"></button><button
+                            medium="Illustrator"></button><button medium="InDesign"></button><button
+                            medium="Photoshop"></button><button medium="XD"></button><button
+                            medium="Figma"></button><button medium="Cinema4d"></button><button
+                            medium="Max/Msp/Jitter"></button><button medium="Procreate"></button><button
+                            medium="HTML/CSS"></button><button medium="Javascript"></button><button
+                            medium="Python"></button><button medium="Traditional Media"></button>
+                    </div>
+                </span>
+            </span>
 
-        <!--        ✱page content-->
-        <main>
-            <div class="home list">
+            <div id="gallery">
+                <div id="no-matches" class="hidden">
+                    <p class="M">No matching projects found.</p>
+                </div>
                 <div class="container">
-                    <div id="no-matches" class="hidden">
-                        <h3>No projects found :(</h3>
-                        <h4>Try adjusting the filter or switching to gallery view!</h4>
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/Terraformation/banner-4.jpg">
+                            <img src="/gallery/Terraformation/banner-3.jpg">
+                            <img src="/gallery/Terraformation/hiring-3.jpg">
+                            <img src="/gallery/Terraformation/hiring-2.jpg">
+                            <img src="/gallery/Terraformation/hiring-1.jpg">
+                            <img src="/gallery/Terraformation/social-3.jpg">
+                            <img src="/gallery/Terraformation/social-2.jpg">
+                            <img src="/gallery/Terraformation/social-1.jpg">
+                            <video autoplay muted loop>
+                                <source src="/gallery/Terraformation/animated.mov">
+                            </video>
+                            <img src="/gallery/Terraformation/banner-2.jpg">
+                            <img src="/gallery/Terraformation/banner-1.jpg">
+                            <img src="/gallery/Terraformation/booth.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Social media and print assets I worked on during my time at Terraformation.
+                            </p>
+                            <button type="Graphic"></button><button type="Print"></button><button
+                                type="Motion"></button><button class="spacer"></button><button
+                                medium="Figma"></button><button medium="Illustrator"></button><button
+                                medium="After Effects"></button>
+                        </div>
                     </div>
 
-                    <a href="work/NOVID.html">
-                        <div class="project spotlight">
-                            <div class="display-b">
-                                <div class="flex-container">
-                                    <span>
-                                        <img src="work/NOVID/design-system/branding.gif">
-                                    </span>
-                                    <span>
-                                        <img src="work/NOVID/UI:UX/light-dark.png">
-                                    </span>
-                                </div>
-                                <video autoplay muted loop>
-                                    <source src="work/NOVID/UI:UX/report-flow.mp4">
-                                </video>
-                                <div class="flex-container">
-                                    <span>
-                                        <img src="work/NOVID/UI:UX/onboarding.png">
-                                    </span>
-                                    <span>
-                                        <video autoplay muted loop>
-                                            <source src="work/NOVID/motion/walking.mp4">
-                                        </video>
-                                    </span>
-                                </div>
-                                <video autoplay muted loop>
-                                    <source src="work/NOVID/UI:UX/radar-motion.mov">
-                                </video>
-                                <div class="flex-container">
-                                    <span>
-                                        <video autoplay muted loop>
-                                            <source src="work/NOVID/motion/hand.mp4">
-                                        </video>
-                                    </span>
-                                    <span>
-                                        <video autoplay muted loop>
-                                            <source src="work/NOVID/motion/landing-scrapped.mp4">
-                                        </video>
-                                    </span>
-                                </div>
-                                <img src="work/NOVID/design-system/app-type.png">
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/NOVID/social-media/holiday.jpg">
+                            <img src="/gallery/NOVID/social-media/app-store.jpg">
+                            <img src="/gallery/NOVID/social-media/email-footer.png">
+                            <img src="/gallery/NOVID/social-media/CMU.jpg">
+                            <img src="/gallery/NOVID/social-media/social-cropped.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Social media assets I worked on during my time at NOVID.</p>
+                            <button type="Graphic"></button><button class="spacer"></button><button
+                                medium="Figma"></button>
+                        </div>
+                    </div>
 
-                                <div class="flex-container">
-                                    <span>
-                                        <img src="work/NOVID/design-system/colors.png">
-                                    </span>
-                                    <span>
-                                        <img src="work/NOVID/design-system/color-contrast.png">
-                                    </span>
-                                </div>
-                                <img src="work/NOVID/UI:UX/modules.png">
-                                <div class="flex-container">
-                                    <span>
-                                        <img src="work/NOVID/design-system/buttons-1.png">
-                                    </span>
-                                    <span>
-                                        <img src="work/NOVID/design-system/icons.gif">
-                                    </span>
-                                </div>
-                                <video autoplay muted loop>
-                                    <source src="work/NOVID/motion/community-dash.mp4">
-                                </video>
-                                <div class="flex-container">
-                                    <span>
-                                        <img src="work/NOVID/graphic/CMU.png">
-                                    </span>
-                                    <span>
-                                        <img src="work/NOVID/graphic/social-cropped.png">
-                                    </span>
-                                </div>
-                                <!--                <img src="NOVID/graphic/posters.png">-->
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/NOVID/print/safety-posters/mask_3_poster_color.png">
+                            <img src="/gallery/NOVID/print/safety-posters/mask_2_poster_color.png">
+                            <img src="/gallery/NOVID/print/safety-posters/mask_1_poster_color.png">
+                            <img src="/gallery/NOVID/print/safety-posters/hygiene_2_poster_color.png">
+                            <img src="/gallery/NOVID/print/safety-posters/hygiene_1_poster_color.png">
+                            <img src="/gallery/NOVID/print/safety-posters/distancing_3_poster_color.png">
+                            <img src="/gallery/NOVID/print/safety-posters/distancing_2_poster_color.png">
+                            <img src="/gallery/NOVID/print/safety-posters/distancing_1_poster_color.png">
+                            <img src="/gallery/NOVID/print/safety-posters/cdc_2_poster_color.png">
+                            <img src="/gallery/NOVID/print/yardsign.jpg">
+                            <img src="/gallery/NOVID/print/geotag.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Print assets I worked on during my time at NOVID.</p>
+                            <button type="Graphic"></button><button type="Print"></button><button
+                                class="spacer"></button><button medium="Figma"></button>
+                        </div>
+                    </div>
 
+                    <div class="stack">
+                        <a href="https://hannah-cai.github.io/audiocollage/" target="_blank">
+                            <div class="covers">
+                                <img src="/gallery/audiovis/2d/audiocollage.png" class="link-out">
                             </div>
                             <div class="label">
-                                <p class="title">NOVID</p>
-                                <p class="desc">The future of contact tracing and pandemic response: a cross-platform service visualizing the status of your social circle.</p>
-                                <button type="motion"></button><button type="UI/UX"></button><button type="graphic"></button><button type="data visualization"></button><button type="illustration"></button><button class="spacer"></button><button medium="Figma"></button><button medium="After Effects"></button>
-                                <div class="linespacer"></div>
-                                <p class="subtitle">Deliverables</p>
-                                <p>motion, design system, UI/UX, print, and more</p>
-                                <p class="subtitle">Category</p>
-                                <p>Client Work</p>
-                                <p class="subtitle">Team Members</p>
-                                <p>Bennett Huffman, Dean Dijour</p>
-                                <p class="subtitle">Timeframe</p>
-                                <p>Summer 2020 - <i>Present</i></p>
-                            </div>	
-                        </div>
-                    </a>
+                                <p class="title">Audiocollage</p>
+                                <p class="desc">Create collages as you play a keyboard.</p>
+                                <button type="Data-Visualization"></button><button type="Code"></button><button
+                                    type="Collage"></button><button type="Graphic"></button><button
+                                    class="spacer"></button><button medium="HTML/CSS"></button><button
+                                    medium="Javascript"></button>
+                            </div>
+                        </a>
+                    </div>
 
-                    <a href="work/poetry-visualizer.html">
-                        <div class="project spotlight">
-                            <div class="display-b">
-                                <img src="work/poetry-visualizer/final-mockup.png">
-                                <div class="flex-container">
-                                    <span>
-                                        <img src="work/poetry-visualizer/love-song-1.jpg">
-                                    </span>
-                                    <span>
-                                        <img src="work/poetry-visualizer/love-song-2.jpg">
-                                    </span>
-                                </div>
-                                <video autoplay muted loop>
-                                    <source src="work/poetry-visualizer/script.mov">
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/poetry-visualizer/love-song-1.jpg">
+                            <img src="/gallery/poetry-visualizer/valediction.jpg">
+                            <img src="/gallery/poetry-visualizer/weep.jpg">
+                            <video autoplay muted loop>
+                                <source src="/gallery/poetry-visualizer/script.mov">
+                            </video>
+                        </div>
+                        <div class="label">
+                            <p class="desc">Programmatic poetry visualizer built using text processing and InDesign
+                                scripts.</p>
+                            <button type="Code"></button><button type="Data-Visualization"></button><button
+                                class="spacer"></button><button medium="Python"></button><button
+                                medium="Javascript"></button><button medium="InDesign"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <a href="/gallery/misc-creative-code/01-bw.html" target="_blank">
+                                <img src="/gallery/misc-creative-code/quarter-circles.gif" class="link-out">
+                            </a>
+                            <a href="/gallery/misc-creative-code/painting-photo-filter.html" target="_blank">
+                                <img src="/gallery/misc-creative-code/painting-photo-filter.jpg" class="link-out"></img>
+                            </a>
+                            <a href="/gallery/misc-creative-code/generative-fish-variations.html" target="_blank">
+                                <img src="/gallery/misc-creative-code/arowana.gif" class="link-out"></img>
+                            </a>
+                        </div>
+                        <div class="label">
+                            <p class="desc">Creative coding projects made with p5.js.
+                            </p>
+                            <button type="Code"></button><button type="Illustration"></button><button
+                                class="spacer"></button><button medium="Javascript"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <video autoplay muted controls loop>
+                                <source src="/gallery/audiovis/3d/spectrum-1.mov">
+                            </video>
+                            <video autoplay muted controls loop>
+                                <source src="/gallery/audiovis/3d/displacer-drums.mov">
+                            </video>
+                            <video autoplay muted controls loop>
+                                <source src="/gallery/audiovis/3d/kick-bass-displacer.mov">
+                            </video>
+                        </div>
+                        <div class="label">
+                            <p class="desc">3d audiovisual studies. <i>hover to see controls and unmute</i></p>
+                            <button type="3d"></button><button type="Motion"><button
+                                    type="Data-Visualization"></button><button class="spacer"></button><button
+                                    medium="Cinema4d"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <video autoplay muted loop>
+                                <source src="/gallery/c4d/volume-sphere.mp4">
+                            </video>
+                            <video autoplay muted loop>
+                                <source src="/gallery/c4d/monument.mov">
+                            </video>
+                            <video autoplay muted loop>
+                                <source src="/gallery/c4d/materials.mov">
+                            </video>
+                            <video autoplay muted loop>
+                                <source src="/gallery/c4d/soft-body.mov">
+                            </video>
+                        </div>
+                        <div class="label">
+                            <p class="desc">Cinema4d motion studies.</p>
+                            <button type="3d"></button><button type="Motion"></button><button
+                                class="spacer"></button><button medium="Cinema4d"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/c4d/lg-4.jpg">
+                            <img src="/gallery/c4d/lg-3.jpg">
+                            <img src="/gallery/c4d/lg-2.jpg">
+                            <img src="/gallery/c4d/lg-1.jpg">
+                            <img src="/gallery/c4d/scale-test.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Cinema4d renders done for Lunar Gala, one of the largest fashion events in
+                                Pittsburgh.</p>
+                            <button type="3d"></button><button class="spacer"></button><button
+                                medium="Cinema4d"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/c4d/vertices.jpg">
+                            <img src="/gallery/c4d/study.jpg">
+                            <img src="/gallery/c4d/golgi.jpg">
+                            <img src="/gallery/c4d/material.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Cinema4d studies.</p>
+                            <button type="3d"></button><button class="spacer"></button><button
+                                medium="Cinema4d"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/glass/glass-beads-2.jpg">
+                            <img src="/gallery/glass/glass-beads-3.jpg">
+                            <img src="/gallery/glass/glass-birds.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Flameworked beads and figurines, made at the Pittsburgh Glass
+                                Center. </p>
+                            <button medium="Traditional Media"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/misc-collage/digital/parallels.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="title">Parallels</p>
+                            <p class="desc">A series of collages inspired by the pandemic.</p>
+                            <button type="Collage"></button><button class="spacer"></button><button
+                                medium="Figma"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/misc-collage/digital/pittsburgh-2.jpg">
+                            <img src="/gallery/misc-collage/digital/seagulls.jpg">
+                            <img src="/gallery/misc-collage/digital/flamingo.jpg">
+                            <img src="/gallery/misc-collage/digital/holy.jpg">
+                            <img src="/gallery/misc-collage/digital/mountainous-1.jpg">
+                            <img src="/gallery/misc-collage/digital/mountainous-2.jpg">
+                            <img src="/gallery/misc-collage/digital/spark.jpg">
+                            <img src="/gallery/misc-collage/digital/echo.jpg">
+                            <img src="/gallery/misc-collage/digital/ocean-street.jpg">
+                            <img src="/gallery/misc-collage/digital/hot-air-ballon.jpg">
+                        </div>
+                        <div class="label">
+                            <button type="Collage"></button>
+                            <button class="spacer"></button>
+                            <button medium="Photoshop"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/misc-collage/traditional/owl.jpg">
+                            <img src="/gallery/misc-collage/traditional/the-photographer.jpg">
+                            <img src="/gallery/misc-collage/traditional/magazines-8.jpg">
+                            <img src="/gallery/misc-collage/traditional/magazines-7.jpg">
+                            <img src="/gallery/misc-collage/traditional/magazines-4.jpg">
+                            <img src="/gallery/misc-collage/traditional/magazines-5.jpg">
+                            <img src="/gallery/misc-collage/traditional/magazines-6.jpg">
+                            <img src="/gallery/misc-collage/traditional/magazines-3.jpg">
+                            <img src="/gallery/misc-collage/traditional/magazines-2.jpg">
+                            <img src="/gallery/misc-collage/traditional/magazines-1.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Magazine collages.</p>
+                            <button type="Collage"></button>
+                            <button class="spacer"></button>
+                            <button medium="Traditional Media"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <a href="https://vimeo.com/385099932" target="_blank">
+                            <div class="covers">
+                                <video autoplay muted loop class="link-out">
+                                    <source src="/gallery/life-under-water/scene-3.mov">
+                                </video>
+                                <video autoplay muted loop class="link-out">
+                                    <source src="/gallery/life-under-water/scene-2.mov">
+                                </video>
+                                <video autoplay muted loop class="link-out">
+                                    <source src="/gallery/life-under-water/scene-1.mov">
                                 </video>
                             </div>
                             <div class="label">
-                                <p class="title">Synesthesia</p>
-                                <p class="desc">A programmatic poetry visualizer made with text processing and InDesign scripts.</p>
-                                <button type="code"></button><button type="data visualization"></button><button class="spacer"></button><button medium="Python"></button><button medium="Javascript"></button><button medium="InDesign"></button>
-                                <div class="linespacer"></div>
-                                <p class="subtitle">Deliverables</p>
-                                <p>Python and basil.js scripts, generated graphics</p>
-                                <p class="subtitle">Category</p>
-                                <p>Personal Work, Classwork</p>
-                                <p class="subtitle">Timeframe</p>
-                                <p>Fall 2019, ~five weeks</p>
-                            </div>	
-                        </div>
-                    </a>
+                                <p class="desc">A short animated narrative inspiring awareness and action for UN
+                                    Sustainable Development Goal #14: Life Under Water.</p>
+                                <button type="Motion"></button><button class="spacer"></button><button
+                                    medium="After Effects"></button>
+                            </div>
+                        </a>
+                    </div>
 
-                    <a href="work/UN-goals-video.html">
-                        <div class="project spotlight">
-                            <div class="display-b">
-                                <div style="padding:56.25% 0 0 0;position:relative"><iframe src="https://player.vimeo.com/video/385099932?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                                <div class="flex-container" style="margin-top: 24px">
-                                    <span>
-                                        <video autoplay muted loop>
-                                            <source src="work/UN-goals/scene-2.mov">
-                                        </video>
-                                    </span>
-                                    <span>
-                                        <video autoplay muted loop>
-                                            <source src="work/UN-goals/scene-1.mov">
-                                        </video>
-                                    </span>
-                                </div>
-
+                    <div class="stack">
+                        <a href="/gallery/expressive-typography/richard-blanco.pdf" target="_blank">
+                            <div class="covers">
+                                <img src="/gallery/expressive-typography/richard-blanco.jpg" class="link-out">
                             </div>
                             <div class="label">
-                                <p class="title">UN SDG #14: Life Under Water</p>
-                                <p class="desc">A motion piece  aligned with the UN Sustainable Development Goals campaign, aiming to promote awareness and action.</p>
-                                <button type="motion"></button><button class="spacer"></button><button medium="After Effects"></button>
-                                <div class="linespacer"></div>
-                                <p class="subtitle">Deliverables</p>
-                                <p>A motion piece with a length of at least 30 seconds; no longer than 2 minutes</p>
-                                <p class="subtitle">Category</p>
-                                <p>Classwork</p>
-                                <p class="subtitle">Timeframe</p>
-                                <p>Fall 2019, ~two weeks</p>
-                            </div>	
+                                <p class="desc">Telling an immgrant's story through expressive typography.</p>
+                                <button type="Graphic"></button><button type="Print"></button><button
+                                    class="spacer"></button><button medium="InDesign"></button>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/pittsburgh-arts-and-lectures/final-mockup.jpg">
+                            <img src="/gallery/pittsburgh-arts-and-lectures/final-poster.jpg">
+                            <img src="/gallery/bickham-script/final-mockup.jpg">
+                            <img src="/gallery/bickham-script/final-spread.jpg">
+                            <img src="/gallery/misc-art/vector/wsp-final.jpg">
                         </div>
-                    </a>
+                        <div class="label">
+                            <p class="desc">Print case studies.</p>
+                            <button type="Graphic"></button><button type="Print"></button><button
+                                type="Illustration"></button><button class="spacer"></button><button
+                                medium="Illustrator"></button><button medium="InDesign"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/endangered-animal-playing-cards/printtabloid-03.jpg" class="link-out">
+                            <img src="/gallery/endangered-animal-playing-cards/printtabloid-02.jpg" class="link-out">
+                            <img src="/gallery/endangered-animal-playing-cards/printtabloid-01.jpg" class="link-out">
+                            <img src="/gallery/endangered-animal-playing-cards/king-of-diamonds-west-african-lion.jpg">
+                            <img src="/gallery/endangered-animal-playing-cards/10-of-diamonds-red-wolf.jpg">
+                            <img src="/gallery/endangered-animal-playing-cards/jack-of-clubs-panda-bear.jpg">
+                            <img src="/gallery/endangered-animal-playing-cards/queen-of-hearts-white-tiger.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">A set of playing cards featuring threatened animal species.</p>
+                            <button type="Graphic"></button><button type="Print"></button><button
+                                type="Illustration"></button><button class="spacer"></button><button
+                                medium="Illustrator"></button><button medium="Photoshop"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/misc-art/vector/plants-1.png">
+                            <img src="/gallery/misc-art/vector/plants-2.png">
+                            <img src="/gallery/misc-art/vector/plants-3.png">
+                            <img src="/gallery/misc-art/vector/plants-4.png">
+                            <img src="/gallery/misc-art/vector/bees.png">
+                            <img src="/gallery/misc-art/vector/stems.png">
+                            <img src="/gallery/misc-art/vector/flowers.png">
+                            <img src="/gallery/misc-art/vector/leaves.png">
+                            <img src="/gallery/misc-art/vector/racoons.gif">
+                            <img src="/gallery/misc-art/vector/night-day.gif">
+                            <img src="/gallery/misc-art/vector/generative-landscape.jpg">
+                            <img src="/gallery/misc-art/vector/eye-candy.png">
+                            <img src="/gallery/misc-art/vector/self-portrait.png">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Miscellaneous vector illustrations.</p>
+                            <button type="Illustration"></button><button class="spacer"></button><button
+                                medium="Illustrator"><button medium="Figma"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <video autoplay muted loop>
+                                <source src="/gallery/lighter-fire.mp4">
+                            </video>
+                        </div>
+                        <div class="label">
+                            <p class="desc">Interactive wordplay.</p>
+                            <button type="Motion"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/misc-art/digital-painting/rat-sketch.jpg">
+                            <img src="/gallery/misc-art/digital-painting/tagged-bird-specimen-sketch.jpg">
+                            <img src="/gallery/misc-art/digital-painting/insects-2.jpg">
+                            <img src="/gallery/misc-art/digital-painting/insects-1.jpg">
+                            <img src="/gallery/misc-art/digital-painting/dinosaur-skeleton-sketch.jpg">
+                            <img src="/gallery/misc-art/digital-painting/bony-fish-skeleton-sketch.jpg">
+                            <img src="/gallery/misc-art/digital-painting/tyrannosaurus-rex-skeleton-sketch.jpg">
+                            <img
+                                src="/gallery/misc-art/digital-painting/ancient-irish-giant-deer-elk-skeleton-sketch.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Sketches done at the Carnegie Museum of Natural History.</p>
+                            <button type="Art"></button><button class="spacer"></button><button
+                                medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/misc-art/digital-painting/seabirds.jpg">
+                            <img src="/gallery/misc-art/digital-painting/herons.jpg">
+                            <img src="/gallery/misc-art/digital-painting/sparrow.jpg">
+                            <img src="/gallery/misc-art/digital-painting/owl-40min.jpg">
+                            <img src="/gallery/misc-art/digital-painting/portrait-demo.jpg">
+                            <img src="/gallery/misc-art/digital-painting/duke.gif">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Portraits and studies of people and animals.</p>
+                            <button type="Art"></button><button class="spacer"></button><button
+                                medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/misc-art/digital-painting/sunset.jpg">
+                            <img src="/gallery/misc-art/digital-painting/lovers-point.jpg">
+                            <img src="/gallery/misc-art/digital-painting/winter.jpg">
+                            <img src="/gallery/misc-art/digital-painting/minari-1.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Photo and landscape studies.</p>
+                            <button type="Art"></button><button class="spacer"></button><button
+                                medium="Procreate"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/misc-art/traditional/tree.jpg">
+                            <img src="/gallery/misc-art/traditional/figure-2.jpg">
+                            <img src="/gallery/misc-art/traditional/figure-1.jpg">
+                            <img src="/gallery/misc-art/traditional/spread-2.jpg">
+                            <img src="/gallery/misc-art/traditional/spread-1.jpg">
+                            <img src="/gallery/misc-art/traditional/observational-studies.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">Mixed media studies.</p>
+                            <button type="Art"></button><button class="spacer"></button><button
+                                medium="Traditional Media"></button>
+                        </div>
+                    </div>
+
+                    <div class="stack">
+                        <div class="covers">
+                            <img src="/gallery/misc-photography/dancers/d.jpg">
+                            <img src="/gallery/misc-photography/dancers/c2.jpg">
+                            <img src="/gallery/misc-photography/dancers/c1.jpg">
+                            <img src="/gallery/misc-photography/dancers/b3.jpg">
+                            <img src="/gallery/misc-photography/dancers/b2.jpg">
+                            <img src="/gallery/misc-photography/dancers/b1.jpg">
+                            <img src="/gallery/misc-photography/dancers/a2.jpg">
+                            <img src="/gallery/misc-photography/dancers/a1.jpg">
+                        </div>
+                        <div class="label">
+                            <p class="desc">A series of photos of dancers, experimenting with shutter speed.</p>
+                            <button type="Photography"></button><button class="spacer"></button><button
+                                medium="Photoshop"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
+        </section>
 
-        <footer>
-            <div class="container">
-                <div id="social-links">
-                    <a target="_blank" href="https://www.instagram.com/hyrcai/"><img src="instagram.svg"></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/hannah-cai/"><img src="linkedin.svg"></a>
+
+
+        <section id="about-bookmark">
+            <span class="container-b">
+                <p class="XL">To me, good design is <i>clean</i>,
+                    <i>intuitive</i>, and <i>satisfying</i>, and great design both <i>embodies and celebrates its
+                        purpose</i>. As a designer, I'm meticulous (I've been told I have <i>"eagle eyes"</i> ), and
+                    always aim to optimize both form and function—I don't like compromising either.
+                    Having worked at <i>multiple startups</i>, I'm comfortable with
+                    fast-paced projects that benefit from a diverse skillset.<br><br>
+                    Outside of design, you'll find me enjoying <i>concerts</i>, trying to <i>befriend every cat I
+                        see</i>, taking <i>walks</i>, and curating <i>playlists</i>,
+                    inspiration, and <i>little things</i>. If you want to stay connected, <i>reach out:</i>
+                </p>
+                <div id="contact-me" class="flex-container equal">
+                    <span>
+                        <p class="subtitle">Add me on LinkedIn</p>
+                        <p><a href="linkedin.com/in/hannah-cai" target="_blank"
+                                class="link-out">linkedin.com/in/hannah-cai</a></p>
+                    </span>
+                    <span>
+                        <p class="subtitle">Send me mail</p>
+                        <p><a href="mailto:hannah.yanran.cai@gmail.com" target="_blank"
+                                class="link-out">hannah.yanran.cai@gmail.com</a></p>
+                    </span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div id="messages">
-                    <p>thank you for visiting! :)</p>
-                    <p>have a great day!</p>
-                    <p>🎵 currently listening to: <a target="_blank" href="https://open.spotify.com/track/2IFFKj9orAsQOOS0JRhHAW">Anderson .Paak - JEWELZ</a></p>
-                    <p>🎵 currently listening to: <a target="_blank" href="https://open.spotify.com/track/7jI6Se0BWVcF7ALTjQUBup">Lauv - Miss Me</a></p>
-                    <p>🎵 currently listening to: <a target="_blank" href="https://open.spotify.com/track/5rtc8Mp22059tlkPbSuKrk">The Nor'easters - The End of Love</a></p>
-                    <p>🎥 currently re-watching: <a target="_blank" href="https://youtu.be/WLxE_its-3k?t=240">Farewell - Witness (Tungtwist Remix) • Franklin Yu Choreography</a></p>
-                    <p>🎥 currently re-watching: <a target="_blank" href="https://www.youtube.com/watch?v=4DuNkr3oAEU">Låpsley - Station • Tessandra Chavez Choreography</a></p>
-                </div>
-                <p id="credits">© Hannah Cai • 2021</p>
-            </div>
-        </footer>
+            </span>
+        </section>
+    </main>
 
-        <script>
-            $(window).on('load', function() {
-                $('#loader').addClass('hidden');
-            });
+    <footer>
+        <div data-include="bottom-nav"></div>
+    </footer>
+    <script type="text/javascript" src="/js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="/js/base.js"></script>
+    <script type="text/javascript" src="/js/gallery.js" defer></script>
+    <script type="text/javascript" src="/js/filter.js"></script>
+    <script type="text/javascript" src="/js/cursor.js"></script>
+</body>
 
-            $(document).ready(function() {
-
-
-                //add footer
-                //                $("#footer").load("footer.html"); 
-
-                //                $("body").addClass('hidden');
-
-                //hamburger menu
-                //                $("#hamburger").click(function(){
-                //                    $("nav ul div").toggleClass('visible');
-                //                    $("main").toggleClass('blur'); $("#favicon").toggleClass('blur');
-                //                    $("footer").toggleClass('blur'); $("#container").toggleClass('visible');
-                //                    $("#hamburger").toggleClass('x');
-                //                })
-
-                //filter & toggles
-                $("button").click(function(event){
-
-                    // make clicked tags active
-                    var clicked = $(event.target);
-                    if (!clicked.hasClass('text')){
-                        clicked.toggleClass('active');
-                    }
-                    // handle toggles 
-                    if (clicked.parent(".toggle") && !clicked.hasClass('active') && clicked.hasClass('text')) {
-                        clicked.parent().children().toggleClass('active');
-                    }
-                    //mark active filter tags
-                    // type tags
-                    if (clicked.attr('type')) {
-                        //if specific tags active
-                        if ($("#filter button.active[type!='all']")  && (clicked.attr('type')!=='all') && clicked.attr('type')) {
-                            $("#filter button[type][type='all']").removeClass('active');
-                        }
-                        // if "all" active
-                        else if ($("#filter button.active[type='all']")) {
-                            $("#filter button.active[type][type!='all']").removeClass('active');
-                        }
-                        // if none active, turn on "all"
-                        if ($("#filter button.active[type]").length == 0) {
-                            ($("#filter button[type][type='all']")).addClass('active');
-                        }
-                    }
-                    // medium tags
-                    else if (clicked.attr('medium')) {
-                        // if specific tags active
-                        if ($("#filter button.active[medium!='all']")  && (clicked.attr('medium')!=='all') && clicked.attr('medium')) {
-                            $("#filter button[medium][medium='all']").removeClass('active');
-                        }
-                        // if "all" active
-                        else if ($("#filter button.active[medium='all']")) {
-                            $("#filter button.active[medium][medium!='all']").removeClass('active');
-                        }
-                        // if none active, turn on "all"
-                        if ($("#filter button.active[medium]").length == 0) {
-                            ($("#filter button[medium][medium='all']")).addClass('active');
-                        }
-                    }
-
-                    // hide all projects
-                    $("div[class*='project']").addClass('hidden');
-                    $("div[class*='spotlight']").parent().addClass('hidden');
-
-                    //show projects with active tags 🟩
-                    //match any
-                    if ($("#spotlight.active").length == 1 && $("#any.active").length == 1) {
-                        $("#filter button.active[type]").each(function(){
-                            $("div[class*='project spotlight'][type*='" + $(this).attr('type') + "']").removeClass('hidden');
-                            $("div[class*='spotlight'][type*='" + $(this).attr('type') + "']").parent().removeClass('hidden');
-                        })
-                        $("#filter button.active[medium]").each(function(){
-                            $("div[class*='project spotlight'][medium*='" + $(this).attr('medium') + "']").removeClass('hidden');
-                            $("div[class*='spotlight'][medium*='" + $(this).attr('medium') + "']").parent().removeClass('hidden');
-                        })
-                    } else if ($("#gallery.active").length == 1 && $("#any.active").length == 1) {
-                        $("#filter button.active[type]").each(function(){
-                            $("div[class*='project'][type*='" + $(this).attr('type') + "']").removeClass('hidden');
-                            $("div[class*='spotlight'][type*='" + $(this).attr('type') + "']").parent().removeClass('hidden');
-                        })
-                        $("#filter button.active[medium]").each(function(){
-                            $("div[class*='project'][medium*='" + $(this).attr('medium') + "']").removeClass('hidden');
-                            $("div[class*='spotlight'][medium*='" + $(this).attr('medium') + "']").parent().removeClass('hidden');
-                        })
-                    }
-
-                    //match all 🟨
-                    if ($("#all.active").length == 1) {
-                        var types = "";
-                        var mediums = "";
-                        // get active type tags
-                        $("#filter button.active[type]").each(function(){
-                            types += $(this).attr('type') + " ";
-                        }) 
-                        // get active medium tags
-                        $("#filter button.active[medium]").each(function(){
-                            mediums += $(this).attr('medium') + " ";
-                        })
-                        // list view
-                        if ($("#spotlight.active").length == 1) {
-                            $("div[class*='project spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).removeClass('hidden');
-                            $("div[class*='spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).parent().removeClass('hidden');
-                        } 
-                        // gallery view
-                        else if ($("#gallery.active").length == 1) {
-                            $("div[class*='project']" + chainValues("type", types) + chainValues("medium", mediums)).removeClass('hidden');
-                            $("div[class*='spotlight']" + chainValues("type", types) + chainValues("medium", mediums)).parent().removeClass('hidden');
-                        }
-                    }
-
-                    //show all projects if reset 🟩
-                    if ($("#filter button.active[type='all']").length == 1 && $("#filter button.active[medium='all']").length == 1 && $("#all.active").length == 0) {
-                        $("div[class*='project']").removeClass('hidden');
-                        $("div[class*='spotlight']").parent().removeClass('hidden');
-                    }
-
-                    //show message if no projects found 🟩
-                    if ($("#spotlight.active")) {
-                        if ($("div[class*='project spotlight']").length == $("div[class*='project spotlight'][class*='hidden']").length) {
-                            $("#no-matches").removeClass('hidden');
-                        } else {
-                            $("#no-matches").addClass('hidden');
-                        }
-                    }
-                    if ($("#gallery.active")) {
-                        if ($("div[class*='project']").length == $("div[class*='project'][class*='hidden']").length) {
-                            $("#no-matches").removeClass('hidden');
-                        } else {
-                            $("#no-matches").addClass('hidden');
-                        }
-                    }
-                })
-
-                //functions
-                function chainValues(attribute, values) {
-                    var chain = "";
-                    values = values.split(" ");
-                    console.log(values);
-                    for (var v in values) {
-                        if (values[v] !== "") {
-                            console.log(values[v]);
-                            chain += "[" + attribute + "*='" + values[v] + "']"
-                        }
-                    }
-                    return chain;
-                }
-            })
-        </script>
-
-        <script type="text/javascript" src="style.js" defer></script>
-    </body>
 </html>
