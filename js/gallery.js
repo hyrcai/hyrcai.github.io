@@ -97,7 +97,7 @@ var mousePageX, mouseClientY;
 if (tablet.matches) {
     document.addEventListener('touchmove', (event) => {
         setTimeout(() => {
-        positionElements((winWidth / 2), (winHeight / 2));
+            positionElements((winWidth / 2), (winHeight / 2));
         }, "325")
     })
 } else {
@@ -201,7 +201,7 @@ function styleElements(elements) {
             var coverFactor = covers.children.length * 0.005;
             var maxSize;
             var width, height;
-            var thisVideo;
+            var thisImg, thisVideo;
             if (mobile.matches) {
                 winFactor = 2.25;
             } else if (landscape.matches) {
@@ -214,13 +214,15 @@ function styleElements(elements) {
                 winFactor = 1;
             }
             if (thisCover.querySelector('img')) {
-                width = thisCover.querySelector('img').clientWidth;
-                height = thisCover.querySelector('img').clientHeight;
+                thisImg = thisCover.querySelector('img');
+                width = thisImg.naturalWidth;
+                height = thisImg.naturalHeight;
             } else if (thisCover.querySelector('video')) {
                 thisVideo = thisCover.querySelector('video');
-                width = thisVideo.videoWidth;
-                height = thisVideo.videoHeight;
-                console.log(thisVideo, width, height);
+                thisVideo.addEventListener("loadedmetadata", function (e) {
+                    width = thisVideo.videoWidth;
+                    height = thisVideo.videoHeight;
+                }, false);
             }
             if (width > height) {
                 maxSize = 0.14;
