@@ -752,12 +752,6 @@ iframe {
 #gallery .stack:hover .label {
   opacity: 1;
 }
-#gallery img,
-#gallery video,
-#gallery iframe {
-  width: 100%;
-  height: 100%;
-}
 #gallery iframe {
   pointer-events: none;
 }

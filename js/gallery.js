@@ -201,7 +201,7 @@ function styleElements(elements) {
             var coverFactor = covers.children.length * 0.005;
             var maxSize;
             var width, height;
-            var thisImg, thisVideo;
+            var coverChild;
             if (mobile.matches) {
                 winFactor = 2.25;
             } else if (landscape.matches) {
@@ -214,28 +214,33 @@ function styleElements(elements) {
                 winFactor = 1;
             }
             if (thisCover.querySelector('img')) {
-                thisImg = thisCover.querySelector('img');
-                width = thisImg.naturalWidth;
-                height = thisImg.naturalHeight;
+                coverChild = thisCover.querySelector('img');
+                width = coverChild.naturalWidth;
+                height = coverChild.naturalHeight;
             } else if (thisCover.querySelector('video')) {
-                thisVideo = thisCover.querySelector('video');
-                thisVideo.addEventListener("loadedmetadata", function (e) {
-                    width = thisVideo.videoWidth;
-                    height = thisVideo.videoHeight;
+                coverChild = thisCover.querySelector('video');
+                coverChild.addEventListener("loadedmetadata", function (e) {
+                    width = coverChild.videoWidth;
+                    height = coverChild.videoHeight;
                 }, false);
             }
             if (width > height) {
                 maxSize = 0.14;
                 thisCover.style.width = (winWidth * winFactor) * (maxSize - coverFactor) + "px";
-                thisCover.style.height = "auto !important";
+                thisCover.style.height = "auto";
+                coverChild.style.width = "100%";
+                coverChild.style.height = "auto";
             } else if (height > width) {
                 maxSize = 0.12;
                 thisCover.style.height = (winWidth * winFactor) * (maxSize - coverFactor) + "px";
-                thisCover.style.width = "auto !important";
+                thisCover.style.width = "auto";
+                coverChild.style.height = "100%";
+                coverChild.style.width = "auto";
             } else if (width == height) {
                 maxSize = 0.12;
                 thisCover.style.width = (winWidth * winFactor) * (maxSize - coverFactor) + "px";
                 thisCover.style.height = (winWidth * winFactor) * (maxSize - coverFactor) + "px";
+                coverChild.style.width = "100%";
             }
 
         }
