@@ -1205,10 +1205,6 @@ section {
     padding-top: 6em;
     padding-bottom: 12em;
   }
-  #gallery img,
-  #gallery video {
-    box-shadow: none;
-  }
   .frame.container-m.indent {
     width: 100% !important;
     margin-left: -3em;

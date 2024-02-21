@@ -1439,10 +1439,10 @@ section {
     #gallery {
         padding-top: $bspacer-2;
         padding-bottom: $bspacer-4;
-        img,
-        video {
-            box-shadow: none;
-        }
+        // img,
+        // video {
+        //     box-shadow: none;
+        // }
     }
 
     .frame.container-m.indent {
