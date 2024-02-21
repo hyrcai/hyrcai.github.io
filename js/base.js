@@ -1,11 +1,8 @@
 // hide loader on load
 $(window).on('load', function () {
-    $('body > *:not([data-include="loader"])').css('opacity', '1');
-    // setTimeout(function () {
-        $('#loader').addClass('hidden');
-        $('#loader').css('visibility', 'hidden');
-        $('html').css('overflow-y', 'auto');
-    // }, 3000);
+    $('body>*:not([data-include="loader"])').css('opacity', '1');
+    $('#loader').addClass('hidden');
+    $('html').css('overflow-y', 'auto');
 });
 
 // load top and bottom nav

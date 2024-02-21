@@ -239,10 +239,10 @@ var mousePageX, mousePageY, mouseClientY, scrollTop;
 
 if (tablet.matches) {
     document.addEventListener('scrollend', (event) => {
-        // setTimeout(() => {
+        setTimeout(() => {
             scrollTop = document.documentElement.scrollTop;
             positionElements((winWidth / 2) - margin, winHeight / 2, winHeight / 2, scrollTop)
-        // }, "325")
+        }, "325")
     })
 } else {
     document.addEventListener('mousemove', (event) => {
