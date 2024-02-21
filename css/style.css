@@ -186,7 +186,7 @@ h1 {
 }
 
 h2 {
-  font: 500 1.5em/1.6 "Open Sans", Open Sans, sans-serif;
+  font: 500 1.5em/1.5 "Open Sans", Open Sans, sans-serif;
   margin: 0;
   padding-bottom: 1em;
 }
@@ -636,7 +636,7 @@ iframe {
   transform: translate(-50%, -50%);
 }
 .list .title {
-  font: 500 1.5em/1.6 "Open Sans", Open Sans, sans-serif;
+  font: 500 1.5em/1.5 "Open Sans", Open Sans, sans-serif;
   padding-bottom: 0.25em;
 }
 .list .desc {
@@ -1145,9 +1145,16 @@ section {
   }
   .L {
     font-size: 1.5em;
+    padding-bottom: 0.25em;
+  }
+  h2 {
+    font-size: 1.25em;
   }
   .M {
-    font-size: 1.25em;
+    font-size: 1em;
+  }
+  .sectiontitle {
+    font-size: 1.25em !important;
   }
   main {
     padding: 0 3em !important;
@@ -1210,7 +1217,8 @@ section {
     padding-top: 0;
   }
   .frame.container-m.indent {
-    width: calc(100% - 3em) !important;
+    width: 100% !important;
+    margin-left: -3em;
   }
   header button {
     margin-bottom: 0.25em;

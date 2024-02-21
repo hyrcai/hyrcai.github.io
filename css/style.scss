@@ -14,7 +14,7 @@ $secondary-bold: 500;
 $secondary-normal: 400;
 // fonts
 $h1: $primary-normal 2.25em/1.4 $primary;
-$h2: $primary-normal 1.5em/1.6 $primary;
+$h2: $primary-normal 1.5em/1.5 $primary;
 $h3: $primary-normal 1.25em/1.4 $primary;
 $h4: $secondary-normal 1em/1.4 $secondary;
 $subtitle: $primary-bold .875em/2 $primary;
@@ -1377,10 +1377,19 @@ section {
 
     .L {
         font-size: 1.5em;
+        padding-bottom: $spacer-1;
+    }
+
+    h2 {
+        font-size: 1.25em;
     }
 
     .M {
-        font-size: 1.25em;
+        font-size: 1em;
+    }
+
+    .sectiontitle {
+        font-size: 1.25em !important;
     }
 
     main {
@@ -1466,7 +1475,8 @@ section {
     }
 
     .frame.container-m.indent {
-        width: calc(100% - $bspacer-1) !important;
+        width: 100% !important;
+        margin-left: -$margin;
     }
 
     header {
