@@ -1213,7 +1213,8 @@ section {
     margin-top: -3em;
   }
   #gallery {
-    padding-top: 0;
+    padding-top: 6em;
+    padding-bottom: 12em;
   }
   .frame.container-m.indent {
     width: 100% !important;
