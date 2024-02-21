@@ -98,7 +98,7 @@ if (tablet.matches) {
     document.addEventListener('touchmove', (event) => {
         setTimeout(() => {
             positionElements((winWidth / 2), (winHeight / 2));
-        }, "325")
+        }, "750")
     })
 } else {
     document.addEventListener('mousemove', (event) => {
