@@ -215,14 +215,13 @@ function styleElements(elements) {
 
 // mouse interactions
 let addPerspective = document.getElementsByClassName('perspective');
-var mousePageX, mousePageY, mouseClientY, scrollTop;
+var mousePageX, mouseClientY;
 
 if (tablet.matches) {
-    document.addEventListener('scrollend', (event) => {
+    document.addEventListener('scroll', (event) => {
         setTimeout(() => {
-            scrollTop = document.documentElement.scrollTop;
-            positionElements(winWidth / 2, winHeight / 2, winHeight / 2, scrollTop)
-        }, "325")
+            positionElements((winWidth / 2), (winHeight / 2));
+        }, "750")
     })
 } else {
     document.addEventListener('mousemove', (event) => {
@@ -230,19 +229,17 @@ if (tablet.matches) {
         mousePageY = event.pageY;
         mouseClientY = event.clientY;
         setTimeout(() => {
-            scrollTop = document.documentElement.scrollTop;
-            positionElements(mousePageX, mousePageY, mouseClientY, scrollTop);
+            positionElements(mousePageX, mouseClientY);
         }, "10")
     })
     document.addEventListener('scroll', (event) => {
         setTimeout(() => {
-            scrollTop = document.documentElement;
-            positionElements(mousePageX, mousePageY, mouseClientY);
+            positionElements(mousePageX, mouseClientY);
         }, "750")
     })
 }
 
-function positionElements(mousePageX, mousePageY, mouseClientY) {
+function positionElements(mousePageX, mouseClientY) {
     // get gallery stacks
     if (gallery) {
         for (var i = 0; i < galleryStacks.length; i++) {
