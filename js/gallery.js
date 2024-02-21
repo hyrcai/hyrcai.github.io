@@ -96,9 +96,9 @@ var mousePageX, mouseClientY;
 
 if (tablet.matches) {
     document.addEventListener('touchmove', (event) => {
-        // setTimeout(() => {
+        setTimeout(() => {
         positionElements((winWidth / 2), (winHeight / 2));
-        // }, "750")
+        }, "325")
     })
 } else {
     document.addEventListener('mousemove', (event) => {
