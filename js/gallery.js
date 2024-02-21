@@ -238,10 +238,10 @@ let addPerspective = document.getElementsByClassName('perspective');
 var mousePageX, mousePageY, mouseClientY, scrollTop;
 
 if (tablet.matches) {
-    document.addEventListener('scrollend', (event) => {
+    document.addEventListener('scroll', (event) => {
         setTimeout(() => {
             scrollTop = document.documentElement.scrollTop;
-            positionElements((winWidth / 2) - margin, winHeight / 2, winHeight / 2, scrollTop)
+            positionElements(winWidth / 2, winHeight / 2, winHeight / 2, scrollTop)
         }, "325")
     })
 } else {

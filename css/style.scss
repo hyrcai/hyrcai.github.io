@@ -1436,8 +1436,7 @@ section {
         }
     }
 
-    .label .subtitle,
-    header .subtitle {
+    .subtitle {
         padding-top: $spacer-2;
     }
 
@@ -1454,7 +1453,6 @@ section {
 
     .frame,
     .case-study {
-        // padding: $spacer-6;
         margin-left: -$margin;
         margin-right: -$margin;
         border-left: 1px solid transparent !important;
