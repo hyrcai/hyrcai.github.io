@@ -117,7 +117,7 @@ body {
     margin: 0;
 }
 
-body > *:not([data-include="loader"]) {
+body>*:not([data-include="loader"]) {
     opacity: 0;
 }
 
@@ -571,7 +571,6 @@ nav {
     z-index: 2000 !important;
     width: 100vw;
     background: $bg-transparent-light;
-    background-filter: blur($bg-blur);
     -webkit-backdrop-filter: blur($bg-blur);
     backdrop-filter: blur($bg-blur);
 
@@ -663,7 +662,6 @@ footer {
     width: 100vw;
     box-sizing: border-box;
     background: $bg-transparent-light;
-    background-filter: blur($bg-blur);
     -webkit-backdrop-filter: blur($bg-blur);
     backdrop-filter: blur($bg-blur);
 
@@ -866,7 +864,6 @@ iframe {
             max-width: 320px;
             background: $bg;
             box-shadow: $box-shadow-b;
-            background-filter: blur($bg-blur);
             -webkit-backdrop-filter: blur($bg-blur);
             backdrop-filter: blur($bg-blur);
             border: $border;
@@ -1193,7 +1190,6 @@ section {
         text-align: center;
         background-color: $bg-transparent-dark;
         padding: $spacer-4;
-        background-filter: blur($blur);
         -webkit-backdrop-filter: blur($blur);
         backdrop-filter: blur($blur);
         color: white;
@@ -1215,6 +1211,7 @@ section {
 //media queries
 
 @media (min-width: 1800px) {
+
     header,
     main {
         max-width: 1800px;
@@ -1370,12 +1367,15 @@ section {
         }
     }
 
-    h1, .XL {
+    h1,
+    .XL {
         font-size: 1.75em;
     }
+
     .L {
         font-size: 1.5em;
     }
+
     .M {
         font-size: 1.25em;
     }

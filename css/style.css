@@ -466,7 +466,6 @@ nav {
   z-index: 2000 !important;
   width: 100vw;
   background: rgba(250, 250, 250, 0.64);
-  background-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
@@ -545,7 +544,6 @@ footer {
   width: 100vw;
   box-sizing: border-box;
   background: rgba(250, 250, 250, 0.64);
-  background-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
@@ -721,7 +719,6 @@ iframe {
   max-width: 320px;
   background: rgb(250, 250, 250);
   box-shadow: 1em 2em 3em rgba(50, 50, 50, 0.065), 0.5em 1em 2em rgba(50, 50, 50, 0.07), 0.25em 0.5em 1em rgba(50, 50, 50, 0.075);
-  background-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border: 1px solid black;
@@ -1007,7 +1004,6 @@ section {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.64);
   padding: 1em;
-  background-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   color: white;
@@ -1140,7 +1136,8 @@ section {
   nav #about {
     display: none;
   }
-  h1, .XL {
+  h1,
+  .XL {
     font-size: 1.75em;
   }
   .L {
