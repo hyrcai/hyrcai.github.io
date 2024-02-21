@@ -94,15 +94,16 @@ document.addEventListener('click', (event) => {
 // re-style on window resize
 window.addEventListener('resize', function (event) {
     actions++;
-    setTimeout(function () {
-        if (widescreen.matches) {
-            style = window.getComputedStyle(main);
-            marginX = style.marginLeft;
-            marginX = parseInt(marginX);
-            console.log("resize: " + marginX);
-        }
-        styleElements(galleryStacks);
-    }, 200);
+    if (this.window.screen.width !== winWidth) {
+        setTimeout(function () {
+            if (widescreen.matches) {
+                style = window.getComputedStyle(main);
+                marginX = style.marginLeft;
+                marginX = parseInt(marginX);
+            }
+            styleElements(galleryStacks);
+        }, 200);
+    }
 }, true);
 
 function styleElements(elements) {
