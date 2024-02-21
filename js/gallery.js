@@ -1,22 +1,15 @@
 // get elements
 let nav = document.getElementsByTagName('nav');
 nav = nav[0];
-let header = document.getElementsByTagName('header');
-header = header[0];
 let main = document.getElementsByTagName('main');
 main = main[0];
 var style;
 var marginX = 0;
 let gallery = document.getElementById('gallery');
-let galleryStacks;
-if (gallery) {
-    galleryStacks = gallery.querySelectorAll('.stack:not(.hidden)');
-}
+let galleryStacks = gallery.querySelectorAll('.stack:not(.hidden)');
 let buttons = document.getElementsByTagName('button');
-let overview = document.getElementById('overview');
 let labels = document.getElementsByClassName('label');
 let tags = document.getElementsByTagName('button');
-let otherStacks = document.querySelectorAll('.stack-b, .stack-s');
 let actions = 0;
 var winWidth, winHeight, clientWidth;
 
@@ -28,26 +21,24 @@ var landscape = window.matchMedia("(max-width: 800px)");
 var mobile = window.matchMedia("(max-width: 550px)");
 
 // add type and medium attributes to gallery stacks
-if (gallery) {
-    for (var i = 0; i < galleryStacks.length; i++) {
-        var thisStack = galleryStacks[i];
-        if (thisStack.querySelector('.label')) {
-            let thisLabel = thisStack.querySelector('.label');
-            var labelButtons = thisLabel.getElementsByTagName('button');
-            var types = "";
-            var mediums = "";
-            for (var b = 0; b < labelButtons.length; b++) {
-                var thisTag = labelButtons[b];
-                if (thisTag.getAttribute('type')) {
-                    types += thisTag.getAttribute('type') + " ";
-                }
-                if (thisTag.getAttribute('medium')) {
-                    mediums += thisTag.getAttribute('medium') + " ";
-                }
+for (var i = 0; i < galleryStacks.length; i++) {
+    var thisStack = galleryStacks[i];
+    if (thisStack.querySelector('.label')) {
+        let thisLabel = thisStack.querySelector('.label');
+        var labelButtons = thisLabel.getElementsByTagName('button');
+        var types = "";
+        var mediums = "";
+        for (var b = 0; b < labelButtons.length; b++) {
+            var thisTag = labelButtons[b];
+            if (thisTag.getAttribute('type')) {
+                types += thisTag.getAttribute('type') + " ";
             }
-            thisStack.setAttribute("type", types);
-            thisStack.setAttribute("medium", mediums);
+            if (thisTag.getAttribute('medium')) {
+                mediums += thisTag.getAttribute('medium') + " ";
+            }
         }
+        thisStack.setAttribute("type", types);
+        thisStack.setAttribute("medium", mediums);
     }
 }
 
@@ -55,9 +46,6 @@ if (gallery) {
 var margin = 48;
 var offsetX = margin;
 var offsetY = margin;
-// if (header) {
-//     offsetY += header.offsetHeight;
-// }
 var variation = 160;
 var threshold = 400;
 var rows, columns, x, y, xInterval, yInterval, xVariation, yVariation;
@@ -68,14 +56,8 @@ if (widescreen.matches) {
     marginX = parseInt(marginX);
 }
 
-
 // style main gallery project stacks
-if (gallery) {
-    styleElements(galleryStacks);
-}
-
-// // style other stacks
-// styleElements(otherStacks);
+styleElements(galleryStacks);
 
 // shuffle covers on click
 document.addEventListener('click', (event) => {
@@ -84,7 +66,7 @@ document.addEventListener('click', (event) => {
         galleryStacks = gallery.querySelectorAll('.stack:not(.hidden)');
         styleElements(galleryStacks);
         // set height to position footer properly
-        gallery.style.height = (Math.ceil(galleryStacks.length / columns) * yInterval) + (margin * 3) + "px";
+        gallery.style.height = (Math.ceil(galleryStacks.length / columns) * yInterval) + "px";
         if (galleryStacks.length == 0) {
             gallery.style.height = (margin * 10) + "px";
         }
@@ -94,7 +76,7 @@ document.addEventListener('click', (event) => {
 // re-style on window resize
 window.addEventListener('resize', function (event) {
     actions++;
-    if (this.window.screen.width !== winWidth) {
+    if (this.window.screen.width !== winWidth) { // fix for mobile scrollbar causing resize
         setTimeout(function () {
             if (widescreen.matches) {
                 style = window.getComputedStyle(main);
@@ -107,6 +89,7 @@ window.addEventListener('resize', function (event) {
 }, true);
 
 function styleElements(elements) {
+
     // get window width and height
     winWidth = window.innerWidth || document.documentElement.clientWidth ||
         document.body.clientWidth;
@@ -183,11 +166,7 @@ function styleElements(elements) {
 
             // set position
             thisCover.style.left = x + xVariation + (margin * 2) + "px";
-            if (header) {
-                thisCover.style.top = y + yVariation - header.offsetHeight + (margin * 6) + "px";
-            } else {
-                thisCover.style.top = y + yVariation + (margin * 6) + "px";
-            }
+            thisCover.style.top = y + yVariation + (margin * 6) + "px";
 
             // scale by width or height 
             var winFactor;
@@ -282,11 +261,11 @@ function positionElements(mousePageX, mousePageY, mouseClientY) {
                 }
             }
 
-            // gallery view 
             // add perspective based on mouse position
             var perspective = getPerspective(mousePageX, mouseClientY, 12);
             gallery.querySelector('.container').style.transform = "rotateX(" + perspective[1] + "deg) rotateY(" + perspective[0] + "deg)";
 
+            // show respective label on hover
             thisLabel.classList.add('hidden');
             if (gallery.matches(':hover')) {
                 thisLabel.classList.remove('display-none');

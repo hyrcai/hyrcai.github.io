@@ -48,7 +48,6 @@ html * {
 
 body {
   margin: 0;
-  opacity: 1;
 }
 
 body > *:not([data-include=loader]) {
@@ -469,7 +468,6 @@ nav {
   background: rgba(250, 250, 250, 0.64);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  opacity: 1;
 }
 nav .container {
   display: flex;
@@ -548,7 +546,6 @@ footer {
   background: rgba(250, 250, 250, 0.64);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  opacity: 1;
 }
 footer .container {
   height: 69px;
@@ -1052,15 +1049,6 @@ section {
   }
   main .list .case-study {
     flex-direction: column-reverse;
-  }
-  main .list .case-study .perspective {
-    width: 100%;
-  }
-  main .list .case-study .perspective .cover {
-    width: calc(100vw - 12em) !important;
-    transform: translate(0, 0) !important;
-    position: static;
-    margin: 3em 0;
   }
   .display-grid .flex-container span:first-child {
     margin-bottom: 1.5em;

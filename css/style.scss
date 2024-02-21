@@ -1,8 +1,8 @@
-//fonts 🟨
+//fonts
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700|Asap:300,400,500,600,700|EB+Garamond:300,400,500,600,700|Source+Serif+4:200,300,400,500,600,700);
 
 /*-----------------------------------------------*/
-//sass variables 🟨
+//sass variables
 // font families
 $primary: "Open Sans", Open Sans, sans-serif;
 $secondary: "Asap", Asap, sans-serif;
@@ -91,7 +91,7 @@ $bg-blur: 12px;
 $border: 1px solid $black;
 
 /*-----------------------------------------------*/
-//text and groundwork 🟨
+//text and groundwork
 
 html {
     background-color: $bg;
@@ -115,7 +115,6 @@ html {
 
 body {
     margin: 0;
-    opacity: 1;
 }
 
 body>*:not([data-include="loader"]) {
@@ -153,7 +152,6 @@ body>*:not([data-include="loader"]) {
     border-radius: $spacer-4;
     border: $border;
     background-color: white;
-    // backdrop-filter: blur(1px);
     position: fixed;
     pointer-events: none;
     z-index: 2001 !important;
@@ -161,16 +159,12 @@ body>*:not([data-include="loader"]) {
     line-height: 0px !important;
     margin-top: 0;
     margin-left: 0;
-    // mix-blend-mode: multiply;
-    // box-shadow: $box-shadow-b;
 }
 
 #cursor.link-in,
 #cursor.link-out {
     width: $bspacer-1;
     height: $bspacer-1;
-    // margin-top: -$spacer-6;
-    // margin-left: -$spacer-6;
     opacity: 1;
     filter: none;
     border-radius: $bspacer-2;
@@ -339,7 +333,7 @@ ol {
 }
 
 /*-----------------------------------------------*/
-//classes 🟨
+//classes
 
 .blur {
     opacity: 0.2;
@@ -415,12 +409,10 @@ header .flex-container span:not(:last-child) {
 }
 
 .flex-container.equal {
-    // flex-wrap: wrap;
     justify-content: left;
 
     span {
         box-sizing: border-box;
-        // padding-right: $bspacer-1;
     }
 }
 
@@ -558,11 +550,10 @@ figcaption {
     color: $grey;
     text-align: center;
     line-height: 140%;
-    // max-width: 60%;
 }
 
 /*-----------------------------------------------*/
-//main navigation 🟩
+//main navigation
 
 nav {
     display: flex;
@@ -574,7 +565,6 @@ nav {
     background: $bg-transparent-light;
     -webkit-backdrop-filter: blur($bg-blur);
     backdrop-filter: blur($bg-blur);
-    opacity: 1;
 
     .container {
         display: flex;
@@ -656,7 +646,7 @@ header {
     }
 }
 
-//footer 🟩
+//footer
 footer {
     position: sticky;
     bottom: 0;
@@ -666,7 +656,6 @@ footer {
     background: $bg-transparent-light;
     -webkit-backdrop-filter: blur($bg-blur);
     backdrop-filter: blur($bg-blur);
-    opacity: 1;
 
     .container {
         height: 69px;
@@ -710,7 +699,7 @@ footer {
     }
 }
 
-//landing + collections 🟥
+//landing + collections
 main {
     padding: 0 $bspacer-3;
 
@@ -1051,7 +1040,7 @@ header button {
 }
 
 /*-----------------------------------------------*/
-//project pages 🟨
+//project pages
 .process {
     .sectiontitle {
         font-family: "Source Serif 4", serif;
@@ -1151,10 +1140,6 @@ section {
     }
 }
 
-// .frame.container-b {
-//     width: calc(100% - $bspacer-2);
-// }
-
 .frame.container-m.indent:not(.full) {
     width: calc(60% - $bspacer-2);
 }
@@ -1176,14 +1161,9 @@ section {
 .stack-s {
     height: $bspacer-3;
     padding-bottom: $bspacer-5;
-    // position: relative;
     z-index: 10 !important;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-
-    .covers {
-        // position: absolute;
-    }
 
     .caption {
         position: absolute;
@@ -1228,7 +1208,7 @@ section {
     }
 }
 
-// Medium devices (tablets, less than 992px)  🟩
+// Medium devices (tablets, less than 992px) 
 @media (max-width: 1200px) {
 
     header {
@@ -1249,18 +1229,6 @@ section {
         .list {
             .case-study {
                 flex-direction: column-reverse;
-
-                .perspective {
-                    width: 100%;
-
-                    .cover {
-                        width: calc(100vw - 12em) !important;
-                        transform: translate(0, 0) !important;
-                        position: static;
-                        margin: $margin 0;
-                    }
-
-                }
             }
         }
     }
