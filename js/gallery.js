@@ -95,7 +95,7 @@ let addPerspective = document.getElementsByClassName('perspective');
 var mousePageX, mouseClientY;
 
 if (tablet.matches) {
-    document.addEventListener('scrollend', (event) => {
+    document.addEventListener('touchend', (event) => {
         // setTimeout(() => {
         positionElements((winWidth / 2), (winHeight / 2));
         // }, "750")
