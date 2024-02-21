@@ -88,6 +88,34 @@ window.addEventListener('resize', function (event) {
     }
 }, true);
 
+
+
+// mouse interactions
+let addPerspective = document.getElementsByClassName('perspective');
+var mousePageX, mouseClientY;
+
+if (tablet.matches) {
+    document.addEventListener('scrollend', (event) => {
+        // setTimeout(() => {
+        positionElements((winWidth / 2), (winHeight / 2));
+        // }, "750")
+    })
+} else {
+    document.addEventListener('mousemove', (event) => {
+        mousePageX = event.pageX;
+        mousePageY = event.pageY;
+        mouseClientY = event.clientY;
+        setTimeout(() => {
+            positionElements(mousePageX, mouseClientY);
+        }, "10")
+    })
+    document.addEventListener('scroll', (event) => {
+        setTimeout(() => {
+            positionElements(mousePageX, mouseClientY);
+        }, "750")
+    })
+}
+
 function styleElements(elements) {
 
     // get window width and height
@@ -192,15 +220,16 @@ function styleElements(elements) {
                 thisVideo = thisCover.querySelector('video');
                 width = thisVideo.videoWidth;
                 height = thisVideo.videoHeight;
+                console.log(thisVideo, width, height);
             }
             if (width > height) {
                 maxSize = 0.14;
                 thisCover.style.width = (winWidth * winFactor) * (maxSize - coverFactor) + "px";
-                thisCover.style.height = "auto";
+                thisCover.style.height = "auto !important";
             } else if (height > width) {
                 maxSize = 0.12;
                 thisCover.style.height = (winWidth * winFactor) * (maxSize - coverFactor) + "px";
-                thisCover.style.width = "auto";
+                thisCover.style.width = "auto !important";
             } else if (width == height) {
                 maxSize = 0.12;
                 thisCover.style.width = (winWidth * winFactor) * (maxSize - coverFactor) + "px";
@@ -211,32 +240,6 @@ function styleElements(elements) {
     }
     // set height to position footer properly
     gallery.style.height = (Math.ceil(galleryStacks.length / columns) * yInterval) + "px";
-}
-
-// mouse interactions
-let addPerspective = document.getElementsByClassName('perspective');
-var mousePageX, mouseClientY;
-
-if (tablet.matches) {
-    document.addEventListener('scroll', (event) => {
-        setTimeout(() => {
-            positionElements((winWidth / 2), (winHeight / 2));
-        }, "750")
-    })
-} else {
-    document.addEventListener('mousemove', (event) => {
-        mousePageX = event.pageX;
-        mousePageY = event.pageY;
-        mouseClientY = event.clientY;
-        setTimeout(() => {
-            positionElements(mousePageX, mouseClientY);
-        }, "10")
-    })
-    document.addEventListener('scroll', (event) => {
-        setTimeout(() => {
-            positionElements(mousePageX, mouseClientY);
-        }, "750")
-    })
 }
 
 function positionElements(mousePageX, mouseClientY) {
