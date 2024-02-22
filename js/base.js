@@ -11,9 +11,9 @@ $(function () {
 $(window).on('load', function () {
     // $('body>:not([data-include="loader"])').css('opacity', '1');
     $('#loader').addClass('hidden');
-    // setTimeout(function () {
-    //     $('#loader').css('display', 'none');
-    // }, 750);
+    setTimeout(function () {
+        $('#loader').css('display', 'none');
+    }, 750);
     $('html').css('overflow-y', 'auto');
 });
 

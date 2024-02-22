@@ -115,12 +115,11 @@ html {
 
 body {
     margin: 0;
-    opacity: 1;
 }
 
-// body>*:not([data-include="loader"]) {
-//     opacity: 0;
-// }
+body>*:not([data-include="loader"]) {
+    opacity: 0;
+}
 
 #loader {
     width: 100vw;
@@ -1288,7 +1287,7 @@ section {
 
 @media (max-width: 800px) {
     nav {
-        // background: $bg;
+        background: $bg;
 
         #case-studies,
         #gallery,
@@ -1372,7 +1371,7 @@ section {
     }
 
     footer {
-        // background: $bg;
+        background: $bg;
 
         #messages {
             display: none;

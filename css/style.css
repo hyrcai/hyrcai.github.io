@@ -48,7 +48,10 @@ html * {
 
 body {
   margin: 0;
-  opacity: 1;
+}
+
+body > *:not([data-include=loader]) {
+  opacity: 0;
 }
 
 #loader {
@@ -1079,6 +1082,9 @@ section {
   }
 }
 @media (max-width: 800px) {
+  nav {
+    background: rgb(250, 250, 250);
+  }
   nav #case-studies,
   nav #gallery,
   nav #about {
@@ -1138,6 +1144,9 @@ section {
   }
   .label .flex-container.equal {
     padding-top: 0.5em;
+  }
+  footer {
+    background: rgb(250, 250, 250);
   }
   footer #messages {
     display: none;
