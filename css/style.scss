@@ -117,9 +117,8 @@ body {
     margin: 0;
 }
 
-body>*:not([data-include="loader"]) {
-    // opacity: 0;
-    visibility: hidden;
+body>:not([data-include="loader"]) {
+    opacity: 0;
 }
 
 #loader {
