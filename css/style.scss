@@ -115,11 +115,12 @@ html {
 
 body {
     margin: 0;
+    opacity: 1;
 }
 
-body>*:not([data-include="loader"]) {
-    opacity: 0;
-}
+// body>*:not([data-include="loader"]) {
+//     opacity: 0;
+// }
 
 #loader {
     width: 100vw;
@@ -560,11 +561,11 @@ nav {
     flex-direction: column;
     position: sticky;
     top: 0;
-    z-index: 2000 !important;
+    z-index: 2000;
     width: 100vw;
     background: $bg-transparent-light;
-    -webkit-backdrop-filter: blur($bg-blur) !important;
-    backdrop-filter: blur($bg-blur) !important;
+    -webkit-backdrop-filter: blur($bg-blur);
+    backdrop-filter: blur($bg-blur);
 
     .container {
         display: flex;
@@ -650,12 +651,12 @@ header {
 footer {
     position: sticky;
     bottom: 0;
-    z-index: 2000 !important;
+    z-index: 2000;
     width: 100vw;
     box-sizing: border-box;
     background: $bg-transparent-light;
-    -webkit-backdrop-filter: blur($bg-blur) !important;
-    backdrop-filter: blur($bg-blur) !important;
+    -webkit-backdrop-filter: blur($bg-blur);
+    backdrop-filter: blur($bg-blur);
 
     .container {
         height: 69px;
@@ -1287,7 +1288,7 @@ section {
 
 @media (max-width: 800px) {
     nav {
-        background: $bg;
+        // background: $bg;
 
         #case-studies,
         #gallery,
@@ -1371,7 +1372,7 @@ section {
     }
 
     footer {
-        background: $bg;
+        // background: $bg;
 
         #messages {
             display: none;
