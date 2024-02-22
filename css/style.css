@@ -375,6 +375,9 @@ header .flex-container span:not(:last-child) {
 .covers:hover {
   z-index: 1 !important;
 }
+.covers:hover .label {
+  transition: visibility 0.5s ease-out, opacity 0.5s ease-out, filter 0.5s ease-out, transform 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.05), margin-top 0.5s ease-out, display 0.5s ease-out;
+}
 
 .cover:hover {
   z-index: 2 !important;
@@ -724,7 +727,7 @@ iframe {
   backdrop-filter: blur(12px);
   border: 1px solid black;
   line-height: 1.6;
-  transition: visibility 0.75s ease, opacity 0.75s ease, filter 0.75s ease, transform 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.05), margin-top 0.75s ease, display 0.75s ease;
+  transition: visibility 0.5s ease-in, opacity 0.5s ease-in, filter 0.5s ease-in, transform 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.05), margin-top 0.5s ease-in, display 0.5s ease-in;
 }
 #gallery .stack .label .title {
   font: 500 1.25em/1.4 "Open Sans", Open Sans, sans-serif;

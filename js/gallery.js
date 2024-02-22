@@ -284,7 +284,7 @@ function positionElements(mousePageX, mouseClientY) {
             }
             setTimeout(function () {
                 $("div[class*='label hidden']").addClass('display-none');
-            }, 750);
+            }, 500);
         }
     }
 }
