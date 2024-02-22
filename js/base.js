@@ -10,6 +10,7 @@ $(function () {
 // hide loader on load
 $(window).on('load', function () {
     // $('body>*:not([data-include="loader"])').css('opacity', '1');
+    $('body>*:not([data-include="loader"])').css('visibility', 'visible');
     $('#loader').addClass('hidden');
     setTimeout(function () {
         $('#loader').css('display', 'none');

@@ -50,6 +50,10 @@ body {
   margin: 0;
 }
 
+body > *:not([data-include=loader]) {
+  visibility: hidden;
+}
+
 #loader {
   width: 100vw;
   height: 100vh;

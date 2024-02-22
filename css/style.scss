@@ -119,6 +119,7 @@ body {
 
 body>*:not([data-include="loader"]) {
     // opacity: 0;
+    visibility: hidden;
 }
 
 #loader {
