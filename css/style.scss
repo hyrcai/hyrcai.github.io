@@ -117,9 +117,9 @@ body {
     margin: 0;
 }
 
-body>:not([data-include="loader"]) {
-    opacity: 0;
-}
+// body>*:not([data-include="loader"]) {
+//     opacity: 0;
+// }
 
 #loader {
     width: 100vw;
