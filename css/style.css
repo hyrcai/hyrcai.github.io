@@ -50,6 +50,10 @@ body {
   margin: 0;
 }
 
+body > *:not([data-include=loader]) {
+  opacity: 0;
+}
+
 #loader {
   width: 100vw;
   height: 100vh;
@@ -462,8 +466,8 @@ nav {
   z-index: 2000 !important;
   width: 100vw;
   background: rgba(250, 250, 250, 0.64);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: blur(12px) !important;
 }
 nav .container {
   display: flex;
@@ -540,8 +544,8 @@ footer {
   width: 100vw;
   box-sizing: border-box;
   background: rgba(250, 250, 250, 0.64);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: blur(12px) !important;
 }
 footer .container {
   height: 69px;
@@ -918,9 +922,6 @@ header button {
 .process ol.big * {
   font: 500 1.25em/1.4 "Open Sans", Open Sans, sans-serif;
 }
-.process .stack-b .cover * {
-  width: 100%;
-}
 
 section .covers {
   top: 0;
@@ -977,38 +978,6 @@ section {
 .container-s {
   width: 40%;
   height: 100%;
-}
-
-.stack-b,
-.stack-s {
-  height: 9em;
-  padding-bottom: 15em;
-  z-index: 10 !important;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-.stack-b .caption,
-.stack-s .caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.64);
-  padding: 1em;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  color: white;
-}
-
-.stack-b {
-  width: 100%;
-  margin: 9em;
-  margin-left: 3em;
-}
-
-.stack-s {
-  width: 60%;
-  margin-bottom: 18em;
 }
 
 /*-----------------------------------------------*/

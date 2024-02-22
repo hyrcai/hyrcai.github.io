@@ -117,9 +117,9 @@ body {
     margin: 0;
 }
 
-// body>*:not([data-include="loader"]) {
-//     opacity: 0;
-// }
+body>*:not([data-include="loader"]) {
+    opacity: 0;
+}
 
 #loader {
     width: 100vw;
@@ -563,8 +563,8 @@ nav {
     z-index: 2000 !important;
     width: 100vw;
     background: $bg-transparent-light;
-    -webkit-backdrop-filter: blur($bg-blur);
-    backdrop-filter: blur($bg-blur);
+    -webkit-backdrop-filter: blur($bg-blur) !important;
+    backdrop-filter: blur($bg-blur) !important;
 
     .container {
         display: flex;
@@ -654,8 +654,8 @@ footer {
     width: 100vw;
     box-sizing: border-box;
     background: $bg-transparent-light;
-    -webkit-backdrop-filter: blur($bg-blur);
-    backdrop-filter: blur($bg-blur);
+    -webkit-backdrop-filter: blur($bg-blur) !important;
+    backdrop-filter: blur($bg-blur) !important;
 
     .container {
         height: 69px;
@@ -1082,10 +1082,6 @@ header button {
     ol.big * {
         font: $h3;
     }
-
-    .stack-b .cover * {
-        width: 100%;
-    }
 }
 
 section {
@@ -1149,39 +1145,6 @@ section {
 .container-s {
     width: 40%;
     height: 100%;
-}
-
-.stack-b,
-.stack-s {
-    height: $bspacer-3;
-    padding-bottom: $bspacer-5;
-    z-index: 10 !important;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-
-    .caption {
-        position: absolute;
-        top: 50%;
-        //        left: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-        background-color: $bg-transparent-dark;
-        padding: $spacer-4;
-        -webkit-backdrop-filter: blur($blur);
-        backdrop-filter: blur($blur);
-        color: white;
-    }
-}
-
-.stack-b {
-    width: 100%;
-    margin: $bspacer-3;
-    margin-left: $margin;
-}
-
-.stack-s {
-    width: 60%;
-    margin-bottom: $bspacer-6;
 }
 
 /*-----------------------------------------------*/
@@ -1432,10 +1395,6 @@ section {
     #gallery {
         padding-top: $bspacer-2;
         padding-bottom: $bspacer-4;
-        // img,
-        // video {
-        //     box-shadow: none;
-        // }
     }
 
     .frame.container-m.indent {
