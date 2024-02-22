@@ -1287,6 +1287,7 @@ section {
 
 @media (max-width: 800px) {
     nav {
+        background: $bg;
 
         #case-studies,
         #gallery,
@@ -1369,8 +1370,12 @@ section {
         padding-top: $spacer-2;
     }
 
-    footer #messages {
-        display: none;
+    footer {
+        background: $bg;
+
+        #messages {
+            display: none;
+        }
     }
 }
 
