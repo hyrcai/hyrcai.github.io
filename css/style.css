@@ -1141,7 +1141,7 @@ section {
   .flex-container.equal span > * {
     margin-right: 0;
   }
-  .subtitle {
+  .label .subtitle, .subtitle {
     padding-top: 0.5em;
   }
   .label .flex-container.equal {
