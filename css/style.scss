@@ -464,8 +464,7 @@ header .flex-container span:not(:last-child) {
 
 .cover:hover {
     z-index: 2 !important;
-    transition: 0.75s ease;
-    transition-timing-function: cubic-bezier(.25, 0, .25, 1.25);
+    transition: 0.75s cubic-bezier(.25, 0, .25, 1.25);
 
     >img,
     >a img,
