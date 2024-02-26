@@ -416,10 +416,6 @@ header .flex-container span:not(:last-child) {
     }
 }
 
-.flex-container.equal span {
-    max-width: 20%;
-}
-
 .container-b .single-image {
     margin-top: $bspacer-1;
 }
@@ -773,7 +769,7 @@ iframe {
 .case-study {
     border: $border;
     padding: $bspacer-1;
-    margin-bottom: $bspacer-1;
+    margin-bottom: $bspacer-2;
 
     .sectiontitle {
         padding-bottom: $spacer-8;
@@ -1042,7 +1038,6 @@ header button {
         font-family: "Source Serif 4", serif;
         font-size: 1.5em;
         font-weight: 400;
-        padding-bottom: $spacer-2;
         font-style: italic;
         letter-spacing: -0.02em;
     }
