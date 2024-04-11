@@ -239,7 +239,7 @@ function styleElements(elements) {
             } else if (width == height) {
                 maxSize = 0.12;
                 thisCover.style.width = (winWidth * winFactor) * (maxSize - coverFactor) + "px";
-                thisCover.style.height = (winWidth * winFactor) * (maxSize - coverFactor) + "px";
+                thisCover.style.height = "auto";
                 coverChild.style.width = "100%";
             }
 
@@ -275,16 +275,16 @@ function positionElements(mousePageX, mouseClientY) {
             // show respective label on hover
             thisLabel.classList.add('hidden');
             if (gallery.matches(':hover')) {
-                thisLabel.classList.remove('display-none');
+                // thisLabel.classList.remove('display-none');
                 var dist = calculateDistance(gallery, mousePageX, mouseClientY);
                 thisLabel.style.transform = "translate(" + (mousePageX - marginX - 144 - (thisLabel.offsetWidth / 2)) + "px , " + (dist.top + (margin * 1.2)) + "px)";
                 if (thisStack.matches(':hover')) {
                     thisLabel.classList.remove('hidden');
                 }
             }
-            setTimeout(function () {
-                $("div[class*='label hidden']").addClass('display-none');
-            }, 500);
+            // setTimeout(function () {
+            //     $("div[class*='label hidden']").addClass('display-none');
+            // }, 750);
         }
     }
 }
