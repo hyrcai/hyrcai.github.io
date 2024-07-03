@@ -603,11 +603,11 @@ main #about-bookmark {
   padding-top: 9em;
 }
 main #no-matches {
-  width: calc(100% - 96px);
+  width: 100%;
   text-align: center;
   position: relative;
   top: 9em;
-  left: calc(50% - 96px);
+  left: calc(50% - 1.5em);
   transform: translateX(-50%);
   display: inline-block;
 }
