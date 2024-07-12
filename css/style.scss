@@ -607,10 +607,9 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin: 0 $bspacer-3;
+    margin: 0 $bspacer-3 $bspacer-3 $bspacer-3;
     width: auto;
     padding-top: $bspacer-2;
-    margin-bottom: $bspacer-3;
 
     h2 {
         color: $off-black;

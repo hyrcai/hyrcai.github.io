@@ -504,10 +504,9 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  margin: 0 9em;
+  margin: 0 9em 9em 9em;
   width: auto;
   padding-top: 6em;
-  margin-bottom: 9em;
 }
 header h2 {
   color: rgb(50, 50, 50);

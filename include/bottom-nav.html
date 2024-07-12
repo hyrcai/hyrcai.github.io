@@ -50,8 +50,9 @@
 <script>
         // load a random message in the footer
         let messages = document.getElementById('messages').getElementsByTagName('p');
-        var show = getRandomNumber(0, messages.length, 0);
+        var show = Math.floor(Math.random() * messages.length);
         messages[show].style.display = "inline";
+        console.log(messages, show);
 </script>
 
 </html>
