@@ -98,7 +98,6 @@ $(document).ready(function () {
     function chainValues(attribute, values) {
         var chain = "";
         values = values.split(" ");
-        console.log(values);
         for (var v in values) {
             if (values[v] != "") {
                 chain += "[" + attribute + "*='" + values[v] + "']"
